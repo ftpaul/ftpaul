@@ -1,0 +1,4 @@
+name: Paulo Teixeira
+markdown: redcarpet
+pygments: true
+exclude: [node_modules, Gruntfile.js, package.json]

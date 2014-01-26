@@ -1,0 +1,15 @@
+---
+layout: default
+title: Paulo Teixeira
+---
+
+<div class="row">
+  <h3>Last work</h3>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <h3>I'm social</h3>
+  
+</div>
