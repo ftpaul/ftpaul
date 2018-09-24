@@ -1,0 +1,18 @@
+---
+layout: default
+title: Paulo Teixeira - Developer and System Administrator
+---
+
+<div class="row">
+	<p class="lead">Recent work</p>
+  
+    {% for post in site.posts %}
+      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.image }}</a><br/>
+    {% endfor %}
+  
+	<p class="lead">I'm social</p>
+	<a class="social"><i class="fa fa-twitter fa-2x"></i></a>
+	<a class="social"><i class="fa fa-github fa-2x"></i></a>
+	<a class="social"><i class="fa fa-linkedin fa-2x"></i></a>
+	<a class="social"><i class="fa fa-facebook fa-2x"></i></a>
+</div>

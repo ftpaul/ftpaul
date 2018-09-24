@@ -1,18 +1,123 @@
----
-layout: default
-title: Paulo Teixeira - Developer and System Administrator
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paulo Teixeira - Growth Engineer at Landing.jobs</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<style type="text/css" media="screen">
+	body {
+		margin: 0;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 400;
 
-<div class="row">
-	<p class="lead">Recent work</p>
-  
-    {% for post in site.posts %}
-      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.image }}</a><br/>
-    {% endfor %}
-  
-	<p class="lead">I'm social</p>
-	<a class="social"><i class="fa fa-twitter fa-2x"></i></a>
-	<a class="social"><i class="fa fa-github fa-2x"></i></a>
-	<a class="social"><i class="fa fa-linkedin fa-2x"></i></a>
-	<a class="social"><i class="fa fa-facebook fa-2x"></i></a>
+		color: #243341;
+		background-color: #F1F5EF;
+		/*
+
+		E14263 fuschia 
+		7E8185 grey
+		F1F5EF white
+		243341 dark-blu
+		F2C61C yellow
+		
+		http://colormind.io/bootstrap/
+
+		*/
+	}
+	p {
+		font-size: 18px;
+    	line-height: 1.5;
+	}
+	h1 {
+
+	}
+	.col1  {
+		display:table;
+		width:33%;
+		height:50%;
+		position:absolute;
+		display: flex;
+    	align-items: center;
+	}
+	.col1 div, .col2 div {
+		display:table-cell;
+		vertical-align:middle;
+		padding-left: 25px;
+		padding-bottom: 25px;
+	}
+	.col2 {
+		display:table;
+		width:66%;
+		height:75%;
+		position:absolute;
+		right: 0;
+		display: flex;
+    	align-items: center;
+	}
+	.col1 img {
+		width: 155px;
+	    height: 155px;
+	    display: block;
+	    margin-left: auto;
+	    border: solid 5px transparent;
+		border-radius: 160px;
+		
+		background-image: linear-gradient(white, white), radial-gradient(circle at top left, #E14263,#F2C61C);
+		background-origin: border-box;
+  		background-clip: content-box, border-box;
+
+	}
+	.col2 div {
+		max-width: 600px;
+	    margin-right: auto;
+		
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+	p {
+		margin: 5px 0;
+	}
+	@media screen and (max-width: 900px) {
+	    .col1 {
+	        width: 100%;
+		    height: 175px;
+		    position: relative;
+	    }
+	    .col2 {
+	    	width: 100%;
+	    	display: block;
+	    	margin-right: 1em;
+	    }
+	    .col1 img {
+	        margin-left: 10px;
+	    }
+
+}
+	}
+</style>
+</head>
+<body>
+
+<div class="col1">
+    <img src="paulo-zen-square.jpg" alt=""> 
 </div>
+
+<div class="col2">
+	<div>
+		<h1>Hello stranger from the <em>internet</em>! ✌️ </h1>
+		<br>
+		<p>I'm <u>Paulo</u> and I work in digital businesses for more than 4 years. I started as a Ruby on Rails develepor and then moved slowly to growth / marketing area.</p>
+		<br>
+		<p>Currently I'm helping the world to understand and to be understood at Unbabel (link).</p>
+		<br>
+		<p>I like to connect with people, if you do so feel free to</p>
+		<br>
+		&emsp;<big>ftpaul [at] gmail.com</big>
+		
+	</div>
+  
+</div>
+
+</body>
+</html>
