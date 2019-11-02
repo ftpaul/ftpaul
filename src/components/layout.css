@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1rem;
+}
+
+html,
+body {
+  background: yellowgreen;
+  margin: 0 !important;
+  color: #555;
+  font-family: -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-top: 0.5px;
+}
