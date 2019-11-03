@@ -23,6 +23,10 @@ h6 {
   color: DimGrey;
   line-height: 1.1;
 }
+p {
+  margin-top: 0.25rem;
+}
+
 .container-parent {
   align-items: center;
   height: 90vh;
@@ -30,7 +34,7 @@ h6 {
 }
 .container-child {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 666px;
   padding: 0 1rem;
   display: flex;
 }
@@ -39,12 +43,25 @@ h6 {
   padding-left: 1rem;
 }
 
+a {
+  color: #FF5733;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.5s ease-in-out; 
+  -webkit-transition: border-bottom-color 0.5s ease-in-out;
+}
 
-@media only screen and (max-width: 700px) {
+a:hover {
+  color: #FC502B;
+  text-decoration: none;
+  border-bottom-color: #FC502B;
+  
+}
 
-  .container-parent, .container-child, .container-text {
-    padding: 0;
-    padding-left: 0.5rem;
+@media only screen and (max-width: 650px) {
+
+  .container-parent, .container-child, .container-text, .container-image {
+    padding: 0 0.5rem;
     display: block;
     margin-top: 1rem;
   }

@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
+import Img from "gatsby-image"
 
-export default () => (
+const IndexPage = ({ data }) => { return (
   <>
   <Helmet>
     <meta charSet="utf-8" />
@@ -11,14 +12,32 @@ export default () => (
 
   <Layout>
     <div class="container-image">
-    <img src="http://placekitten.com/200/200" alt="Paulo Teixeira" />
+    <Img
+        className="headshot"
+        fixed={data.file.childImageSharp.fixed}
+        alt="Paulo Teixeira"
+      />
     </div>
     <div class="container-text">
     <h1>Paulo Teixeira</h1>
-    <p>I've been working on digital business for more than 5 years. Currently, I work at <u>Unbabel</u>.</p>
+    <p>I've been working on digital business for more than 5 years. Currently, I work at <a href="https://unbabel.com">Unbabel</a>.</p>
     <p> Thinking is something we are not able to do alone, that's why I like to collaborate with different people to reach the best solutions.</p>
-    <p>Feel free to reach me out by email (ftpaul [at gmail.com]) or on linkein.</p>
+    <p>Feel free to reach me out if you need help thinking by <a href="mailto:ftpaul+web@gmail.com">email</a> or on <a href="https://www.linkedin.com/in/ftpaul/">Linkdein</a>.</p>
     </div>
   </Layout>
-  </>
-)
+  </>)
+}
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "paulo-teixeira-square.jpg" }) {
+      childImageSharp {
+        fixed(width: 225, height: 225) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`
+
+export default IndexPage
