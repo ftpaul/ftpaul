@@ -3,15 +3,12 @@
   margin: 0;
 }
 
-* + * {
-  margin-top: 1rem;
-}
 
 html,
 body {
-  background: yellowgreen;
+  background: whitesmoke;
   margin: 0 !important;
-  color: #555;
+  color: DimGrey;
   font-family: -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
   font-size: 18px;
   line-height: 1.4;
@@ -23,15 +20,32 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
+  color: DimGrey;
   line-height: 1.1;
-  margin-top: 0.5rem;
 }
-
-li {
-  margin-top: 0.5px;
+.container-parent {
+  align-items: center;
+  height: 90vh;
+  display: flex;
+}
+.container-child {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 1rem;
+  display: flex;
 }
 
 .container-text {
   padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .container-parent, .container-child, .container-text {
+    padding: 0;
+    padding-left: 0.5rem;
+    display: block;
+    margin-top: 1rem;
+  }
 }
