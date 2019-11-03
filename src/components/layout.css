@@ -31,3 +31,7 @@ h6 {
 li {
   margin-top: 0.5px;
 }
+
+.container-text {
+  padding-left: 1rem;
+}

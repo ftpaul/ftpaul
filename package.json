@@ -15,8 +15,10 @@
   "dependencies": {
     "dependencies": "^0.0.1",
     "gatsby": "^2.17.6",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
