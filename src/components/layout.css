@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html,
+body {
+  background: whitesmoke;
+  margin: 0 !important;
+  color: DimGrey;
+  font-family: -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: DimGrey;
+  line-height: 1.1;
+}
+p {
+  margin-top: 0.25rem;
+}
+
+.container-parent {
+  align-items: center;
+  height: 90vh;
+  display: flex;
+}
+.container-child {
+  margin: 0 auto;
+  max-width: 666px;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.container-text {
+  padding-left: 1rem;
+}
+
+a {
+  color: #FF5733;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.5s ease-in-out; 
+  -webkit-transition: border-bottom-color 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #FC502B;
+  text-decoration: none;
+  border-bottom-color: #FC502B;
+  
+}
+
+@media only screen and (max-width: 650px) {
+
+  .container-parent, .container-child, .container-text, .container-image {
+    padding: 0 0.5rem;
+    display: block;
+    margin-top: 1rem;
+  }
+}
