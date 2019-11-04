@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
+import { graphql } from 'gatsby'
 import Img from "gatsby-image"
 
 const IndexPage = ({ data }) => { return (
@@ -12,9 +13,9 @@ const IndexPage = ({ data }) => { return (
 
   <Layout>
     <div class="container-image">
-    <Img
+    <img
         className="headshot"
-        fixed={data.file.childImageSharp.fixed}
+        src={data.file.childImageSharp.fixed.src}
         alt="Paulo Teixeira"
       />
     </div>
@@ -29,15 +30,15 @@ const IndexPage = ({ data }) => { return (
 }
 
 export const query = graphql`
-  query {
-    file(relativePath: { eq: "paulo-teixeira-square.jpg" }) {
-      childImageSharp {
-        fixed(width: 225, height: 225) {
-          ...GatsbyImageSharpFixed
-        }
+{
+  file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
+    childImageSharp {
+      fixed {
+        src
       }
     }
   }
+}
 `
 
 export default IndexPage

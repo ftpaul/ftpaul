@@ -43,6 +43,11 @@ p {
   padding-left: 1rem;
 }
 
+.headshot {
+  width: 225px;
+  height: 225px;
+}
+
 a {
   color: #FF5733;
   text-decoration: none;
