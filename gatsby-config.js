@@ -5,5 +5,16 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,{ resolve: `gatsby-source-filesystem`, options: { path: `./src/images/`, quality: 100, loading: `lazy` } },]
+  plugins: [
+    `gatsby-plugin-react-helmet`, 
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`,
+    { resolve: `gatsby-source-filesystem`, 
+      options: { 
+        path: `./src/images/`, 
+        quality: 100, 
+        loading: `lazy` 
+      } 
+    },
+  ]
 }
