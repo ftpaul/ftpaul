@@ -1,0 +1,277 @@
+{
+    "basics": {
+      "name": "Paulo Teixeira",
+      "label": "Always optimizing things that matter. Performance oriented-mindset. Passionate about books and self-improvement. Stoic learner. Deep thinking is my best friend.",
+      "picture": "",
+      "email": "",
+      "phone": "",
+      "website": "",
+      "summary": "Internet",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "",
+        "countryCode": "",
+        "region": ""
+      },
+      "profiles": []
+    },
+    "work": [
+      {
+        "company": "Unbabel",
+        "position": "Product Manager (Web Properties)",
+        "website": "",
+        "startDate": "2019-05-01",
+        "summary": "- Managing all demand generation assets: B2B website, landing pages tool, and two editorial brands - Executing the roadmap with a team of designers and developers, having all product rituals (sprints, retrospectives, stand ups) - Improving key metrics to influence more sales pipeline",
+        "highlights": []
+      },
+      {
+        "company": "Unbabel",
+        "position": "Performance Marketing Manager",
+        "website": "",
+        "startDate": "2018-02-01",
+        "summary": "",
+        "highlights": [],
+        "endDate": "2019-05-01"
+      },
+      {
+        "company": "Landing.jobs",
+        "position": "Marketing Lead",
+        "website": "",
+        "startDate": "2017-01-01",
+        "summary": "- Developed and executed Landing.jobs performance marketing strategy (Adwords, Facebook, Twitter, aggregators and affiliate networks).  - Responsible for the paid marketing budget and controlling ROI on all performance-led campaigns.  - Managed relationship with Marketing partners and acted as controller for budgeting and ROI.  - Led paid promotion efforts for the Landing.careers Festival and also played an integral role on the ideation, conceptualisation and creation of the Festival’s brand and communications strategy.",
+        "highlights": [],
+        "endDate": "2017-06-01"
+      },
+      {
+        "company": "Landing.jobs",
+        "position": "Growth Marketing Manager",
+        "website": "",
+        "startDate": "2014-07-01",
+        "summary": "- Acquisition Channel Management (Aggregators, Adwords, Facebook Ads, etc)  - Ownership of tracking and reporting on analytics  - Marketing Support (SEO, Campaigns, Newsletters and Product Marketing)",
+        "highlights": [],
+        "endDate": "2016-12-01"
+      },
+      {
+        "company": "ISCTE Junior Consulting",
+        "position": "IT Consultant",
+        "website": "",
+        "startDate": "2013-06-01",
+        "summary": "- Institutional Website Development   - Teach skills related with building websites",
+        "highlights": [],
+        "endDate": "2014-01-01"
+      },
+      {
+        "company": "ISCTE - Instituto Universitário de Lisboa",
+        "position": "IT Consultant - Unidade de Alumni & Fundraising",
+        "website": "",
+        "startDate": "2013-03-01",
+        "summary": "- Alumni database optimization - Alumni Reunion Website Developer",
+        "highlights": [],
+        "endDate": "2013-06-01"
+      },
+      {
+        "company": "Inspiring",
+        "position": "Co-founder and Developer",
+        "website": "",
+        "startDate": "2013-02-01",
+        "summary": "We created  a software house with a shared-risk model. We built web platforms or mobile apps to more than a dozen ventures.",
+        "highlights": [],
+        "endDate": "2014-02-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "ISCTE - Instituto Universitário de Lisboa",
+        "area": "",
+        "studyType": "",
+        "startDate": "2010-01-01",
+        "gpa": "",
+        "courses": [],
+        "endDate": "2017-01-01"
+      },
+      {
+        "institution": "Escola Secundária José Saramago",
+        "area": "",
+        "studyType": "Técnico de Informática",
+        "startDate": "2007-01-01",
+        "gpa": "",
+        "courses": [],
+        "endDate": "2010-01-01"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Metrics",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SEO",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Analytics",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Online Advertising",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Ruby on Rails",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Management",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Growth Hacking",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Development",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Digital Marketing",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "WordPress",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "System Administration",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "CSS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Linux",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PPC",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Team Leadership",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Programming",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Search Engine Optimization (SEO)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Problem Solving",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "Português",
+        "fluency": "Native or bilingual proficiency"
+      },
+      {
+        "language": "Inglês",
+        "fluency": "Full professional proficiency"
+      }
+    ],
+    "references": [
+      {
+        "name": "Joana Porteiro - Unbabel",
+        "reference": "Although he didn’t manage me directly, Paulo played a big part in my onboarding at Unbabel and has really influenced the way I approach work early in my career. He consistently put in the extra mile to teach me and make sure that I was always learning, never shying away from giving (and receiving) constructive feedback while challenging the team not only to understand what we’re doing but why we're doing it. With his technical background, he has a great balance of people and technical skills. He leaves no loose ends and always strives to get everyone on the same page.  tl;dr: Paulo has been a great mentor and I would jump on an opportunity to work with him any time."
+      },
+      {
+        "name": "Nuno Veiga - Investoo Group",
+        "reference": "Paulo was the Marketing Lead for Landing.jobs during my time with the company. He’s a brilliant individual and so much more that what first meets the eye. He’s insightful, emotionally wealthy, and acts as a stabilising presence wherever he ends up in. He loves to learn and is consistently looking at self-improvement, be it through seeking honest feedback from his peers or through literature. As a marketer, Paulo knows his stuff and isn’t afraid of fast iteration to achieve proposed goals. I wholeheartedly recommend Paulo to anyone who might be thinking of hiring him."
+      },
+      {
+        "name": "Daniel Kisluk - ALTA Digital",
+        "reference": "Paulo is a detail oriented, ambitious and strong Growth Marketing Manager - his exceptional workflow, skills & productivity methods make his work exceptional. I would recommend him for any project that requires the very best in analytical execution. He had the vision to see the benefits and the passion to turn that into a competitive advantage for Landing Jobs. I've consistently felt Paulo was one of the brightest teammates I have ever had the opportunity of working with."
+      },
+      {
+        "name": "Robin Pernel - ELDOTRAVO",
+        "reference": "We had been working together for a year within Unbabel performance marketing team. Paulo’s set of technical skills allowed our team to leverage on our tool stack at full potential to optimize demand generation (HubSpot, Pardot, Salesforce, Zapier, Facebook Ads Manager, Linkedin Ads Manager, Google Analytics, Google Tag Manager…). Organized, rigorous and detail oriented, Paulo plaid a key role in the decision making process of the strategy of the team. Smart and self learner Paulo challenges others and love being challenged which continuously drive the overall performance of the team to excellence. I’m proud that I had been working with Paulo and hope our professional paths will cross again."
+      },
+      {
+        "name": "Mariana Silva 👩🏽‍💻 - Unbabel",
+        "reference": "I started admiring Paulo’s skills when he joined us in the marketing team over two years ago now. Paulo was one of a kind with his always-ready-to-write notebook, unique spreadsheets, and productivity hacks. All of this combined with Paulo’s dedication to empowering the growth of others resulted in the implementation of key project management techniques in the team, especially later in his role as Web Properties Product Manager.    While many of us are still figuring out what does a “career” mean, Paulo has proven to have a very clearly defined vision of his path as Product Manager; he was and he is continuously striving to achieve that in his daily tasks and personal connections.  Personally, I have to thank Paulo for his outstanding mentoring skills to guide me through my career advancement and for being my “teacher assistant” on my journey towards becoming a web developer for the past year. I've also witnessed this mentorship approach happening when Paulo was onboarding new members to the team.  On top of his full-time job, Paulo never stops learning and not only he’s always involved in side gigs as a frontend developer, and there will also hardly be a day where Paulo won’t read for at least one hour to keep feeding his mind.   Finally, Paulo’s unique personality traits are a must in any team — he’ll keep challenging every manager to seek excellence while granting a more humane group of people working together."
+      },
+      {
+        "name": "Fernando Amaral - Comerciantes.pt",
+        "reference": "Paulo is a results driven, focused and hard working member of our team at Unbabel. He understands his contribution to our mission and is permanently seeking to improve himself and his work.   Paulo is known for always asking the right questions, challenging anyone in the team. His curiosity is sincere and positive.  He is dedicated to growth, experimentation and learning - a valuable asset in a fast paced organisation."
+      },
+      {
+        "name": "Pedro Martinho, MBA - Unbabel",
+        "reference": "Paulo was responsible for all our demand generation assets from a product management perspective. His background in marketing and computer science made him the ideal person to take care of our website, blogs, event microsites, etc. He transitioned from marketing into product management really well, he has the product mindset of understanding the problem accurately and them moving to the solution.  Paulo adapts very fast to the changing conditions of the market, which often require last minute changes to on-going projects. These are never a problem but are seen as an opportunity to further improve our position. I am happy to recommend Paulo for any product management position particularly if it involves public facing assets."
+      }
+    ],
+    "projects": [
+      {
+        "name": "ICT 2014",
+        "startDate": "2014-04-01",
+        "summary": "",
+        "url": "http://www.iscte-iul.pt/servicos/image_and_communication_office/Academia.aspx"
+      },
+      {
+        "name": "FISTA'14",
+        "startDate": "2013-11-01",
+        "summary": "",
+        "url": "http://fista.iscte-iul.pt/"
+      },
+      {
+        "name": "Google DevFest Portugal",
+        "startDate": "2012-12-01",
+        "summary": "Google DevFests are large, community-run events that can offer speaker sessions across product areas, all-day hackatons, code labs, and more.   Being the first ever Google DevFest on Portuguese Territory we intended to elevate and innovate to an international level from the start, developing key competences alongside the international speakers and promoting a spirit of constant learning, giving a broad perspective of the current technologies being used and developed by Google and using them for a greater cause, not only for young students but also for professionals who wish to refresh their knowledge and innovate in their industries with a Google-sized skill set.",
+        "url": "http://gdgpt.blogspot.pt/",
+        "endDate": "2013-03-01"
+      },
+      {
+        "name": "Mural Solidário ISCTE",
+        "startDate": "2012-12-01",
+        "summary": "",
+        "url": "http://muralsolidario.iscte-iul.pt/"
+      }
+    ]
+  }
