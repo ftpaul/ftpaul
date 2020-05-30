@@ -1,32 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 
 
 html,
 body {
-  background: whitesmoke;
   margin: 0 !important;
-  color: DimGrey;
   font-family: "Lato", -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
-  font-size: 18px;
-  line-height: 1.4;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: DimGrey;
-  line-height: 1.2;
-  font-size: 1.17em;
-}
-p {
-  margin-top: 0.25rem;
-}
 
 .container-parent {
   align-items: center;

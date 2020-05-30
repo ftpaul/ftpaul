@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`, 
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
         path: `./src/images/`, 
