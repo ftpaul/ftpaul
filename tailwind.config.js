@@ -192,7 +192,8 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
-      sans: [
+      lato: [
+        'Lato',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',

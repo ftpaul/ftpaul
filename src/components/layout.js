@@ -1,21 +1,22 @@
 import React from "react"
 import "./layout.css"
 import { Helmet } from "react-helmet"
-import favicon from '../images/favicon.png'
+import favicon from '../images/favicon.jpg'
 
 export default ({ children }) => (
   <>
   <Helmet bodyAttributes={{
-        class: 'bg-gray-100'
+        class: 'bg-gray-100 font-lato'
     }}>
     <link rel="icon" href={favicon} />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
-    <div className="w-screen h-2 bg-yellow-500"></div>
-  <div class="container-parent" >
-  <div class="container-child" >
-    {children}
-  </div>
+    
+  <div className="flex flex-wrap content-center h-screen">
+  <div className="w-screen h-2 bg-yellow-500 absolute t-0 l-0"></div>
+    <div class="mx-auto" >
+      {children}
+    </div>
   </div>
   </>
 )

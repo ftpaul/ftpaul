@@ -11,9 +11,7 @@ const IndexPage = ({ data }) => { return (
   </Helmet>
 
   <Layout>
-    <div class="container-text">
     <h1 className="text-2xl text-gray-600">Work in progress <span role="img" aria-label="Man Technologist">👨🏻‍💻</span></h1>
-    </div>
   </Layout>
   </>)
 }

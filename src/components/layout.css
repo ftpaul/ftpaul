@@ -5,40 +5,7 @@
 @tailwind utilities;
 
 
-html,
-body {
-  margin: 0 !important;
-  font-family: "Lato", -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
-}
-
-
-.container-parent {
-  align-items: center;
-  height: 90vh;
-  display: flex;
-}
-.container-child {
-  margin: 0 auto;
-  max-width: 666px;
-  padding: 0 1rem;
-  display: flex;
-}
-
-.container-text {
-  padding-left: 1rem;
-}
-
-.container-image {
-  text-align: center;
-}
-
-.container-image img {
-  border-radius: 80px;
-  width: 160px;
-  height: 160px;
-}
-
-a {
+/* a {
   color: #FF5733;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -51,13 +18,5 @@ a:hover {
   text-decoration: none;
   border-bottom-color: #FC502B;
   
-}
+} */
 
-@media only screen and (max-width: 650px) {
-
-  .container-parent, .container-child, .container-text, .container-image {
-    padding: 0 0.5rem;
-    display: block;
-    margin-top: 1rem;
-  }
-}
