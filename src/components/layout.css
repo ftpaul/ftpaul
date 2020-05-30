@@ -9,7 +9,7 @@ body {
   background: whitesmoke;
   margin: 0 !important;
   color: DimGrey;
-  font-family: -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
+  font-family: "Lato", -apple-system, BlinkMAcSystemFont, "Segoi UI", Roboto, Helvetica;
   font-size: 18px;
   line-height: 1.4;
 }
@@ -49,11 +49,9 @@ p {
 }
 
 .container-image img {
-  border-radius: 5px;
-}
-.headshot {
-  width: 225px;
-  height: 225px;
+  border-radius: 80px;
+  width: 160px;
+  height: 160px;
 }
 
 a {

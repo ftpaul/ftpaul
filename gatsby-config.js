@@ -16,5 +16,16 @@ module.exports = {
         loading: `lazy` 
       } 
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`400`, `700`]
+          },
+        ],
+      },
+    }
   ]
 }

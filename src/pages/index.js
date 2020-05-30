@@ -11,16 +11,8 @@ const IndexPage = ({ data }) => { return (
   </Helmet>
 
   <Layout>
-    <div class="container-image">
-    <img
-        className="headshot"
-        src={data.file.childImageSharp.fixed.src}
-        alt="Paulo Teixeira"
-      />
-    </div>
     <div class="container-text">
-    <h1>Paulo Teixeira</h1>
-    <p>Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as developer and marketer. I have 5+ years of experience working in high-growth tech organizations.</p>
+    <h1>Work in progress 👨🏻‍💻</h1>
     </div>
   </Layout>
   </>)
