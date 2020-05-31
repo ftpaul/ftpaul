@@ -27,6 +27,21 @@ module.exports = {
           },
         ],
       },
-    }
+    },
+    // {
+    //   resolve: "gatsby-source-goodreads",
+    //   options: {
+    //     developerKey: "K5MS7p74EdlcKjCIEcILag",
+    //     goodReadsUserId: "63617698",
+    //     userShelves: ["currently-reading", "read"]
+    //   }
+    // },
+    {
+      resolve: "@jamesdanylik/gatsby-source-goodreads",
+      options: {
+          key: 'K5MS7p74EdlcKjCIEcILag',
+          id: '63617698'
+      },
+    },
   ]
 }
