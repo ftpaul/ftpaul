@@ -2,6 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import favicon from '../images/favicon.jpg'
 import { graphql } from 'gatsby'
+import Navigation from '../components/navigation'
+import ContentColumn from '../components/contentColumn'
  
 
 
@@ -19,10 +21,8 @@ const BooksPage = ({ data }) => {
     <link rel="icon" href={favicon} />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
-  <div className="w-screen h-2 bg-yellow-500 absolute t-0 l-0"></div>
-  <div className="flex flex-wrap max-w-screen-md mx-auto pt-32 px-2">
-  <div className="" >
-      <h1 className="text-4xl text-gray-600 pb-6">Paulo Teixeira<span className="font-bold text-yellow-600">.</span></h1>
+  <Navigation />
+  <ContentColumn>
       <p className="text-2xl text-gray-500 pb-2">Books that's currently reading:</p>
       {currentlyReadingBooks.map((book) => (
         <>
@@ -47,8 +47,7 @@ const BooksPage = ({ data }) => {
           </tr>
           ))}
         </table> 
-        </div>
-  </div>
+        </ContentColumn>
   </>
   )
 }
