@@ -18,7 +18,7 @@ const Navigation = () => {
                         <span className="text-xl text-gray-500 hover:text-yellow-600 xs:hover:text-gray-100 border-b-2 border-yellow-600">{isExpanded ? "Close" : "Menu"}</span>
                     </button>
                     <div className={isExpanded ? `xs:block xs:visible xs:opacity-100 xs:top-0 xs:left-0 xs:absolute xs:w-screen xs:h-screen xs:bg-yellow-600 xs:ease-in-out xs:duration-1000 xs:overflow-y-hidden` : `xs:hidden xs:invisible xs:opacity-0`}>
-                    {isExpanded ? <Helmet bodyAttributes={{class: `xs:overflow-y-hidden`}}></Helmet> : <Helmet bodyAttributes={{class: `xs:overflow-y-auto`}}></Helmet>}
+                    {isExpanded ? <Helmet bodyAttributes={{class: `xs:overflow-hidden`}}></Helmet> : <Helmet bodyAttributes={{class: `xs:overflow-auto`}}></Helmet>}
                     <ul className={isExpanded ? `xs:block text-xl xs:pt-64 xs:text-center xs:text-2l` : `text-xl flex xs:hidden`}>
                         <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
                             <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/preview">About</Link>
