@@ -14,21 +14,24 @@ const Navigation = () => {
                 <div className="flex">
                     <h1 className="text-4xl text-gray-600 pb-4">Paulo Teixeira<span className="font-bold text-5xl text-yellow-600">.</span></h1>
                 </div>
-                    <button className="xs:display flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-10" onClick={() => toggleExpansion(!isExpanded)}>
-                        <span className="text-gray-500 hover:text-yellow-600 border-b-2 border-yellow-600">Menu</span>
+                    <button className="hidden xs:display xs:flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-10" onClick={() => toggleExpansion(!isExpanded)}>
+                        <span className="text-xl text-gray-500 hover:text-yellow-600 border-b-2 border-yellow-600">Menu</span>
                     </button>
-                    <div className={isExpanded ? `block top-0 left-0 absolute` : `hidden`}><div className="absolute w-screen h-screen bg-yellow-600"></div></div>
-                    <ul className="text-xl flex xs:hidden ">
-                        <li className="mr-6">
-                            <Link className="text-gray-500 hover:text-yellow-600" activeClassName="border-b-2 border-yellow-600" to="/about">About</Link>
+                    <div className={isExpanded ? `xs:block xs:visible xs:opacity-100 xs:top-0 xs:left-0 xs:absolute xs:w-screen xs:h-screen xs:bg-yellow-600 xs:ease-in-out xs:duration-1000` : `xs:hidden xs:invisible xs:opacity-0`}>
+                    
+                    <ul className=" " className={isExpanded ? `xs:block text-xl xs:pt-64 xs:text-center xs:text-2l` : `text-xl flex xs:hidden`}>
+                        <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
+                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/about">About</Link>
                         </li>
-                        <li className="mr-6">
-                            <button className="text-gray-500 opacity-50 cursor-not-allowed"activeClassName="border-b-2 border-yellow-600" to="#" disabled={true}>Blog</button>
+                        <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
+                            <button className="text-gray-500  opacity-50 cursor-not-allowed" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="#" disabled={true}>Blog</button>
                         </li>
-                        <li className="mr-6">
-                            <Link className="text-gray-500 hover:text-yellow-600"activeClassName="border-b-2 border-yellow-600" to="/books">Books</Link>
+                        <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
+                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/books">Books</Link>
                         </li>
                     </ul>
+
+                    </div>
                     
                 
             </nav>
