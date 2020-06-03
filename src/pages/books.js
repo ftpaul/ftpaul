@@ -66,7 +66,7 @@ const BooksPage = ({ data }) => {
           ))}
           </tbody>
         </table> 
-        <p className="text-xl text-gray-500 pb-2 ">You can follow my reviews and reading on <a href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
+        <p className="text-xl text-gray-500 pb-2 ">You can follow my reviews and reading on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
         </ContentColumn>
   </>
   )
