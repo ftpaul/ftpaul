@@ -23,30 +23,50 @@ const BooksPage = ({ data }) => {
     </Helmet>
   <Navigation />
   <ContentColumn>
-      <p className="text-2xl text-gray-500 pb-2">Books that's currently reading:</p>
-      {currentlyReadingBooks.map((book) => (
-        <>
-        <img src={book.book.image_url} alt={book.book.title} className="" />
-        <a href={book.book.link} target="_blank" rel="noreferrer"><p>{book.book.title}</p></a>
-        </>
-        ))}
-        <hr />
-        <table className="table-auto">
+      <p className="text-xl text-gray-500 pb-2">Books are my primary source of knowledge, I like to deep dive in technical books and occasional nonfiction, both in portuguese and in english. Here's you can find what I'm currently reading:</p>
+      <table className="table-auto mb-8">
         <thead>
+          <tr>
+          <th className="px-4 py-2">Cover</th>
+          <th className="px-4 py-2">Title</th>
+          <th className="px-4 py-2">Author</th>
+          </tr>
+        </thead>
+        <tbody>
+      {currentlyReadingBooks.map((book) => (
+        
+        <tr key={book.book.id}>
+          <td className="px-4 py-2"><img src={book.book.image_url} alt={book.book.title} className="" /></td>
+          <td className="px-4 py-2"><a href={book.book.link} target="_blank" rel="noreferrer">{book.book.title}</a></td>
+          <td className="px-4 py-2">{book.book.authors[0].name}</td>
+          </tr>
+        
+        ))}
+        </tbody>
+    </table> 
+        <hr />
+        <p className="text-xl text-gray-500 pb-2 ">These are the last 10 books I've read:</p>
+        <table className="table-auto mb-8">
+        <thead>
+        <tr>
           <th className="px-4 py-2">Cover</th>
           <th className="px-4 py-2">Title</th>
           <th className="px-4 py-2">Author</th>
           <th className="px-4 py-2">Rating</th>
+          </tr>
         </thead>
+        <tbody>
           {readBooks.map((review) => (
-          <tr>
+          <tr key={review.book.id}>
           <td className="px-4 py-2"><img src={review.book.image_url} alt={review.book.title} className="" /></td>
           <td className="px-4 py-2"><a href={review.book.link} target="_blank" rel="noreferrer">{review.book.title}</a></td>
-          <td className="px-4 py-2">Author</td>
+          <td className="px-4 py-2">{review.book.authors[0].name}</td>
           <td className="px-4 py-2">{review.rating}/5</td>
           </tr>
           ))}
+          </tbody>
         </table> 
+        <p className="text-xl text-gray-500 pb-2 ">You can follow my reviews and reading on <a href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
         </ContentColumn>
   </>
   )
@@ -61,6 +81,7 @@ export const query = graphql`
       node {
         reviews {
           book {
+            id
             title
             image_url
             link
@@ -79,6 +100,7 @@ export const query = graphql`
           rating
           read_at
           book {
+            id
             title
             image_url
             link
