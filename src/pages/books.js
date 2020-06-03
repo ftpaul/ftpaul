@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import favicon from '../images/favicon.jpg'
 import { graphql } from 'gatsby'
 import Navigation from '../components/navigation'
+import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
  
 
@@ -68,6 +69,7 @@ const BooksPage = ({ data }) => {
         </table> 
         <p className="text-xl text-gray-500 pb-2 ">You can follow my reviews and reading on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
         </ContentColumn>
+        <Footer />
   </>
   )
 }
