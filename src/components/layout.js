@@ -13,7 +13,7 @@ export default ({ children }) => (
     
   <div className="flex flex-wrap content-center h-screen">
   <div className="w-screen h-2 bg-yellow-500 absolute t-0 l-0 "></div>
-    <div class="mx-auto mt-2" >
+    <div className="mx-auto mt-2" >
       {children}
     </div>
   </div>
