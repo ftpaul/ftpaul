@@ -16,8 +16,11 @@ const AboutPage = ({ data }) => { return (
     </Helmet>
   <Navigation />
   <ContentColumn>
-      <p className="text-2xl text-gray-500 pb-2">Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as developer and marketer. I have 5+ years of experience working in high-growth tech organizations such as Unbabel and Landing.jobs.</p>
-      <p className="text-2xl text-gray-500 pb-2">I'm currently looking for new challenges that allow me to work with multidisciplinary teams, developing products in the growth stage (needs improvement). You can reach out to me on LinkedIn or via e-mail.</p>
+      <p className="text-3xl text-gray-500 pb-2">Hey there <span role="img" aria-label="Wave">👋🏽</span></p>
+      <p className="text-2xl text-gray-500 pb-2">Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as developer and marketer.</p>
+      {/* <p className="text-2xl text-gray-500 pb-2">Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as developer and marketer.</p> */}
+      <p className="text-2xl text-gray-500 pb-2">I'm currently looking for new challenges as Product Manager or Product Owner. I have 5+ years of experience working in high-growth tech organizations such as Unbabel and Landing.jobs.</p>
+      <p className="text-2xl text-gray-500 pb-2">Feel free to out to me on LinkedIn or via e-mail.</p>
       </ContentColumn>
       <Footer />
   </>
