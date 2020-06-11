@@ -59,7 +59,7 @@ const SEO = ({ title, description, image, article }) => {
       {seo.image && <meta name="twitter:image" content={seo.image} />}
 
     
-      <link rel="icon" href={favicon} />
+      <link rel="icon" href={seo.favicon} />
 
       <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
