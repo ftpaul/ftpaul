@@ -10,7 +10,7 @@ const Navigation = () => {
     return (
         <>
             <div className="w-screen h-2 bg-yellow-500 absolute t-0 l-0"></div>
-            <nav className="flex flex-1 items-center justify-between max-w-screen-md mx-auto pt-16 px-2">
+            <nav className="flex flex-1 items-center justify-between max-w-screen-md mx-auto pt-16 px-2 xs:pt-4">
                 <div className="flex">
                     <h1 className="text-4xl text-gray-600 pb-4">Paulo Teixeira<span className="font-bold text-5xl text-yellow-600">.</span></h1>
                 </div>
