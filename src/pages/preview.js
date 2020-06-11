@@ -18,7 +18,7 @@ const AboutPage = ({ data }) => { return (
       <div className="relative w-3/4 xs:w-full pb-full mx-auto mb-4">
         <img src="/paulo-teixeira-product-manager.jpg" alt="Paulo Teixeira - Product Manager" className="absolute top-0 h-full w-full object-cover" />
       </div>
-      <p className="text-xl xs:text-lg leading-snug text-gray-500 pb-2 text-justify xs:text-left">PS: I'm currently looking for new challenges as a Product Manager or Owner, if you're looking for someone to deliver outstanding digital products get in touch with me via&nbsp; 
+      <p className="text-xl xs:text-lg leading-snug text-gray-500 pb-2 text-justify xs:text-left">PS: I'm currently open to new opportunities as a Product Manager or Owner. In case you're looking for someone to deliver high quality digital products get in touch with me via&nbsp; 
         <a href="https://linkedin.com/in/ftpaul" className="text-yellow-600 underline hover:text-yellow-400">LinkedIn</a> or&nbsp;
         <a href="mailto:ftpaul@gmail.com" className="text-yellow-600 underline hover:text-yellow-400">e-mail</a>.
       </p>
