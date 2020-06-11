@@ -1,19 +1,14 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import favicon from '../images/favicon.jpg'
 import Navigation from '../components/navigation'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
 
 
 const AboutPage = ({ data }) => { return (
   <>
-  <Helmet bodyAttributes={{
-        class: 'bg-gray-100 font-lato'
-    }}>
-    <link rel="icon" href={favicon} />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    </Helmet>
+  <SEO />
+    
   <Navigation />
   <ContentColumn>
       {/* <img src="/paulo-teixeira.png" className="justify-center flex h-48 w-48" /> */}

@@ -1,8 +1,7 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import favicon from '../images/favicon.jpg'
 import { graphql } from 'gatsby'
 import Navigation from '../components/navigation'
+import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
  
@@ -16,12 +15,7 @@ const BooksPage = ({ data }) => {
 
   return (
   <>
-  <Helmet bodyAttributes={{
-        class: 'bg-gray-100 font-lato'
-    }}>
-    <link rel="icon" href={favicon} />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    </Helmet>
+  <SEO />
   <Navigation />
   <ContentColumn>
       <p className="text-xl text-gray-500 pb-2">Books are my primary source of knowledge, I like to deep dive in technical books and occasional nonfiction, both in portuguese and in english. Here's you can find what I'm currently reading:</p>

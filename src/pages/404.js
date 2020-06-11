@@ -1,14 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Helmet } from "react-helmet"
+import SEO from '../components/seo'
 import { graphql , Link} from 'gatsby'
 
 const IndexPage = ({ data }) => { return (
   <>
-  <Helmet>
-    <meta charSet="utf-8" />
-    <title>This is the best title I could find</title>
-  </Helmet>
+  <SEO />
 
   <Layout>
     <h1 className="text-2xl text-bold text-gray-600">You just hit a road block <span role="img" aria-label="Construction">🚧</span></h1>
