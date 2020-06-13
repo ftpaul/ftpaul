@@ -1,13 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import favicon from '../images/favicon.jpg'
 
 export default ({ children }) => (
   <>
   <Helmet bodyAttributes={{
         class: 'bg-gray-100 font-lato'
     }}>
-    <link rel="icon" href={favicon} />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
     
