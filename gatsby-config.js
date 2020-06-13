@@ -12,7 +12,7 @@ module.exports = {
       "A Product Manager with 6+ years of experience working with web technologies.",
     url: "https://pauloteixeira.pt", // No trailing slash allowed!
     image: "/paulo-teixeira-sharing-image.png", // Path to your image you placed in the 'static' folder
-    favicon: "/favicon.ico", // Path to your image you placed in the 'static' folder
+    favicon: "/favicon.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@iamftpaul",
   },
   plugins: [
