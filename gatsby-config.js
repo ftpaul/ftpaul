@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "Paulo Teixeira",
-    titleTemplate: "%s · Paulo Teixeirs",
+    titleTemplate: "%s · Paulo Teixeira",
     description:
       "A Product Manager with 6+ years of experience working with web technologies.",
     url: "https://pauloteixeira.pt", // No trailing slash allowed!
