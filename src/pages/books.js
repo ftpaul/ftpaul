@@ -4,7 +4,7 @@ import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
- 
+import { css } from "@emotion/core"
 
 
 const BooksPage = ({ data }) => { 
@@ -40,7 +40,31 @@ const BooksPage = ({ data }) => {
         </tbody>
     </table> 
         <hr />
-        <p className="text-xl text-gray-500 pb-2 ">These are the last 10 books I've read:</p>
+
+        <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 xs:gap-4">
+        {currentlyReadingBooks.map((book) => (
+          <a href={book.book.link} target="_blank" rel="noreferrer" className="w-full flex hover:shadow-2xl mr-2" css={{height:`145px`}} key={book.book.id}>
+            <div className="h-24 sm:h-32 lg:h-auto lg:w-24 flex-none bg-cover text-center overflow-hidden sm:max-w-sm sm:inline-block" css={{height:`145px`,width:`98px`}} >
+            <img className="w-full cover" src={book.book.image_url} alt={book.book.title}  /> 
+            </div>
+            <div className="bg-gray-100 w-full p-3 flex flex-col justify-between leading-normal sm:inline-block">
+              <div className="mb-8">
+                <div className="text-gray-900 text-lg mb-2">{cleanBookTitle(book.book.title)}</div>
+              </div>
+              <div className="flex items-center">
+                <div className="text-sm">
+                  <p className="text-gray-900 leading-none">{book.book.authors[0].name}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+        </div>
+        
+
+        <hr />
+        <br />
+        <p className="mt-4 text-xl text-gray-500 pb-2 ">These are the last 10 books I've read:</p>
         <table className="table-auto mb-8">
         <thead>
         <tr>
@@ -54,7 +78,7 @@ const BooksPage = ({ data }) => {
           {readBooks.map((review) => (
           <tr key={review.book.id}>
           <td className="px-4 py-2"><img src={review.book.image_url} alt={review.book.title} className="" /></td>
-          <td className="px-4 py-2"><a href={review.book.link} target="_blank" rel="noreferrer">{review.book.title}</a></td>
+          <td className="px-4 py-2"><a href={review.book.link} target="_blank" rel="noreferrer">{cleanBookTitle(review.book.title)}</a></td>
           <td className="px-4 py-2">{review.book.authors[0].name}</td>
           <td className="px-4 py-2">{review.rating}/5</td>
           </tr>
@@ -69,6 +93,14 @@ const BooksPage = ({ data }) => {
 }
 
 
+function cleanBookTitle(title) {
+  if (title.indexOf(':') > 0 && title.length > 52) {
+    const a = title.substring(0, title.indexOf(':'))
+    console.log(a)
+    return a
+  }
+  return title
+}
 
 export const query = graphql`
 {
