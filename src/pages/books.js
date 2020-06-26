@@ -43,7 +43,7 @@ const BooksPage = ({ data }) => {
 
         <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 xs:gap-4">
         {currentlyReadingBooks.map((book) => (
-          <a href={book.book.link} target="_blank" rel="noreferrer" className="w-full flex hover:shadow-2xl mr-2" css={{height:`145px`}} key={book.book.id}>
+          <a href={book.book.link} target="_blank" rel="noreferrer" className="w-full flex hover:shadow-lg mr-2" css={{height:`145px`}} key={book.book.id}>
             <div className="h-24 sm:h-32 lg:h-auto lg:w-24 flex-none bg-cover text-center overflow-hidden sm:max-w-sm sm:inline-block" css={{height:`145px`,width:`98px`}} >
             <img className="w-full cover" src={book.book.image_url} alt={book.book.title}  /> 
             </div>
