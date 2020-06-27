@@ -4,6 +4,7 @@ import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
+import BookCard from '../components/books/bookCard'
 
 
 const BooksPage = ({ data }) => { 
@@ -11,8 +12,7 @@ const BooksPage = ({ data }) => {
   const currentlyReadingBooks = data.currently_reading.edges[0].node.reviews
   const readBooks = data.read.edges[0].node.reviews.slice(0,10)
 
-  const ratingYellowStar = `<span class="text-yellow-600">★</span>`
-  const ratingGrayStar = `<span class="text-gray-400">★</span>`
+  
 
   return (
   <>
@@ -25,21 +25,12 @@ const BooksPage = ({ data }) => {
 
         <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 xs:gap-4">
         {currentlyReadingBooks.map((book) => (
-          <a href={book.book.link} target="_blank" rel="noreferrer" className="w-full flex hover:shadow-lg mr-2" css={{height:`145px`}} key={book.book.id}>
-            <div className="h-24 sm:h-32 lg:h-auto lg:w-24 flex-none bg-cover text-center overflow-hidden sm:max-w-sm sm:inline-block" css={{height:`145px`,width:`98px`}} >
-            <img className="w-full cover" src={book.book.image_url} alt={book.book.title}  /> 
-            </div>
-            <div className="bg-gray-100 w-full p-3 flex flex-col justify-between leading-normal sm:inline-block">
-              <div className="mb-8">
-                <div className="text-gray-900 text-lg mb-2">{cleanBookTitle(book.book.title)}</div>
-              </div>
-              <div className="flex items-center">
-                <div className="text-sm">
-                  <p className="text-gray-900 leading-none">{book.book.authors[0].name}</p>
-                </div>
-              </div>
-            </div>
-          </a>
+          <BookCard 
+            link={book.book.link} 
+            title={book.book.title} 
+            author={book.book.authors[0].name} 
+            image_url={book.book.image_url}
+            key={book.book.id} />
         ))}
         </div>
         
@@ -50,20 +41,13 @@ const BooksPage = ({ data }) => {
 
         <div className="grid grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
         {readBooks.map((review) => (
-          <a href={review.book.link} target="_blank" rel="noreferrer" className="bg-gray-100 w-full flex hover:shadow-lg mr-2" css={{height:`145px`}} key={review.book.id}>
-            <div className="lg:w-24 flex-none bg-cover text-center overflow-hidden sm:max-w-sm sm:inline-block" >
-            <img className="object-none object-center" css={{height:`145px`,width:`98px`}} src={review.book.image_url} alt={review.book.title}  /> 
-            </div>
-            <div className="w-full p-3 inline-grid content-between">
-              <div className="text-gray-900 text-lg mb-2">
-                {cleanBookTitle(review.book.title)}
-              </div>
-              <div className="flex justify-between text-sm">
-                  <p className="text-gray-900 leading-none">{review.book.authors[0].name}</p>
-                  <p dangerouslySetInnerHTML={{__html: (ratingYellowStar.repeat(review.rating)+ratingGrayStar.repeat(5-review.rating))}}></p>
-              </div>
-            </div>
-          </a>
+          <BookCard 
+            link={review.book.link} 
+            title={review.book.title} 
+            author={review.book.authors[0].name} 
+            rating={review.rating} 
+            image_url={review.book.image_url}
+            key={review.book.id} />
         ))}
         </div>
 
@@ -75,14 +59,7 @@ const BooksPage = ({ data }) => {
 }
 
 
-function cleanBookTitle(title) {
-  if (title.indexOf(':') > 0 && title.length > 52) {
-    const a = title.substring(0, title.indexOf(':'))
-    console.log(a)
-    return a
-  }
-  return title
-}
+
 
 export const query = graphql`
 {
