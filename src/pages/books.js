@@ -19,41 +19,39 @@ const BooksPage = ({ data }) => {
   <SEO />
   <Navigation />
   <ContentColumn>
-      <p className="text-xl text-gray-500 pb-2">Books are my primary source of knowledge, I like to deep dive in technical books and occasional nonfiction, both in portuguese and in english. Here's you can find what I'm currently reading:</p>
+      <p className="text-xl text-gray-500">Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. I look to deep dive in technical books and occasional nonfiction, both in Portuguese and in English. You can follow my reading and reviews on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
       
-        <hr />
+      <h3 className="text-xl text-gray-500 pt-6 pb-2">Currently Reading</h3>
 
-        <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 xs:gap-4">
-        {currentlyReadingBooks.map((book) => (
-          <BookCard 
-            link={book.book.link} 
-            title={book.book.title} 
-            author={book.book.authors[0].name} 
-            image_url={book.book.image_url}
-            key={book.book.id} />
-        ))}
-        </div>
+      <div className="grid grid-cols-2 xs:grid-cols-1 gap-2 xs:gap-4">
+      {currentlyReadingBooks.map((book) => (
+        <BookCard 
+          link={book.book.link} 
+          title={book.book.title} 
+          author={book.book.authors[0].name} 
+          image_url={book.book.image_url}
+          key={book.book.id} />
+      ))}
+      </div>
         
 
-        <hr />
-        <br />
-        <p className="mt-4 text-xl text-gray-500 pb-2 ">These are the last 10 books I've read:</p>
+      <h3 className="text-xl text-gray-500 pt-8 pb-2">Last 10 reads</h3>
 
-        <div className="grid grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
-        {readBooks.map((review) => (
-          <BookCard 
-            link={review.book.link} 
-            title={review.book.title} 
-            author={review.book.authors[0].name} 
-            rating={review.rating} 
-            image_url={review.book.image_url}
-            key={review.book.id} />
-        ))}
-        </div>
+      <div className="grid grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
+      {readBooks.map((review) => (
+        <BookCard 
+          link={review.book.link} 
+          title={review.book.title} 
+          author={review.book.authors[0].name} 
+          rating={review.rating} 
+          image_url={review.book.image_url}
+          key={review.book.id} />
+      ))}
+      </div>
 
-        <p className="text-xl text-gray-500 py-2 ">You can follow my reviews and reading on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
-        </ContentColumn>
-        <Footer />
+      <p className="text-xl text-gray-500 py-2 "></p>
+      </ContentColumn>
+      <Footer />
   </>
   )
 }
