@@ -54,9 +54,9 @@ const BooksPage = ({ data }) => {
             <div className="lg:w-24 flex-none bg-cover text-center overflow-hidden sm:max-w-sm sm:inline-block" >
             <img className="object-none object-center" css={{height:`145px`,width:`98px`}} src={review.book.image_url} alt={review.book.title}  /> 
             </div>
-            <div className="w-full p-3 inline-grid">
-              <div className="mb-8">
-                <div className="text-gray-900 text-lg mb-2">{cleanBookTitle(review.book.title)}</div>
+            <div className="w-full p-3 inline-grid content-between">
+              <div className="text-gray-900 text-lg mb-2">
+                {cleanBookTitle(review.book.title)}
               </div>
               <div className="flex justify-between text-sm">
                   <p className="text-gray-900 leading-none">{review.book.authors[0].name}</p>
