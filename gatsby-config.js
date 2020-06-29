@@ -22,7 +22,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
-        path: `./src/images/`, 
+        path: `./src/assets/images/`, 
         quality: 100, 
         loading: `lazy` 
       } 
