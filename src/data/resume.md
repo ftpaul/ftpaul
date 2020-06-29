@@ -3,6 +3,7 @@ summary: Driven by outstanding experiences and meaningful collaborations, I am a
 experience:
     - company: Unbabel
       role: Product Manager
+      logo: /unbabel.png
       location: Lisbon
       start_date: Apr 2019 
       end_date: Apr 2020
@@ -12,6 +13,7 @@ experience:
         - Delivered 10+ product launches working with a team up to 8 people including front-end developers, designers, copywriters, performance marketeers, and external agencies
     - company: Unbabel
       role: Performance Marketing Manager
+      logo: /unbabel.png
       location: Lisbon
       start_date: Feb 2018 
       end_date: Mar 2019
@@ -20,6 +22,7 @@ experience:
         - Developed and executed the performance marketing strategy with a strong focus on ABM
     - company: Landing.jobs
       role: Growth Marketing Manager
+      logo: /landingjobs.png
       location: Lisbon
       start_date: Jun 2014 
       end_date: Jun 2017
@@ -29,6 +32,7 @@ experience:
         - More than 100% user growth YoY
     - company: Inspiring Code
       role: Co-founder
+      logo: /unbabel.png
       location: Lisbon
       start_date: Feb 2013 
       end_date: Feb 2014

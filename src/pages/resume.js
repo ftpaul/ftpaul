@@ -20,12 +20,13 @@ const ResumePage = ({ data }) => {
     <h4 className="uppercase text-xs text-gray-300 tracking-widest">Summary</h4>
     <p className="text-lg text-gray-500 pb-4">{resumeData.summary}</p>
 
-    <h4 className="uppercase text-xs text-gray-300 tracking-widest">Experience</h4>
+    <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
 
     {resumeData.experience.map((job) => (
       <>
-      <p className="text-base w-full"><span className="font-bold">{job.role}</span>, {job.company}</p>
-      <p className="text-base text-gray-300 w-full">{job.start_date} - {job.end_date}</p>
+      <img src={job.logo} className="my-1 mr-2 w-12 h-12 " />
+      <p className="text-base pt-1"><span className="font-bold">{job.role}</span> at {job.company} <br/>
+      <span className="text-base text-gray-300 ">{job.start_date} - {job.end_date}</span></p>
       <ul className="list-disc pl-6 pb-2">
         {job.description.map((point) => (
           <li>{point}</li>
@@ -51,10 +52,7 @@ export const query = graphql`
     edges {
       node {
         frontmatter {
-          education {
-            course
-            school
-          }
+          summary
           experience {
             company
             description
@@ -62,8 +60,12 @@ export const query = graphql`
             location
             role
             start_date
+            logo
           }
-          summary
+          education {
+            course
+            school
+          }
         }
         fileAbsolutePath
       }
