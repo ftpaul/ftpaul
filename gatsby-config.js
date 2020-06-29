@@ -22,7 +22,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
-        path: `./src/images/`, 
+        path: `./src/assets/images/`, 
         quality: 100, 
         loading: `lazy` 
       } 
@@ -38,14 +38,16 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: "gatsby-source-goodreads",
-    //   options: {
-    //     developerKey: "K5MS7p74EdlcKjCIEcILag",
-    //     goodReadsUserId: "63617698",
-    //     userShelves: ["currently-reading", "read"]
-    //   }
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+    },
     {
       resolve: "@jamesdanylik/gatsby-source-goodreads",
       options: {
