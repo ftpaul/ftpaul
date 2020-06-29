@@ -32,7 +32,7 @@ experience:
         - More than 100% user growth YoY
     - company: Inspiring Code
       role: Co-founder
-      logo: /unbabel.png
+      logo: /inspiringcode.png
       location: Lisbon
       start_date: Feb 2013 
       end_date: Feb 2014

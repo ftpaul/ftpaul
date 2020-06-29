@@ -35,6 +35,8 @@ const ResumePage = ({ data }) => {
       </>
     ))}
 
+     <h2 className="text-2xl text-center pt-6 pb-8 mx-auto ">
+       <a className="text-yellow-600 underline hover:text-yellow-400" target="_blank" rel="noreferrer"  href="https://drive.google.com/file/d/1PuPYO0u5tYwWTIbTCtEbKX_ArNKQf2CV/view?usp=sharing">Download full CV (PDF)</a></h2>
     
 
       </ContentColumn>
