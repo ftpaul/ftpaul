@@ -18,7 +18,52 @@ experience:
       description: >- 
           * Managed the marketing automation stack (Hubspot, Pardot, Zapier, Salesforce) and analytics tools (GA, Hotjar, Chart.io)
           * Developed and executed the performance marketing strategy with a strong focus on ABM
+    - company: Landing.jobs
+      role: Growth Marketing Manager
+      location: Lisbon
+      start_date: Jun 2014 
+      end_date: Jun 2017
+      description: >- 
+          * Responsible for the paid marketing budget (with 5 digits per quarter) and controlling ROI on all performance-led campaigns
+          * Managed the work and rituals of the team with the Head of Marketing (after August 2016)
+          * More than 100% user growth YoY
+    - company: Inspiring Code
+      role: Co-founder
+      location: Lisbon
+      start_date: Feb 2013 
+      end_date: Feb 2014
+      description: >- 
+          * Managed and coordinated projects with external stakeholders.
+          * Developed web applications using Ruby on Rails, PHP, and HTML&CSS
+          * Collaborated with other 2 developers and 2 designers to define specs for MVPs
 education:
     - school: ISCTE-IUL
       course: Computer Engineer 
+      description: something
+details: 
+    website: pauloteixeira.pt
+    linkedin: linkedin.com/in/ftpaul
+    email: ftpaul@gmail.com
+    phone: "+351914475179"
+    location: 
+      - city: Lisbon
+        description: Open to remote postions or realocation to European cities.
+    industry_knowledge:
+        - Product Management
+        - Web Analytics
+        - A/B Testing
+        - User Experience
+        - Wireframing
+        - B2B Lead Gen
+        - Performance Marketing
+    landguages:
+        - Portuguese (Native)
+        - English (Professional)
+    projects:
+        - name: João Pedro Reis
+          description:  ∙ Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy∙ Designing and developing all technical infrastructure needed
+    random:
+        - Since 2016 tracking my own weight in a spreadsheet 
+        - OKRs used as personal goal setting method
+        
 ---
