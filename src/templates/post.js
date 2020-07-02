@@ -10,10 +10,10 @@ export default function Template({
   data, 
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter, html, excerpt } = markdownRemark
   return (
     <>
-    <SEO />
+    <SEO image={frontmatter.image} title={frontmatter.title} article={true} description={excerpt} />
       
     <Navigation />
     
@@ -37,10 +37,12 @@ export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        image
       }
     }
   }
