@@ -4,6 +4,9 @@
 
 @tailwind utilities;
 
+body {
+  font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* a {
   color: #FF5733;

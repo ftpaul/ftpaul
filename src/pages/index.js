@@ -19,7 +19,7 @@ const AboutPage = ({ data }) => { return (
 
       <Img fluid={data.file.childImageSharp.fluid} alt="Paulo Teixeira - Product Manager" className="h-full w-full object-cover mx-24 xs:mx-4 mb-4" />
       
-      <p className="text-xl xs:text-lg leading-snug text-gray-500 pb-2 text-justify xs:text-left">PS: I'm currently open to new opportunities as a Product Manager or Owner. In case you're looking for someone to deliver high quality digital products get in touch with me via&nbsp; 
+      <p className="text-xl xs:text-lg leading-snug text-gray-500 pb-2 text-justify xs:text-left">PS: I'm currently open to new opportunities as a Product Manager or Owner. In case you're looking for someone to deliver high-quality digital products get in touch with me via&nbsp; 
         <a href="https://linkedin.com/in/ftpaul" className="text-yellow-600 underline hover:text-yellow-400">LinkedIn</a> or&nbsp;
         <a href="mailto:ftpaul@gmail.com" className="text-yellow-600 underline hover:text-yellow-400">e-mail</a>.
       </p>
