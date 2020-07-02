@@ -25,7 +25,7 @@ I plan and analyze my OKRs **per quarter**, since it's easier to project them fo
 
 On top of setting up my OKRs every quarter, I make an effort to **review the progress weekly or bi-weekly**. It's essential to keep a close eye on them to understand where I stand at each moment and to learn from things that are not progressing
 
-Today, I’m glad to share a [very straightforward spreadsheet template that I use to track my personal OKRs](https://docs.google.com/spreadsheets/d/1eJkomYMSudwUtrR6xw7HpGkMDmDRa0gj3W_WyZBiAmQ/edit?usp=sharing).
+Today, I’m glad to share a [very straightforward spreadsheet template that I use to track my personal OKRs](https://docs.google.com/spreadsheets/d/1eJkomYMSudwUtrR6xw7HpGkMDmDRa0gj3W_WyZBiAmQ/edit?usp=sharing). Feel free to create a copy and adapt it to your needs.
 
 
 > ###Key takeaways:
