@@ -42,7 +42,10 @@ a:hover {
 }
 /* Links */
 .markdown a {
-  @apply text-blue-600;
+  @apply text-yellow-600 underline;
+}
+.markdown a:hover {
+  @apply text-yellow-400;
 }
 .markdown a:hover {
   @apply underline;
@@ -64,12 +67,12 @@ a:hover {
 .markdown ol {
   @apply list-decimal;
 }
-.markdown ul {
+/* .markdown ul {
   @apply list-disc;
-}
+} */
 /* Blockquotes */
 .markdown blockquote {
-  @apply p-0 p-2 mx-6 bg-gray-100 mb-4 border-l-4 border-gray-400 italic;
+  @apply p-0 p-2 mx-6 bg-yellow-100 mb-4 border-l-4 border-yellow-400;
 }
 .markdown blockquote > p {
   @apply mb-0;
@@ -77,12 +80,22 @@ a:hover {
 /* Tables */
 .markdown td,
 .markdown th {
-  @apply px-2 py-1 border border-gray-400;
+  @apply px-2 py-1 border-none ;
 }
 .markdown tr:nth-child(odd) {
   @apply bg-gray-100;
 }
 .markdown table {
-  @apply mb-6;
+  @apply mb-6 border border-yellow-600;
 }
 /* purgecss end ignore */
+
+
+ul li::before {
+  content: "\2022";
+  color: #F8B500;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
