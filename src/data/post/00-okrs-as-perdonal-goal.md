@@ -1,7 +1,7 @@
 ---
 slug: "/okrs-as-persona-goal-method"
 date: "2019-05-04"
-title: "OKRs as personal goal method"
+title: "OKRs as personal goal setting method"
 ---
 
 In the second half of 2017, I was struggling with setting up goals for myself. I had some objectives in mind and planned them at the beginning of each year, but then — as it probably happens to you —, I never looked at them again. Soon, I would forget that they exist until I try to set them up again. It was also hard to commit to something big and hard to measure like "be more healthy" or "improve my communication skills."
@@ -17,9 +17,9 @@ I plan and analyze my OKRs **per quarter**, since it's easier to project them fo
 **Objective**: be more healthy
 
 **Key results**:
- * Walk 10.000 steps every day
+ * Walk 10,000 steps every day
  * Go to the gym three times per week
- * Find a personal trainer 
+ * Hire a personal trainer 
  * Reduce body fat by 10%
 
 On top of setting up my OKRs every quarter, I make an effort to **review the progress weekly or bi-weekly**. It's essential to keep a close eye on them to understand where I stand at each moment and to learn from things that are not progressing
