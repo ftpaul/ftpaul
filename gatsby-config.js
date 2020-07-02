@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "Paulo Teixeira · Product Manager  · ftpaul.io",
-    titleTemplate: "%s ·",
+    titleTemplate: "%s · ftpaul.io",
     description:
       "A Product Manager with 6+ years of experience working with digital products.",
     url: "https://ftpaul.io", // No trailing slash allowed!
