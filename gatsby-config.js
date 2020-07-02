@@ -6,12 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Paulo Teixeira · Product Manager | Product Owner",
+    title: "Paulo Teixeira · Product Manager  · ftpaul.io",
     titleTemplate: "%s ·",
     description:
-      "A Product Manager with 6+ years of experience working with web technologies.",
-    url: "https://pauloteixeira.pt", // No trailing slash allowed!
-    image: "/paulo-teixeira-sharing-image.png", // Path to your image you placed in the 'static' folder
+      "A Product Manager with 6+ years of experience working with digital products.",
+    url: "https://ftpaul.io", // No trailing slash allowed!
+    image: "/ftpaul-sharing-image.png", // Path to your image you placed in the 'static' folder
     favicon: "/favicon.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@iamftpaul",
   },
