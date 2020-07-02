@@ -2,6 +2,7 @@
 slug: "/okrs-as-persona-goal-method"
 date: "2019-05-04"
 title: "OKRs as personal goal setting method"
+image: "/writing/00-okrs-personal-goals-setting-method.jpeg"
 ---
 
 In the second half of 2017, I was struggling with setting up goals for myself. I had some objectives in mind and planned them at the beginning of each year, but then — as it probably happens to you —, I never looked at them again. Soon, I would forget that they exist until I try to set them up again. It was also hard to commit to something big and hard to measure like "be more healthy" or "improve my communication skills."
