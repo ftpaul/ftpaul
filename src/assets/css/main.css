@@ -91,7 +91,7 @@ a:hover {
 /* purgecss end ignore */
 
 
-ul li::before {
+.markdown ul li::before {
   content: "\2022";
   color: #F8B500;
   font-weight: bold;
