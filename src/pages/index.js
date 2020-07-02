@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => { return (
       {/* <img src="/paulo-teixeira.png" className="justify-center flex h-48 w-48" /> */}
       {/* https://joaopedroreis.pt/image-content/post-4/webdevelopment-sessions%20(1%20of%201).jpg */}
       <p className="text-3xl xs:text-2xl leading-tight text-gray-500 pb-4">Hey there <span role="img" aria-label="Wave">👋🏽</span></p>
-      <p className="text-2xl xs:text-xl leading-snug text-gray-500 pb-4 text-justify xs:text-left">I am a <strong>Product Manager</strong> with a dynamic background as a developer and in digital marketing, with 6+ years of experience working with web technologies. I'm passionate about delivering outstanding experiences and to build meaningful collaborations that allow teams to create extraordiary work. </p>
+      <p className="text-2xl xs:text-xl leading-snug text-gray-500 pb-4 text-justify xs:text-left">I am Paulo Teixeira, a <strong>Product Manager</strong> with a dynamic background as a developer and in digital marketing, with 6+ years of experience working with digital products. I'm passionate about delivering outstanding experiences and to build meaningful collaborations that allow teams to create extraordiary work. </p>
 
       <Img fluid={data.file.childImageSharp.fluid} alt="Paulo Teixeira - Product Manager" className="h-full w-full object-cover mx-24 xs:mx-4 mb-4" />
       
