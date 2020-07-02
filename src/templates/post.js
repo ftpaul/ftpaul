@@ -22,7 +22,7 @@ export default function Template({
           <h1 className="text-3xl xs:text-2xl leading-tight text-gray-500 pb-4" >{frontmatter.title}</h1>
           {/* <h4 className="text-sm italic xs:text-2xl leading-tight text-gray-500 pb-4">{frontmatter.date}</h4> */}
           <div
-            className="text-2xl text-gray-500 pb-4 mardown"
+            className="text-2xl text-gray-500 pb-4 markdown"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
