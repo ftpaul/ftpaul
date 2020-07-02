@@ -1,9 +1,11 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/footer'
 import ContentColumn from '../components/contentColumn'
 import Img from "gatsby-image"
+
 
 
 const AboutPage = ({ data }) => { return (
