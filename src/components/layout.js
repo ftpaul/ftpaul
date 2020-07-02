@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 export default ({ children }) => (
   <>
   <Helmet bodyAttributes={{
-        class: 'bg-gray-100 font-lato'
+        class: 'bg-gray-100'
     }}>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>

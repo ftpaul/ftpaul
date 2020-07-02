@@ -33,7 +33,7 @@ module.exports = {
         fonts: [
           {
             family: `Lato`,
-            variants: [`400`, `700`]
+            variants: [`400`, `700`, `800`, `900`]
           },
         ],
       },
