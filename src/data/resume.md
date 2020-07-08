@@ -50,8 +50,9 @@ details:
     email: ftpaul@gmail.com
     phone: "+351914475179"
     location: 
-      - city: Lisbon
-        description: Open to remote postions or realocation to European cities.
+      city: Lisbon
+      country: Portugal
+      description: Open to remote postions or realocation to European cities.
     industry_knowledge:
         - Product Management
         - Web Analytics
