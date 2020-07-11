@@ -44,11 +44,12 @@ education:
     - school: ISCTE-IUL
       course: Computer Engineer 
       description: something
-details: 
-    website: pauloteixeira.pt
-    linkedin: linkedin.com/in/ftpaul
-    email: ftpaul@gmail.com
-    phone: "+351914475179"
+details:
+    contacts:
+      website: ftpaul.io
+      linkedin: linkedin.com/in/ftpaul
+      email: ftpaul@gmail.com
+      phone: "+351914475179"
     location: 
       city: Lisbon
       country: Portugal
@@ -61,11 +62,12 @@ details:
         - Wireframing
         - B2B Lead Gen
         - Performance Marketing
-    landguages:
+    languages:
         - Portuguese (Native)
         - English (Professional)
     projects:
         - name: João Pedro Reis
+          link: joaopedroreis.com
           description:  ∙ Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy∙ Designing and developing all technical infrastructure needed
     random:
         - Since 2016 tracking my own weight in a spreadsheet 
