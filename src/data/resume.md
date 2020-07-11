@@ -1,4 +1,6 @@
 ---
+name: Paulo Teixeira
+title: Product Manager
 summary: Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as a developer and in digital marketing. I have 5+ years of experience working in high-growth tech organizations.
 experience:
     - company: Unbabel
@@ -45,6 +47,7 @@ education:
       course: Computer Engineer 
       description: something
 details:
+    picture: /paulo-teixeira-resume.png
     contacts:
       website: ftpaul.io
       linkedin: linkedin.com/in/ftpaul

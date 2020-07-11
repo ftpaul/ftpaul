@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
+import YellowTopBar from "./yellowTopBar"
 
 
 const Navigation = () => {
@@ -9,10 +10,10 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="w-screen h-2 bg-yellow-600 absolute t-0 l-0"></div>
+            <YellowTopBar />
             <nav className="flex flex-1 items-center justify-between max-w-screen-lg mx-auto pt-16 px-2 xs:pt-4">
                 <div className="flex">
-                    <h1 className="text-5xl font-bold text-gray-800 pb-4">ftpaul<span className="font-black text-6xl text-yellow-600">.</span></h1>
+                    <h1 className="text-5xl font-bold text-gray-600 pb-4">ftpaul<span className="font-black text-6xl text-yellow-600">.</span></h1>
                 </div>
                     <button className="hidden xs:display xs:flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-20 outline-none" onClick={() => toggleExpansion(!isExpanded)}>
                         <span className="text-xl text-gray-500 hover:text-yellow-600 xs:hover:text-gray-100 border-b-2 border-yellow-600">{isExpanded ? "Close" : "Menu"}</span>
