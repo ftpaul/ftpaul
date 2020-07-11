@@ -20,7 +20,7 @@ const ResumePage = ({ data }) => {
   
   <YellowTopBar />
 
-  <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 ">
+  <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
   
       <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
         &larr; Back to ftpaul.io
@@ -30,19 +30,22 @@ const ResumePage = ({ data }) => {
 
 
 
-  <div className="letter max-w-screen-lg md:max-w-screen-md p-8 mx-auto mb-24 mt-6 bg-white relative">
+  <div className="letter p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
 
     <div className="flex flex-wrap">
-  <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-2 ">
-        
-      <h1 className="text-5xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">{resumeData.name}<span className="font-black text-6xl text-yellow-600">.</span></h1>
-      <h2 className="text-4xl font-normal text-gray-300 pb-4">{resumeData.title}</h2>
+      
+      <div className="w-4/6  pt-4 pr-1 xs:pr-2 ">
+            
+          <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
+            {resumeData.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
+          </h1>
+          <h2 className="text-4xl xs:text-2xl font-normal text-gray-300 pb-4">{resumeData.title}</h2>
 
-  </div>
+      </div>
 
-  <div className="w-2/6 xs:w-full " >
+  <div className="w-2/6  " >
 
-      <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 mb-4" />
+      <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 mb-4 xs:w-20 xs:h-20 xs:mt-4" />
 
   </div>
 
