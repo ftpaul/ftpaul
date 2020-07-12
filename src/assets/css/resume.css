@@ -1,6 +1,9 @@
  /* inspirtation 
     https://codepen.io/mlms13/pen/LKFoy
  */
+ body {
+   overflow-x: hidden;
+ }
  .letter {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
   }
@@ -25,3 +28,32 @@
     top: 1px;
     transform: rotate(1.4deg);
   }
+
+@media only screen and (max-width: 400px) {
+  .letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    left: -3px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+  }
+  .letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    right: -2px;
+    top: 1px;
+    transform: rotate(1.4deg);
+  }
+  .div-w-image {
+    display: none;
+  }
+  .div-w-title {
+    width: 100% !important;
+  }
+  .exp-ul-bullets {
+    display: none;
+  }
+  .exp-main-info {
+    padding-bottom: 2rem;;
+  }
+}

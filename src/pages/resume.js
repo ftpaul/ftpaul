@@ -38,7 +38,7 @@ const ResumePage = ({ data }) => {
 
     <div className="flex flex-wrap">
       
-      <div className="w-4/6  pt-4 pr-1 xs:pr-2 ">
+      <div className="w-4/6  pt-4 pr-1 xs:pr-2 div-w-title">
             
           <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
             {resumeData.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
@@ -47,10 +47,10 @@ const ResumePage = ({ data }) => {
 
       </div>
 
-  <div className="w-2/6  " >
+  <div className="w-2/6 div-w-image " >
 
     <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" />
-    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20  z-20 rounded-full -mt-40 xs:-mt-24  hover:opacity-0 transition ease-linear duration-500" />
+    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20  z-20 rounded-full -mt-40 xs:-mt-20  hover:opacity-0 transition ease-linear duration-500" />
       
 
   </div>
@@ -77,7 +77,7 @@ const ResumePage = ({ data }) => {
     {/* Details Column */}
     <div className="w-2/6 xs:w-full p-4 " >
 
-      <div className="pt-6 pb-8">
+      <div className="pt-6 pb-8 xs:hidden">
         <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label="Portugal">🇵🇹</span></p>
       </div>
 
@@ -88,7 +88,7 @@ const ResumePage = ({ data }) => {
         ))}
       </div>
 
-      <div className="pb-8">
+      <div className="pb-8 xs:hidden">
         <p className="text-base font-bold text-gray-500">Industry knowledge</p>
         {resumeData.details.industry_knowledge.map(point => (
           <p className="text-base text-gray-500 pb-0" key={point}>{point}</p>
