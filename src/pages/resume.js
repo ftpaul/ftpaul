@@ -77,8 +77,11 @@ const ResumePage = ({ data }) => {
     {/* Details Column */}
     <div className="w-2/6 xs:w-full p-4 " >
 
-
       <div className="pt-6 pb-8">
+        <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label="Portugal">🇵🇹</span></p>
+      </div>
+
+      <div className="pb-8">
         <p className="text-base font-bold text-gray-500">Languages</p>
         {resumeData.details.languages.map(language => (
           <p className="text-base text-gray-500 pb-0" key={language}>{language}</p>
@@ -97,19 +100,28 @@ const ResumePage = ({ data }) => {
         <p className="text-base font-bold text-gray-500">Projects</p>
         {resumeData.details.projects.map(project => (
           <div key={project.name}>
-          <a href={project.link} alt={project.name}>
-            <p className="text-base text-gray-500 pb-0 underline">{project.name}</p>
-          </a>
+          <p className="text-base text-gray-500 pb-0 underline">
+            <a href={project.link} alt={project.name} className="text-yellow-600 underline hover:text-yellow-400">
+            {project.name}</a>
+            </p>
           <p className="text-base text-gray-500 pb-0">{project.description}</p>
           </div>
         ))}
       </div>
 
-
+          {console.log(resumeData.details.random)}
       <div className="pb-8">
         <p className="text-base font-bold text-gray-500">Random facts</p>
         {resumeData.details.random.map(fact => (
-          <p className="text-base text-gray-500 pb-0" key={fact}>{fact}</p>
+          <>
+          <p className="text-base text-gray-500 pb-0" >
+            {((fact.link.length > 0) ? (<a className="text-yellow-600 underline hover:text-yellow-400" href={fact.link}>{fact.description}</a>) :
+            
+              fact.description
+            )}
+            
+          </p>
+          </>
         ))}
       </div>
 
@@ -124,7 +136,7 @@ const ResumePage = ({ data }) => {
 }
 
 
-
+// key={fact.description}
 
 export const query = graphql`
 {
@@ -168,7 +180,10 @@ export const query = graphql`
             }
             industry_knowledge
             languages
-            random
+            random {
+              description
+              link
+            }
           }
         }
         fileAbsolutePath

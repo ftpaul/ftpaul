@@ -74,7 +74,9 @@ details:
           link: https://joaopedroreis.com
           description:  Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy. Designing and developing all technical infrastructure needed
     random:
-        - Since 2016 tracking my own weight in a spreadsheet 
-        - OKRs used as personal goal setting method
+        - description: Since 2016 tracking my own weight in a spreadsheet
+          link: ""
+        - description: OKRs used as personal goal setting method
+          link: "https://ftpaul.io/writing/okrs-as-persona-goal-method" 
         
 ---
