@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
-// import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import YellowTopBar from '../components/yellowTopBar'
+import '../assets/css/resume.css'
 
 
 const ResumePage = ({ data }) => { 
@@ -12,11 +12,15 @@ const ResumePage = ({ data }) => {
   const resumeData = data.allMarkdownRemark.edges[0].node.frontmatter
 
 
+  const seo  = {
+    title: "Paulo Teixeira Resume", 
+    description: "Find and download Paulo Teixeira's curriculum. A Product Manager with 5+ years of experience in digital businesses."
+  }
 
 
   return (
   <>
-  <SEO />
+  <SEO title={seo.title} description={seo.description} />
   
   <YellowTopBar />
 
@@ -51,57 +55,68 @@ const ResumePage = ({ data }) => {
 
    
 
+
+    {/* Summary and Experience       */}
+    <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-2 ">
+
+      <h4 className="uppercase text-xs text-gray-300 tracking-widest">Summary</h4>
+      <p className="text-lg text-gray-500 pb-6">{resumeData.summary}</p>
+
+      <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
+
+      {resumeData.experience.map((job) => (
+        <ExperienceBlock job={job} key={job.end_date} />
+      ))}
       
-  <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-2 ">
-
-  
-
-    <h4 className="uppercase text-xs text-gray-300 tracking-widest">Summary</h4>
-    <p className="text-lg text-gray-500 pb-6">{resumeData.summary}</p>
-
-    <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
-
-    {resumeData.experience.map((job) => (
-      <ExperienceBlock job={job} key={job.end_date} />
-    ))}
-    
-  </div>
+    </div>
     
 
 
+    {/* Details Column */}
     <div className="w-2/6 xs:w-full p-4 " >
 
-      <p className="text-base font-bold text-gray-500">Languages</p>
-      {resumeData.details.languages.map(language => (
-        <p className="text-lg text-gray-500 pb-0" key={language}>{language}</p>
-      ))}
+
+      <div className="pt-6 pb-8">
+        <p className="text-base font-bold text-gray-500">Languages</p>
+        {resumeData.details.languages.map(language => (
+          <p className="text-base text-gray-500 pb-0" key={language}>{language}</p>
+        ))}
+      </div>
+
+      <div className="pb-8">
+        <p className="text-base font-bold text-gray-500">Industry knowledge</p>
+        {resumeData.details.industry_knowledge.map(point => (
+          <p className="text-base text-gray-500 pb-0" key={point}>{point}</p>
+        ))}
+      </div>
 
 
-      <p className="text-base font-bold text-gray-500">Industry knowledge</p>
-      {resumeData.details.industry_knowledge.map(point => (
-        <p className="text-lg text-gray-500 pb-0" key={point}>{point}</p>
-      ))}
+      <div className="pb-8">
+        <p className="text-base font-bold text-gray-500">Projects</p>
+        {resumeData.details.projects.map(project => (
+          <div key={project.name}>
+          <a href={project.link} alt={project.name}>
+            <p className="text-base text-gray-500 pb-0 underline">{project.name}</p>
+          </a>
+          <p className="text-base text-gray-500 pb-0">{project.description}</p>
+          </div>
+        ))}
+      </div>
 
 
-      <p className="text-base font-bold text-gray-500">Projects</p>
-      {resumeData.details.projects.map(project => (
-        <div key={project.name}>
-        <p className="text-lg text-gray-500 pb-0">{project.name}</p>
-        <p className="text-lg text-gray-500 pb-0">{project.description}</p>
-        </div>
-      ))}
-
-
-      <p className="text-base font-bold text-gray-500">Random facts</p>
-      {resumeData.details.random.map(fact => (
-        <p className="text-lg text-gray-500 pb-0" key={fact}>{fact}</p>
-      ))}
+      <div className="pb-8">
+        <p className="text-base font-bold text-gray-500">Random facts</p>
+        {resumeData.details.random.map(fact => (
+          <p className="text-base text-gray-500 pb-0" key={fact}>{fact}</p>
+        ))}
+      </div>
 
     </div>
       
     </div>
     </div>
-      <Footer />
+    
+    <Footer />
   </>
   )
 }
@@ -147,6 +162,7 @@ export const query = graphql`
             projects {
               name
               description
+              link
             }
             industry_knowledge
             languages

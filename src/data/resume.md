@@ -70,7 +70,7 @@ details:
         - English (Professional)
     projects:
         - name: João Pedro Reis
-          link: joaopedroreis.com
+          link: https://joaopedroreis.com
           description:  ∙ Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy∙ Designing and developing all technical infrastructure needed
     random:
         - Since 2016 tracking my own weight in a spreadsheet 
