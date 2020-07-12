@@ -49,8 +49,8 @@ const ResumePage = ({ data }) => {
 
   <div className="w-2/6  " >
 
-  <img src="/ezgif-5-0b9b06b00e1f.gif" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" />
-      <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20  z-20 rounded-full -mt-40 xs:-mt-24  hover:opacity-0 transition ease-linear duration-500" />
+    <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" />
+    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20  z-20 rounded-full -mt-40 xs:-mt-24  hover:opacity-0 transition ease-linear duration-500" />
       
 
   </div>
