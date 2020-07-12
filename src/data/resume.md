@@ -59,6 +59,7 @@ details:
       description: Open to remote postions or realocation to European cities.
     industry_knowledge:
         - Product Management
+        - Scrum
         - Web Analytics
         - A/B Testing
         - User Experience
@@ -71,7 +72,7 @@ details:
     projects:
         - name: João Pedro Reis
           link: https://joaopedroreis.com
-          description:  ∙ Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy∙ Designing and developing all technical infrastructure needed
+          description:  Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy. Designing and developing all technical infrastructure needed
     random:
         - Since 2016 tracking my own weight in a spreadsheet 
         - OKRs used as personal goal setting method
