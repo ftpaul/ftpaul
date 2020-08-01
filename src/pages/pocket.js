@@ -3,49 +3,38 @@ import { graphql } from "gatsby"
 
 const ComponentName = ({ data }) => (
     <>
-        {/* <pre>{JSON.stringify(data, null, 4)}</pre> */}
+
+<pre>{JSON.stringify(data.readArticles, null, 4)}</pre>
 
         <hr />
 
-        {data.allPocketArticle.nodes.map(
+        {/* {data.addedArticles.group.map(
             node => (
-                <>
-                <p>{node.time_added}</p>
-                <p>{Date.parse(node.time_added)}</p>
+                <div key={node.fieldValue}>
+                <p>{node.fieldValue}</p>
+                <p>{node.totalCount}</p>
                 <br/>
-                </>
+                </div>
             )
-        )}
+        )} */}
     </>
 )
 
 // https://github.com/conradj/gatsby-source-pocket/issues/2 dates are UNIX type
 
+
 export const query = graphql`
   {
-    allPocketArticle(filter: {readDay: {gt: 0.1}}) {
-      totalCount
-      nodes {
-        title
-        readWeek
-        time_read
-        readDay
-        articleDomain
-        time_added
-        is_index
-        favorite
-        favourite
-        is_article
-        has_image
-        has_video
-        id
-        word_count
-        url
-        time_updated
-        tags
+    addedArticles: allPocketArticle(sort: {fields: fields___month_added}) {
+      group(field: fields___month_added) {
+        totalCount
+        fieldValue
       }
-      pageInfo {
-        itemCount
+    }
+    readArticles: allPocketArticle(sort: {fields: fields___month_read}) {
+      group(field: fields___month_read) {
+        totalCount
+        fieldValue
       }
     }
   }
