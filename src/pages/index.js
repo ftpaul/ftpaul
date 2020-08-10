@@ -14,17 +14,23 @@ const AboutPage = ({ data }) => { return (
     
   <Navigation />
   <ContentColumn>
-      {/* <img src="/paulo-teixeira.png" className="justify-center flex h-48 w-48" /> */}
-      {/* https://joaopedroreis.pt/image-content/post-4/webdevelopment-sessions%20(1%20of%201).jpg */}
-      <p className="text-3xl xs:text-2xl leading-tight text-gray-500 pb-4">Hey there <span role="img" aria-label="Wave">👋🏽</span></p>
-      <p className="text-2xl xs:text-xl leading-snug text-gray-500 pb-4 text-justify xs:text-left">I am Paulo Teixeira, a <strong>Product Manager</strong> with a dynamic background as a developer and in digital marketing, with 6+ years of experience working with digital products. I'm passionate about delivering outstanding experiences and to build meaningful collaborations that allow teams to create extraordinary work. </p>
 
-      <Img fluid={data.file.childImageSharp.fluid} alt="Paulo Teixeira - Product Manager" className="h-full w-full object-cover mx-24 xs:mx-4 mb-8" css={{boxShadow: `10px 10px 0px 0px #F8B500;`}} />
+    <div className="w-4/6 lg:w-4/6 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
+    <p className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4">Hey there <span role="img" aria-label="Wave">👋🏽</span></p>
+        <p className="text-2xl xs:text-xl leading-snug text-gray-500 pb-4 text-justify xs:text-left">I am Paulo Teixeira, a <strong>Product Manager</strong> with a dynamic solid background in product, marketing, and in management. When I am not working I like to code, and build processes and methodologies. </p>
+    </div>
+
+    <div className="w-2/6 lg:w-2/6 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
+    {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" /> */}
+        {/* <img src="/paulo-teixeira-resume.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20  z-20 rounded-full -mt-64 xs:-mt-20  hover:opacity-0 transition ease-linear duration-500" /> */}
+        <img src="/paulo-teixeira-resume.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 mx-auto z-20 rounded-full" />
+    </div>
       
-      <p className="text-xl xs:text-lg leading-snug text-gray-500 pb-2 text-justify xs:text-left">PS: I'm currently open to new opportunities as a Product Manager or Owner. In case you're looking for someone to deliver high-quality digital products get in touch with me via&nbsp; 
-        <a href="https://linkedin.com/in/ftpaul" className="text-yellow-600 underline hover:text-yellow-400">LinkedIn</a> or&nbsp;
-        <a href="mailto:ftpaul@gmail.com" className="text-yellow-600 underline hover:text-yellow-400">e-mail</a>.
-      </p>
+
+      
+    
+      
+      
       </ContentColumn>
       <Footer />
   </>
