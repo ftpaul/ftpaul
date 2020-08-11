@@ -23,7 +23,7 @@ const AboutPage = ({ data }) => { return (
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
             </p>
         <p className="text-4xl xs:text-xl leading-snug text-gray-500 pb-4 text-left m-auto">
-          My name is <span className="border-yellow-600 border-b-2">Paulo Teixeira</span>, and I am a Product Manager with a solid background in product, marketing, and management. 
+          My name is <span className="border-yellow-600 border-b-2">Paulo Teixeira</span>.<br/> I am a Product Manager with a solid background in product, marketing, and management. 
         </p>
       </div>
     </div>
@@ -45,7 +45,7 @@ const AboutPage = ({ data }) => { return (
         The features you will fall in love with
       </h3>
       <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-        Over the last 7 years I've be working around digital products, from validating and defining MVPs, to impact product's growth after the product market fit.
+        Over the last 7 years I've been working around digital products, from validating and defining MVPs, to impact product's growth after the product market fit.
       </p>
     </div>
 
@@ -151,19 +151,32 @@ const AboutPage = ({ data }) => { return (
 
     <div class="flex my-8">
           
-          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 text-center ">
-                {/* <img src="https://chrisgrabinski.com/wp-content/uploads/2016/10/chris-grabinski-hero-img.png" classNAme="rounded-md" /> */}
+          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 text-left pr-4 border-r-2 border-yellow-600">
               <svg xmlns="http://www.w3.org/2000/svg" className="absolute -ml-4 -mt-6 fill-current text-yellow-600 h-16 w-16 z-0" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
               <p class="mt-2 text-xl leading-6 italic text-gray-400 z-10 relative">
                 Paulo is an ace team player and deeply cares about creating an environment in which everyone can excel. He frequently checks in with the people around him and does what is in his power to support them and remove road blocks. </p>
               <p class="mt-2 text-xl leading-6 italic text-gray-400">
                 Finally, Paulo is the definition of zen. His calm and controlled nature is definitely something that affects people around him in the most positive way. His positive attitude is contagious.
               </p>
-              <p class="text-lg leading-6 font-medium text-gray-600 mt-4 inline-block text-left ml-2">
-              <img src="https://media-exp1.licdn.com/dms/image/C5603AQEw5Q4NyAgiEg/profile-displayphoto-shrink_800_800/0?e=1602720000&v=beta&t=fJ2TWYfRajCxlqtmBaIoiuxylyWiIl1CisFUe_aEEhQ" className="rounded-full w-12 inline-block"/>
-                Chris Granbrisky <br/>
-                <span classNAme="text-gray-500">Front-end Developer / Typeform</span>
-              </p>
+              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 flex ">
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQEw5Q4NyAgiEg/profile-displayphoto-shrink_800_800/0?e=1602720000&v=beta&t=fJ2TWYfRajCxlqtmBaIoiuxylyWiIl1CisFUe_aEEhQ" className="rounded-full w-12"/>
+                <p className="ml-2 text-gray-500 font-bold">Chris Granbrisky <br />
+                <span className="font-normal">Front-end Developer / Typeform</span>
+                </p>
+              </div>
+            
+          </div>
+
+          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 pl-8 text-left ">
+              <svg xmlns="http://www.w3.org/2000/svg" className="absolute -ml-4 -mt-6 fill-current text-yellow-600 h-16 w-16 z-0" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
+              <p class="mt-2 text-xl leading-6 italic text-gray-400 z-10 relative">
+              (...) He transitioned from marketing into product management really well, he has the product mindset of understanding the problem accurately and them moving to the solution. Paulo adapts very fast to the changing conditions of the market, which often require last minute changes to on-going projects. These are never a problem but are seen as an opportunity to further improve our position.</p>
+              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 flex ">
+                <img src="https://media-exp1.licdn.com/dms/image/C5103AQEWGbpusYqpHA/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=QGzwGqajLXyQr9zQoynx_VqaNJgnpyZ7v03c0ypKqTc" className="rounded-full w-12"/>
+                <p className="ml-2 text-gray-500 font-bold">Pedro Martinho <br />
+                <span className="font-normal">Senior Product Manager / Loggi</span>
+                </p>
+              </div>
             
           </div>
           
