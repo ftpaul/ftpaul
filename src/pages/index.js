@@ -12,33 +12,32 @@ const AboutPage = ({ data }) => { return (
   <SEO />
     
   <Navigation />
-  <ContentColumn>
+  
+  <div className="flex flex-wrap max-w-screen-lg py-8 my-16 mx-auto content-end ">
 
-    <div className="w-4/6 lg:w-4/6 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
-    <p className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4">Hey there <span role="img" aria-label="Wave">👋🏽</span></p>
-        <p className="text-2xl xs:text-xl leading-snug text-gray-500 pb-4 xs:text-left">My name is <strong>Paulo Teixeira</strong>, and I am a Product Manager with a solid background in product, marketing, and management. I love to build methodologies that drive value to individuals and organizations. I aim to impact people with purposeful experience.</p>
+
+
+    <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center">
+      <div >
+        <p className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4 m-auto">
+          Hey there <span role="img" aria-label="Wave">👋🏽</span>
+            </p>
+        <p className="text-4xl xs:text-xl leading-snug text-gray-500 pb-4 text-left m-auto">
+          My name is <span className="border-yellow-600 border-b-2">Paulo Teixeira</span>, and I am a Product Manager with a solid background in product, marketing, and management. 
+        </p>
+      </div>
     </div>
 
-    <div className="w-2/6 lg:w-2/6 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
+    <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full ">
     {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" /> */}
         {/* <img src="/paulo-teixeira-resume.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20  z-20 rounded-full -mt-64 xs:-mt-20  hover:opacity-0 transition ease-linear duration-500" /> */}
-        <img src="/paulo-teixeira-resume.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 mx-auto z-20 rounded-full" />
+        <img src="/paulo-teixeira-square.jpg" alt="Paulo Teixeira | ftpaul.io" className="w-96 h-96 mx-auto z-20 rounded-xxl" />
+
+    </div>
     </div>
 
-    {/* <div className="w-full pt-16 pr-1 xs:pr-2 ">
-        <h2 className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4">The features you will fall in love with</h2>
-        {/* <p className="text-lg xs:text-lg leading-snug text-gray-400 pb-4 xs:text-left">I am Paulo Teixeira, a <strong>Product Manager</strong> with a dynamic solid background in product, marketing, and in management. When I am not working I like to code, and build processes and methodologies. </p> 
-
-        <ul className="text-lg list-disc pl-6 pb-4 exp-ul-bullets">
-          <li><strong>Product</strong> - From defining MVPs to launch them in the market. I am an experienced product person that looks to focus on building the business outcomes and user experience.</li>
-          <li><strong>Growth</strong> - Focusing on the intersection between Product and Marketing, I impact the company's growth by optimizing experiences that drive value.</li>
-          <li><strong>Management</strong> - Throughout my career, I've empowered individuals and teams to be at their best. People are key in any strategy, and I make sure they know that.</li>
-          <li><strong>Methodologies</strong> - I see everything as a learning opportunity. I love to build and iterate methodologies that help us prosper in chaotic environments and situations. </li>
-        </ul>
-    </div> */}
-
-
-  <div class="py-32 bg-white">
+<ContentColumn>
+  <div class="pb-32 bg-white">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
@@ -46,7 +45,7 @@ const AboutPage = ({ data }) => { return (
         The features you will fall in love with
       </h3>
       <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.
+        Over the last 7 years I've be working around digital products, from validating and defining MVPs, to impact product's growth after the product market fit.
       </p>
     </div>
 
@@ -128,10 +127,10 @@ const AboutPage = ({ data }) => { return (
 
   <div className="flex flex-wrap w-full mx-auto pt-8 xs:pt-0 px-2 bg-yellow-600">
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
-      <img src="/paulo-teixeira-resume-screenshot.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 mx-auto z-20" />
+      <img src="/paulo-teixeira-resume-screenshot.png" alt="Paulo Teixeira | ftpaul.io" className="w-96 mx-auto z-20" />
     </div>
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
-      <h2 className="text-3xl xs:text-2xl leading-tight text-white py-16 xs:py-4" >See my resume &rarr;</h2>
+      <h2 className="text-3xl xs:text-2xl font-extrabold tracking-tight text-white py-24 xs:py-4" >See my resume &rarr;</h2>
     </div>
   </div>
     
@@ -167,22 +166,22 @@ const AboutPage = ({ data }) => { return (
   </div>
 
  
-  <div class="bg-gray-50">
-  <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+  <div class="bg-yellow-600">
+  <div class="max-w-screen-xl mx-auto py-20 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
     <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      Ready to dive in?
+      Ready to set up your game?
       <br/>
-      <span class="text-yellow-600">Start your free trial today.</span>
+      <span class="text-white">Get in touch with me today.</span>
     </h2>
     <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
       <div class="inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          Get started
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-300 hover:bg-gray-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          Contact me
         </a>
       </div>
       <div class="ml-3 inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:text-yellow-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          Learn more
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:bg-gray-200 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          Download my resume
         </a>
       </div>
     </div>
