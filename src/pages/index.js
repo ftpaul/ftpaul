@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => { return (
     
   <Navigation />
   
-  <div className="flex flex-wrap max-w-screen-lg py-8 my-16 mx-auto content-end ">
+  <div className="flex flex-wrap max-w-screen-lg py-8 my-16 xs:my-6 mx-auto content-end ">
 
 
 
@@ -31,7 +31,7 @@ const AboutPage = ({ data }) => { return (
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full ">
     {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" /> */}
         {/* <img src="/paulo-teixeira-resume.png" alt="Paulo Teixeira | ftpaul.io" className="w-64 h-64 xs:w-20 xs:h-20  z-20 rounded-full -mt-64 xs:-mt-20  hover:opacity-0 transition ease-linear duration-500" /> */}
-        <img src="/paulo-teixeira-square.jpg" alt="Paulo Teixeira | ftpaul.io" className="w-96 h-96 mx-auto z-20 rounded-xxl" />
+        <img src="/paulo-teixeira-square.jpg" alt="Paulo Teixeira | ftpaul.io" className="w-96 h-96 mx-auto p-0 xs:p-4 z-20 rounded-xxl" />
 
     </div>
     </div>
@@ -137,7 +137,7 @@ const AboutPage = ({ data }) => { return (
   </div>
     
     
-  <div class="py-32 bg-white">
+  <div class="py-32 xs:py-24 bg-white">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       {/* <p class="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">Transactions</p> */}
@@ -149,16 +149,16 @@ const AboutPage = ({ data }) => { return (
       </p>
     </div>
 
-    <div class="flex my-8">
+    <div class="flex flex-wrap my-8">
           
-          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 text-left pr-4 border-r-2 border-yellow-600">
+          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 text-left pr-4 border-r-2 border-yellow-600 xs:border-r-0 xs:border-b-2 xs:pb-8">
               <svg xmlns="http://www.w3.org/2000/svg" className="absolute -ml-4 -mt-6 fill-current text-yellow-600 h-16 w-16 z-0" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
               <p class="mt-2 text-xl leading-6 italic text-gray-400 z-10 relative">
                 Paulo is an ace team player and deeply cares about creating an environment in which everyone can excel. He frequently checks in with the people around him and does what is in his power to support them and remove road blocks. </p>
               <p class="mt-2 text-xl leading-6 italic text-gray-400">
                 Finally, Paulo is the definition of zen. His calm and controlled nature is definitely something that affects people around him in the most positive way. His positive attitude is contagious.
               </p>
-              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 flex ">
+              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 xs:ml-0 flex  ">
                 <img src="https://media-exp1.licdn.com/dms/image/C5603AQEw5Q4NyAgiEg/profile-displayphoto-shrink_800_800/0?e=1602720000&v=beta&t=fJ2TWYfRajCxlqtmBaIoiuxylyWiIl1CisFUe_aEEhQ" className="rounded-full w-12"/>
                 <p className="ml-2 text-gray-500 font-bold">Chris Granbrisky <br />
                 <span className="font-normal">Front-end Developer / Typeform</span>
@@ -167,11 +167,11 @@ const AboutPage = ({ data }) => { return (
             
           </div>
 
-          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 pl-8 text-left ">
+          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 pl-8 text-left xs:pl-0 xs:pt-8">
               <svg xmlns="http://www.w3.org/2000/svg" className="absolute -ml-4 -mt-6 fill-current text-yellow-600 h-16 w-16 z-0" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
               <p class="mt-2 text-xl leading-6 italic text-gray-400 z-10 relative">
               (...) He transitioned from marketing into product management really well, he has the product mindset of understanding the problem accurately and them moving to the solution. Paulo adapts very fast to the changing conditions of the market, which often require last minute changes to on-going projects. These are never a problem but are seen as an opportunity to further improve our position.</p>
-              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 flex ">
+              <div className="text-base leading-6 font-medium text-gray-500 mt-4 text-left ml-2 xs:ml-0 flex ">
                 <img src="https://media-exp1.licdn.com/dms/image/C5103AQEWGbpusYqpHA/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=QGzwGqajLXyQr9zQoynx_VqaNJgnpyZ7v03c0ypKqTc" className="rounded-full w-12"/>
                 <p className="ml-2 text-gray-500 font-bold">Pedro Martinho <br />
                 <span className="font-normal">Senior Product Manager / Loggi</span>
@@ -199,7 +199,7 @@ const AboutPage = ({ data }) => { return (
           Contact me
         </a>
       </div> */}
-      <div class="ml-3 inline-flex rounded-md shadow">
+      <div class="ml-3 xs:ml-0 inline-flex rounded-md shadow">
         <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:bg-yellow-600 hover:border-4 hover:border-white hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
           Get in touch
         </a>
