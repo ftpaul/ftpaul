@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Navigation from '../components/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/footer'
@@ -17,7 +17,7 @@ const AboutPage = ({ data }) => { return (
 
 
 
-    <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center">
+    <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center px-4">
       <div >
         <p className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
@@ -130,7 +130,9 @@ const AboutPage = ({ data }) => { return (
       <img src="/paulo-teixeira-resume-screenshot.png" alt="Paulo Teixeira | ftpaul.io" className="w-96 mx-auto z-20" />
     </div>
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full pt-4 pr-1 xs:pr-2 ">
-      <h2 className="text-3xl xs:text-2xl font-extrabold tracking-tight text-white py-24 xs:py-4" >See my resume &rarr;</h2>
+      <Link to="/resume/" className="text-3xl xs:text-2xl font-extrabold tracking-tight text-white hover:underline hover:ml-4">
+        <h2 className="py-24" >See my resume &rarr;</h2>
+      </Link>
     </div>
   </div>
     
@@ -149,13 +151,18 @@ const AboutPage = ({ data }) => { return (
 
     <div class="flex my-8">
           
-          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1  ">
+          <div class="w-1/2 lg:w-1/2 sm:w-full xs:w-full mx-auto pt-1 text-center ">
                 {/* <img src="https://chrisgrabinski.com/wp-content/uploads/2016/10/chris-grabinski-hero-img.png" classNAme="rounded-md" /> */}
-              <h4 class="text-lg leading-6 font-medium text-gray-600">Chris Granbrisky<br/> <span classNAme="text-gray-500">Front-end Developer at Typeform</span> </h4>
-              <p class="mt-2 text-lg leading-6 text-gray-500">
+              <svg xmlns="http://www.w3.org/2000/svg" className="absolute -ml-4 -mt-6 fill-current text-yellow-600 h-16 w-16 z-0" viewBox="0 0 24 24"><path d="M13 14.725c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275zm-13 0c0-5.141 3.892-10.519 10-11.725l.984 2.126c-2.215.835-4.163 3.742-4.38 5.746 2.491.392 4.396 2.547 4.396 5.149 0 3.182-2.584 4.979-5.199 4.979-3.015 0-5.801-2.305-5.801-6.275z"/></svg>
+              <p class="mt-2 text-xl leading-6 italic text-gray-400 z-10 relative">
                 Paulo is an ace team player and deeply cares about creating an environment in which everyone can excel. He frequently checks in with the people around him and does what is in his power to support them and remove road blocks. </p>
-              <p class="mt-2 text-lg leading-6 text-gray-500">
+              <p class="mt-2 text-xl leading-6 italic text-gray-400">
                 Finally, Paulo is the definition of zen. His calm and controlled nature is definitely something that affects people around him in the most positive way. His positive attitude is contagious.
+              </p>
+              <p class="text-lg leading-6 font-medium text-gray-600 mt-4 inline-block text-left ml-2">
+              <img src="https://media-exp1.licdn.com/dms/image/C5603AQEw5Q4NyAgiEg/profile-displayphoto-shrink_800_800/0?e=1602720000&v=beta&t=fJ2TWYfRajCxlqtmBaIoiuxylyWiIl1CisFUe_aEEhQ" className="rounded-full w-12 inline-block"/>
+                Chris Granbrisky <br/>
+                <span classNAme="text-gray-500">Front-end Developer / Typeform</span>
               </p>
             
           </div>
@@ -174,14 +181,14 @@ const AboutPage = ({ data }) => { return (
       <span class="text-white">Get in touch with me today.</span>
     </h2>
     <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
-      <div class="inline-flex rounded-md shadow">
+      {/* <div class="inline-flex rounded-md shadow">
         <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-300 hover:bg-gray-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
           Contact me
         </a>
-      </div>
+      </div> */}
       <div class="ml-3 inline-flex rounded-md shadow">
-        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:bg-gray-200 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          Download my resume
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:bg-yellow-600 hover:border-4 hover:border-white hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          Get in touch
         </a>
       </div>
     </div>
