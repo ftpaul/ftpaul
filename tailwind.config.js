@@ -116,6 +116,8 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '96': '24rem',
+      '128': '32rem',
       'full': '100%',
     },
     backgroundColor: theme => theme('colors'),
@@ -147,6 +149,8 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xl: '1.5rem',
+      xxl: '2.5rem',
       full: '9999px',
     },
     borderWidth: {
