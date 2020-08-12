@@ -33,7 +33,14 @@ const AboutPage = ({ data }) => {
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
             </p>
         <p className="text-4xl xs:text-xl leading-snug text-gray-500 pb-4 text-left m-auto">
-          My name is <span className="border-yellow-600 border-b-2" onMouseOver={() => toggleExpansion(!isOnHover)} onMouseLeave={() => toggleExpansion(!isOnHover)}>Paulo Teixeira</span>.<br/> I am a Product Manager with a solid background in product, marketing, and management. 
+          My name is&nbsp; 
+            <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
+              onMouseOver={() => toggleExpansion(!isOnHover)} 
+              onMouseLeave={() => toggleExpansion(!isOnHover)}
+              onFocus={ () => void 0 }>
+                Paulo Teixeira
+            </button>.<br/> 
+            I am a Product Manager with a solid background in product, marketing, and management. 
         </p>
       </div>
     </div>
