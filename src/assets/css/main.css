@@ -100,3 +100,18 @@ a:hover {
   margin-left: -1em;
 }
 
+/* .nameTag:hover + .font-extrabold {
+  background-color: tomato;
+}
+
+.nameTag:hover > .font-extrabold {
+  background-color: tomato;
+}
+
+.nameTag:hover .font-extrabold {
+  background-color: tomato;
+}
+
+.nameTag:hover ~ .font-extrabold {
+  background-color: tomato;
+} */
