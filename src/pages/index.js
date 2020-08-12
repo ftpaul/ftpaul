@@ -76,7 +76,7 @@ const AboutPage = ({ data }) => {
       </div>
     <div class="w-2/6 xs:w-full mt-8 sm:my-4 flex lg:flex-shrink-0 lg:mt-0">
       <div class="ml-3 xs:ml-0 inline-flex rounded-md shadow">
-        <a href="mailto:hey@ftpaul.io?subject=Saw%20your%20website" class="inline-flex font-bold items-center justify-center px-5 py-3 border border-transparent text-lg leading-6 rounded-md text-yellow-600 bg-white hover:bg-yellow-600 hover:border-4 hover:border-white hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+        <a href="mailto:hey@ftpaul.io?subject=I%20saw%20your%20website%20and..." class="inline-flex font-bold items-center justify-center px-5 py-3 border border-transparent text-lg leading-6 rounded-md text-yellow-600 bg-white hover:bg-yellow-600 hover:border-4 hover:border-white hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
           Get in touch
         </a>
       </div>
