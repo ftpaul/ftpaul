@@ -69,7 +69,7 @@ const AboutPage = ({ data }) => {
     <div class="max-w-screen-xl flex flex-wrap mx-auto py-20 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
       <div className="w-4/6 xs:w-full">
       <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-3xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
-        Ready to set up your game?
+        Ready to step up your game?
         <br/>
         <span class="text-white">Get in touch with me today.</span>
       </h2>
