@@ -66,21 +66,21 @@ const AboutPage = ({ data }) => {
 
  
   <div class="bg-yellow-600">
-    <div class="max-w-screen-xl flex flex-wrap mx-auto py-20 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <div className="w-4/6 xs:w-full">
+    <div class="max-w-screen-xl flex flex-wrap mx-auto py-24 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between text-center">
+      <div className="w-full">
       <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-3xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
         Ready to step up your game?
         <br/>
-        <span class="text-white">Get in touch with me today.</span>
+        <span class="">Get in touch today:</span>
       </h2>
-      </div>
-    <div class="w-2/6 xs:w-full mt-8 sm:my-4 flex lg:flex-shrink-0 lg:mt-0">
-      <div class="ml-3 xs:ml-0 inline-flex rounded-md shadow">
-        <a href="mailto:hey@ftpaul.io?subject=I%20saw%20your%20website%20and..." class="inline-flex font-bold items-center justify-center px-5 py-3 border border-transparent text-lg leading-6 rounded-md text-yellow-600 bg-white hover:bg-yellow-600 hover:border-4 hover:border-white hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          Get in touch
+      <br/>
+      <h1 className="text-5xl leading-9 font-extrabold tracking-tight text-white sm:text-5xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
+        <a href="mailto:hey@ftpaul.io?subject=I%20saw%20your%20website%20and..." class="hover:border-4 hover:border-white hover:underline focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+          hey@ftpaul.io
         </a>
+        </h1>
       </div>
-    </div>
+   
   </div>
 </div>
 
