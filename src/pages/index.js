@@ -29,10 +29,10 @@ const AboutPage = ({ data }) => {
 
     <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center px-4">
       <div >
-        <p className="text-3xl xs:text-2xl leading-tight text-gray-500 py-4 m-auto">
+        <p className="text-3xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
             </p>
-        <p className="text-4xl xs:text-xl leading-snug text-gray-500 pb-4 text-left m-auto">
+        <p className="text-4xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
           My name is&nbsp; 
             <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
               onMouseOver={() => toggleExpansion(!isOnHover)} 
