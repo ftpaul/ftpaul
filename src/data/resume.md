@@ -23,15 +23,23 @@ experience:
         - Managed the marketing automation stack (Hubspot, Pardot, Zapier, Salesforce) and analytics tools (GA, Hotjar, Chart.io)
         - Developed and executed the performance marketing strategy with a strong focus on ABM
     - company: Landing.jobs
+      role: Marketing Lead
+      logo: /landingjobs.png
+      location: Lisbon
+      start_date: Jan 2017 
+      end_date: Jun 2017
+      description:
+        - Influenced the business high-level strategy by defining the marketing strategy and objectives
+        - Managed the work and rituals of a team with 5 people
+    - company: Landing.jobs
       role: Growth Marketing Manager
       logo: /landingjobs.png
       location: Lisbon
       start_date: Jun 2014 
-      end_date: Jun 2017
+      end_date: Dec 2016
       description:
         - Responsible for the paid marketing budget (with 5 digits per quarter) and controlling ROI on all performance-led campaigns
-        - Managed the work and rituals of the team with the Head of Marketing (after August 2016)
-        - More than 100% user growth YoY
+        - User and Applications growth over 100% YoY
     - company: Inspiring Code
       role: Co-founder
       logo: /inspiringcode.png
@@ -58,14 +66,18 @@ details:
       country: Portugal
       description: Open to remote postions or realocation to European cities.
     industry_knowledge:
-        - Product Management
-        - Scrum
-        - Web Analytics
-        - A/B Testing
-        - User Experience
-        - Wireframing
-        - B2B Lead Gen
-        - Performance Marketing
+        - name: Product
+          individuals:
+            - User Experience
+            - Data Analysis
+            - Programming
+            - Agile Methodologies & Scrum
+            - Prioritization & Roadmap
+        - name: marketing
+          individuals:
+            - SEO & Advertising
+            - CRO, A/B Testing
+            - Marketing Tech Stack
     languages:
         - Portuguese (Native)
         - English (Professional)
