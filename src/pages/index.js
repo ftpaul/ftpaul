@@ -74,7 +74,7 @@ const AboutPage = ({ data }) => {
         <span class="">Get in touch today:</span>
       </h2>
       <br/>
-      <h1 className="text-5xl leading-9 font-extrabold tracking-tight text-white sm:text-5xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
+      <h1 className="text-5xl leading-9 font-extrabold tracking-tight text-white sm:text-5xl xs:font-bold xs:text-3xl sm:leading-10 flex-shrink">
         <a href="mailto:hey@ftpaul.io?subject=I%20saw%20your%20website%20and..." class="hover:border-4 hover:border-white hover:underline focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
           hey@ftpaul.io
         </a>
