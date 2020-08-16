@@ -89,9 +89,16 @@ const ResumePage = ({ data }) => {
       </div>
 
       <div className="pb-8 xs:hidden">
-        <p className="text-base font-bold text-gray-500">Industry knowledge</p>
-        {resumeData.details.industry_knowledge.map(point => (
-          <p className="text-base text-gray-500 pb-0" key={point}>{point}</p>
+        <p className="text-base font-bold text-gray-500">Skills &amp; Competencies</p>
+        <br />
+        {resumeData.details.industry_knowledge.map(group => (
+          <>
+            <p className="text-base capitalize text-gray-500 pb-0" key={group.name}>{group.name}</p>
+            {group.individuals.map(individuals => (
+              <p className="text-base capitalize text-gray-500" key={individuals}> - {individuals}</p>
+            ))}
+            <br />
+          </>
         ))}
       </div>
 
@@ -178,7 +185,10 @@ export const query = graphql`
               description
               link
             }
-            industry_knowledge
+            industry_knowledge {
+              name
+              individuals
+            }
             languages
             random {
               description
