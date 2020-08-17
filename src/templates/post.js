@@ -17,7 +17,7 @@ export default function Template({
       
     <Navigation />
     
-    <ContentColumn>
+    <ContentColumn shorterColumn={true}>
       <div className="container">
           <h1 className="text-4xl font-bold xs:text-2xl leading-tight text-gray-500 pb-4" >{frontmatter.title}</h1>
           {/* <h4 className="text-sm italic xs:text-2xl leading-tight text-gray-500 pb-4">{frontmatter.date}</h4> */}
