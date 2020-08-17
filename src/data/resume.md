@@ -1,7 +1,8 @@
 ---
 name: Paulo Teixeira
 title: Product Manager
-summary: Driven by outstanding experiences and meaningful collaborations, I am a Product Manager with a dynamic background as a developer and in digital marketing. I have 5+ years of experience working in high-growth tech organizations.
+summary: Summary
+Inspired by impacting individuals through experiences that drive change and add value, I am a Product Manager with a solid background in product, marketing, and management.
 experience:
     - company: Unbabel
       role: Product Manager
