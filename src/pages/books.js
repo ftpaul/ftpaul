@@ -18,7 +18,7 @@ const BooksPage = ({ data }) => {
   <>
   <SEO />
   <Navigation />
-  <ContentColumn>
+  <ContentColumn shorterColumn={true}>
       <p className="text-xl text-gray-500">Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. I look to deep dive in technical books and occasional nonfiction, both in Portuguese and in English. You can follow my reading and reviews on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
       
       <h3 className="text-xl text-gray-500 pt-6 pb-2">Currently Reading</h3>

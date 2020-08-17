@@ -11,7 +11,7 @@ const WritingPage = ({ data }) => { return (
   <SEO />
     
   <Navigation />
-  <ContentColumn>
+  <ContentColumn shorterColumn={true}>
     
 
       {data.allMarkdownRemark.edges.map(article => (
