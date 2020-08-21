@@ -12,9 +12,6 @@ import Img from "gatsby-image"
 
 const AboutPage = ({ data }) => { 
   
-  // onClick={() => toggleExpansion(!isOnHover)
-
-
   const [isOnHover, toggleExpansion] = useState(false)
 
   return (
@@ -23,16 +20,16 @@ const AboutPage = ({ data }) => {
     
   <Navigation />
   
-  <div className="flex flex-wrap max-w-screen-lg py-8 my-16 xs:my-6 mx-auto content-end ">
+  <div className="flex flex-wrap max-w-screen-lg py-0 my-24 xs:my-6 mx-auto">
 
 
 
     <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center px-4">
       <div >
-        <p className="text-3xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
+        <p className="text-2xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
             </p>
-        <p className="text-4xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
+        <h1 className="text-3xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
           My name is&nbsp; 
             <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
               onMouseOver={() => toggleExpansion(!isOnHover)} 
@@ -41,17 +38,14 @@ const AboutPage = ({ data }) => {
                 Paulo Teixeira
             </button>.<br/> 
             I am a Product Manager with a solid background in product, marketing, and management. 
-        </p>
+        </h1>
       </div>
     </div>
 
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full ">
-        <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-96 h-96 mx-auto p-0 xs:p-4 z-10 rounded-xxl" />
-        <div id="firstPicture">
-        {/* <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-96 h-96 mx-auto p-0 xs:p-4 z-20 -mt-96 rounded-xxl hover:opacity-0 transition ease-linear duration-1000 firstPicture" /> */}
+        <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-88 h-88 mx-auto p-0 xs:p-4 z-10 rounded-xxl" />
         <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" 
-          className={isOnHover ? `w-96 h-96 mx-auto p-0 xs:p-4 z-20 -mt-96 rounded-xxl opacity-0 transition ease-linear duration-1000 firstPicture` : `w-96 h-96 mx-auto p-0 xs:p-4 z-20 -mt-96 rounded-xxl opacity hover:opacity-0 transition ease-linear duration-1000 firstPicture`} />
-        </div>
+            className={isOnHover ? `w-88 h-88 mx-auto p-0 xs:p-4 z-20 -mt-88 rounded-xxl opacity-0 transition ease-linear duration-1000 firstPicture` : `w-88 h-88 mx-auto p-0 xs:p-4 z-20 -mt-88 rounded-xxl opacity hover:opacity-0 transition ease-linear duration-1000 firstPicture`} />
     </div>
     </div>
 
