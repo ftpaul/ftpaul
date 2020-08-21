@@ -27,22 +27,28 @@ a:hover {
 /* Markdown Styles */
 /* Global */
 .markdown {
-  @apply leading-relaxed text-lg;
+  @apply leading-relaxed;
+  @apply text-lg;
 }
 /* Headers */
 .markdown h1,
 .markdown h2 {
-  @apply text-2xl my-6 font-bold;
+  @apply text-2xl;
+  @apply my-6;
+  @apply font-bold;
 }
 .markdown h3,
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  @apply text-xl my-3 font-semibold;
+  @apply text-xl;
+  @apply my-3;
+  @apply font-semibold;
 }
 /* Links */
 .markdown a {
-  @apply text-yellow-600 underline;
+  @apply text-yellow-600;
+  @apply underline;
 }
 .markdown a:hover {
   @apply text-yellow-400;
@@ -57,7 +63,8 @@ a:hover {
 /* Lists */
 .markdown ul,
 .markdown ol {
-  @apply mb-4 ml-8;
+  @apply mb-4;
+  @apply ml-8;
 }
 .markdown li > p,
 .markdown li > ul,
@@ -72,7 +79,13 @@ a:hover {
 } */
 /* Blockquotes */
 .markdown blockquote {
-  @apply p-0 p-2 mx-6 bg-yellow-100 mb-4 border-l-4 border-yellow-400;
+  @apply p-0;
+  @apply p-2;
+  @apply mx-6;
+  @apply bg-yellow-100;
+  @apply mb-4;
+  @apply border-l-4;
+  @apply border-yellow-400;
 }
 .markdown blockquote > p {
   @apply mb-0;
@@ -80,13 +93,17 @@ a:hover {
 /* Tables */
 .markdown td,
 .markdown th {
-  @apply px-2 py-1 border-none ;
+  @apply px-2;
+  @apply py-1;
+  @apply border-none;
 }
 .markdown tr:nth-child(odd) {
   @apply bg-gray-100;
 }
 .markdown table {
-  @apply mb-6 border border-yellow-600;
+  @apply mb-6;
+  @apply border;
+  @apply border-yellow-600;
 }
 /* purgecss end ignore */
 
