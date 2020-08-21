@@ -165,4 +165,9 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 800px) 
   .heroTitle {
     @apply text-3xl;
   }
+
+  .heroWidth {
+    @apply max-w-screen-lg;
+    @apply my-20;
+  }
 }

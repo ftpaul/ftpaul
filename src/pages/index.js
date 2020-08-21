@@ -20,7 +20,7 @@ const AboutPage = ({ data }) => {
     
   <Navigation />
   
-  <div className="flex flex-wrap max-w-screen-lg py-0 my-24 xs:my-6 mx-auto">
+  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-20 xs:my-6 mx-auto">
 
 
 
@@ -60,7 +60,7 @@ const AboutPage = ({ data }) => {
 
  
   <div class="bg-yellow-600">
-    <div class="max-w-screen-xl flex flex-wrap mx-auto py-24 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between text-center">
+    <div class="max-w-screen-xl flex flex-wrap mx-auto py-24 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between lg:text-center">
       <div className="w-full">
       <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-3xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
         Ready to step up your game?
