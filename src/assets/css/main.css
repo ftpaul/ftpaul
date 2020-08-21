@@ -138,3 +138,31 @@ a:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) { 
+
+  /* Large screen, retina, stuff to override above media query */
+
+  .heroImage {
+    @apply h-88;
+    @apply w-88;
+  }
+
+  .heroSecondImage {
+    @apply -mt-88;
+  }
+
+  .heroHello {
+    @apply text-2xl;
+  }
+
+  .heroTitle {
+    @apply text-3xl;
+  }
+}

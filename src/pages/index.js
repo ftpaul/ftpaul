@@ -26,10 +26,10 @@ const AboutPage = ({ data }) => {
 
     <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center px-4">
       <div >
-        <p className="text-2xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
+        <p className="heroHello text-xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
             </p>
-        <h1 className="text-3xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
+        <h1 className="heroTitle text-2xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
           My name is&nbsp; 
             <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
               onMouseOver={() => toggleExpansion(!isOnHover)} 
@@ -43,9 +43,9 @@ const AboutPage = ({ data }) => {
     </div>
 
     <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full ">
-        <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-88 h-88 mx-auto p-0 xs:p-4 z-10 rounded-xxl" />
+        <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-xxl" />
         <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" 
-            className={isOnHover ? `w-88 h-88 mx-auto p-0 xs:p-4 z-20 -mt-88 rounded-xxl opacity-0 transition ease-linear duration-1000 firstPicture` : `w-88 h-88 mx-auto p-0 xs:p-4 z-20 -mt-88 rounded-xxl opacity hover:opacity-0 transition ease-linear duration-1000 firstPicture`} />
+            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-xxl opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-xxl opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />
     </div>
     </div>
 
