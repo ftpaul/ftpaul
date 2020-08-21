@@ -168,6 +168,6 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 800px) 
 
   .heroWidth {
     @apply max-w-screen-lg;
-    @apply my-20;
+    @apply my-24;
   }
 }
