@@ -24,7 +24,7 @@ const AboutPage = ({ data }) => {
 
 
 
-    <div className="flex w-1/2 lg:w-1/2 sm:w-full xs:w-full items-center px-4">
+    <div className="flex w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full items-center px-4">
       <div >
         <p className="heroHello text-xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
@@ -42,7 +42,7 @@ const AboutPage = ({ data }) => {
       </div>
     </div>
 
-    <div className="w-1/2 lg:w-1/2 sm:w-full xs:w-full ">
+    <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
         <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-xxl" />
         <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" 
             className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-xxl opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-xxl opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />
