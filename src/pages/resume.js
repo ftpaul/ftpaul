@@ -88,17 +88,15 @@ const ResumePage = ({ data }) => {
         ))}
       </div>
 
-      <div className="pb-8 xs:hidden">
-        <p className="text-base font-bold text-gray-500">Skills &amp; Competencies</p>
-        <br />
+      <div className="pb-2 xs:hidden">
+        <p className="text-base pb-2 font-bold text-gray-500">Skills &amp; Competencies</p>
         {resumeData.details.industry_knowledge.map(group => (
-          <>
+          <div className="pb-3">
             <p className="text-base capitalize text-gray-500 pb-0" key={group.name}>{group.name}</p>
             {group.individuals.map(individuals => (
               <p className="text-base capitalize text-gray-500" key={individuals}> - {individuals}</p>
             ))}
-            <br />
-          </>
+          </div>
         ))}
       </div>
 
@@ -106,7 +104,7 @@ const ResumePage = ({ data }) => {
       <div className="pb-8">
         <p className="text-base font-bold text-gray-500">Projects</p>
         {resumeData.details.projects.map(project => (
-          <div key={project.name}>
+          <div key={project.name} >
           <p className="text-base text-gray-500 pb-0 underline">
             <a href={project.link} alt={project.name} className="text-yellow-600 underline hover:text-yellow-400">
             {project.name}</a>
@@ -142,8 +140,6 @@ const ResumePage = ({ data }) => {
   )
 }
 
-
-// key={fact.description}
 
 export const query = graphql`
 {

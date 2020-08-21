@@ -70,14 +70,17 @@ details:
           individuals:
             - User Experience
             - Data Analysis
-            - Programming
             - Agile Methodologies & Scrum
             - Prioritization & Roadmap
         - name: marketing
           individuals:
             - SEO & Advertising
-            - CRO, A/B Testing
             - Marketing Tech Stack
+        - name: transversal
+          individuals:
+            - Process & Project Management
+            - 360 Vision
+            - Empathy
     languages:
         - Portuguese (Native)
         - English (Professional)
