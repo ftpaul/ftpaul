@@ -150,20 +150,20 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 800px) 
   /* Large screen, retina, stuff to override above media query */
 
   .heroImage {
-    @apply h-88;
-    @apply w-88;
+    @apply h-96;
+    @apply w-96;
   }
 
   .heroSecondImage {
-    @apply -mt-88;
+    @apply -mt-96;
   }
 
   .heroHello {
-    @apply text-2xl;
+    @apply text-3xl;
   }
 
   .heroTitle {
-    @apply text-3xl;
+    @apply text-4xl;
   }
 
   .heroWidth {
