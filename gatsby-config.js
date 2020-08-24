@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `react-simple-chatbot`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
         path: `./src/assets/images/`, 
