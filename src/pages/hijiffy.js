@@ -39,7 +39,7 @@ const steps = [
         id: '21',
         options: [
           { value: 1, label: 'Previous manager', trigger: '22' },
-          { value: 2, label: 'Worked together but in different teams', trigger: '20' },
+          { value: 2, label: 'Worked together but in different teams', trigger: '31' },
           { value: 3, label: 'Worked in the same team', trigger: '5' },
         ],
     },
@@ -89,6 +89,40 @@ const steps = [
     },
     {
         id: '30',
+        options: [
+          { value: 1, label: 'Another persona', trigger: '21' },
+          { value: 2, label: 'Go back', trigger: '4' },
+        ],
+    },
+    {
+        id: '31',
+        message: '"Paulo played a big part in my onboarding at Unbabel and has really influenced the way I approach work early in my career. He leaves no loose ends and always strives to get everyone on the same page."',
+        trigger: '32',
+    },
+    {
+        id: '32',
+        message: 'Joana Porteiro, Performance Marketing',
+        trigger: '33',
+    },
+    {
+        id: '33',
+        options: [
+          { value: 1, label: 'Another one', trigger: '34' },
+          { value: 2, label: 'Go back', trigger: '4' },
+        ],
+    },
+    {
+        id: '34',
+        message: '"The way you push for better organization and processes implementation (right tools, task documentation and ownership, timelines, etc) helps ensure proper alignment and more speed on execution."',
+        trigger: '35',
+    },
+    {
+        id: '35',
+        message: 'Pedro Ferreira, SEO Manager',
+        trigger: '36',
+    },
+    {
+        id: '36',
         options: [
           { value: 1, label: 'Another persona', trigger: '21' },
           { value: 2, label: 'Go back', trigger: '4' },
