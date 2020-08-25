@@ -32,7 +32,8 @@ const steps = [
       options: [
         { value: 1, label: '▶️ Tell me more about yourself', trigger: '50' },
         { value: 2, label: '▶️ What others say about you', trigger: '20' },
-        { value: 3, label: '▶️ Schedule check-in', trigger: '5' },
+        { value: 3, label: '▶️ Schedule check-in', trigger: '60' },
+        { value: 3, label: '▶️ I am done for now', trigger: '70' },
       ],
     },
     {
@@ -41,8 +42,8 @@ const steps = [
       trigger: '3',
     },
     {
-      id: '6',
-      message: 'Awesome! You are a telepath!',
+      id: '70',
+      message: 'Thank you for your time! Hope I could help :)',
       end: true,
     },
     {
@@ -128,7 +129,7 @@ const steps = [
     },
     {
         id: '34',
-        message: '"The way you push for better organization and processes implementation (right tools, task documentation and ownership, timelines, etc) helps ensure proper alignment and more speed on execution."',
+        message: '"The way Paulo pushes for better organization and processes implementation (right tools, task documentation and ownership, timelines, etc) helps ensure proper alignment and more speed on execution."',
         trigger: '35',
     },
     {
@@ -143,7 +144,6 @@ const steps = [
           { value: 2, label: 'Go back', trigger: '4' },
         ],
     },
-    // AQUI
     {
       id: '37',
       message: '"Paulo is an ace team player and deeply cares about creating an environment in which everyone can excel. He frequently checks in with the people around him and does what is in his power to support them and remove roadblocks."',
@@ -211,12 +211,29 @@ const steps = [
     trigger: '55',
     end: true,
   },
+  {
+    id: '60',
+    message: 'I am not great a schedule time yet, but take this link to Calendly:',
+    trigger: '61',
+  },
+  {
+    id: '61',
+    component: (
+      <a href="https://calendly.com/ftpaulio/let-s-meet?month=2020-08" target="_blank" class="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-16 w-48 mx-auto block">Schedule check-in date with Calendly</a>
+    ),
+    trigger: '62',
+  },
+  {
+    id: '62',
+    message: 'Let me know how can I help you more:',
+    trigger: '4',
+  },
   
 ]
  
 
 
-const AboutPage = ({ data }) => { 
+const AboutPage = () => { 
   
   
     return (
