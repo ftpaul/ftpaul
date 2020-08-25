@@ -262,7 +262,7 @@ const AboutPage = () => {
       <> 
       <YellowTopBar />
     <div className="flex h-screen align-middle justify-center ">
-      <div className="w-1/2 p-12 visible xs:invisible xs:w-0 xs:p-0 flex flex-col align-middle ">
+      <div className="w-1/2 p-12 visible md:w-1/2 md:visible sm:invisible sm:w-0 xs:invisible xs:w-0 xs:p-0 flex flex-col align-middle ">
         <div className="align-top">
           <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-10 w-48 mx-auto block ">
             &larr; Back to ftpaul.io
@@ -272,7 +272,7 @@ const AboutPage = () => {
           <img src="https://hijiffy.com/wp-content/uploads/2018/10/LogoHiJiffy-1-smaller2.png" css={{height:`137px`,width:`201px`}} alt="HiJiffy" className="mx-auto" />
         </div>
       </div>
-      <div className="w-1/2 xs:w-full flex align-middle justify-left">
+      <div className="w-1/2 sm:w-full xs:w-full flex align-middle justify-left">
         <div className="my-auto ml-0">
         <ThemeProvider theme={theme}>
           <ChatBot steps={steps} />
