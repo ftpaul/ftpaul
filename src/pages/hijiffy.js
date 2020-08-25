@@ -1,7 +1,7 @@
 import React  from "react"
 import ChatBot from 'react-simple-chatbot'
 import { ThemeProvider } from 'styled-components'
- 
+import YellowTopBar from "../components/yellowTopBar"
 
 const theme = {
   background: '#f5f8fb',
@@ -18,20 +18,20 @@ const theme = {
 const steps = [
     {
       id: '1',
-      message: 'Hey HiJiffy team! Hope that you are well rested after your holidays',
+      message: 'Hey HiJiffy team! Hope that you are well rested after your holidays.',
       trigger: '3',
     },
       {
         id: '3',
-        message: 'I am here to let you know more about me and clear any doubts you might have.',
+        message: 'I am here to let you know more about me and clear any doubts you might have. Let me know how can I help you:',
         trigger: '4',
       },
     {
       id: '4',
       options: [
-        { value: 1, label: 'Tell me more about yourself', trigger: '50' },
-        { value: 2, label: 'What others say about you', trigger: '20' },
-        { value: 3, label: 'Schedule check-in', trigger: '5' },
+        { value: 1, label: '▶️ Tell me more about yourself', trigger: '50' },
+        { value: 2, label: '▶️ What others say about you', trigger: '20' },
+        { value: 3, label: '▶️ Schedule check-in', trigger: '5' },
       ],
     },
     {
@@ -219,13 +219,23 @@ const AboutPage = ({ data }) => {
   
   
     return (
-    <>
-  
-      <ThemeProvider theme={theme}>
-        <ChatBot steps={steps} />
-      </ThemeProvider>
-    
+      <> 
+      <YellowTopBar />
+    <div className="flex h-screen align-middle justify-center ">
+      <div className="w-1/2 p-12 visible xs:invisible xs:w-0 xs:p-0 flex align-middle justify-center">
+        <img src="https://hijiffy.com/wp-content/uploads/2018/10/LogoHiJiffy-1-smaller2.png" css={{height:`137px`,width:`201px`}} alt="HiJiffy" className="m-auto w-20 h-20" />
+      </div>
+      <div className="w-1/2 xs:w-full flex align-middle justify-center">
+        <div className="my-auto">
+        <ThemeProvider theme={theme}>
+          <ChatBot steps={steps} />
+        </ThemeProvider>
+        </div>
+      </div>
+    </div>
+
     </>
+
     )
   }
   
