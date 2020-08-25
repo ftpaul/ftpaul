@@ -1,6 +1,20 @@
 import React  from "react"
-import ChatBot from 'react-simple-chatbot';
+import ChatBot from 'react-simple-chatbot'
+import { ThemeProvider } from 'styled-components'
  
+
+const theme = {
+  background: '#f5f8fb',
+  fontFamily: 'Lato',
+  headerBgColor: '#F8B500',
+  headerFontColor: '#fff',
+  headerFontSize: '1rem',
+  botBubbleColor: '#F8B500',
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#4a4a4a',
+};
+
 const steps = [
     {
       id: '1',
@@ -15,7 +29,7 @@ const steps = [
     {
       id: '4',
       options: [
-        { value: 1, label: 'Tell me more about yourself', trigger: '6' },
+        { value: 1, label: 'Tell me more about yourself', trigger: '50' },
         { value: 2, label: 'What others say about you', trigger: '20' },
         { value: 3, label: 'Schedule check-in', trigger: '5' },
       ],
@@ -40,7 +54,7 @@ const steps = [
         options: [
           { value: 1, label: 'Previous manager', trigger: '22' },
           { value: 2, label: 'Worked together but in different teams', trigger: '31' },
-          { value: 3, label: 'Worked in the same team', trigger: '5' },
+          { value: 3, label: 'Worked in the same team', trigger: '37' },
         ],
     },
     {
@@ -128,7 +142,76 @@ const steps = [
           { value: 2, label: 'Go back', trigger: '4' },
         ],
     },
-  ]
+    // AQUI
+    {
+      id: '37',
+      message: '"Paulo is an ace team player and deeply cares about creating an environment in which everyone can excel. He frequently checks in with the people around him and does what is in his power to support them and remove roadblocks."',
+      trigger: '38',
+  },
+  {
+      id: '38',
+      message: 'Chris Grabinski, Front-end Developer',
+      trigger: '39',
+  },
+  {
+      id: '39',
+      options: [
+        { value: 1, label: 'Another one', trigger: '40' },
+        { value: 2, label: 'Go back', trigger: '4' },
+      ],
+  },
+  {
+      id: '40',
+      message: '"Focused and objective-driven, he helped deliver faster and better results, keeping timings managed and space for deeper thinking."',
+      trigger: '41',
+  },
+  {
+      id: '41',
+      message: 'Bruno Silva, Head of Marketing Design',
+      trigger: '42',
+  },
+  {
+      id: '42',
+      options: [
+        { value: 1, label: 'Another persona', trigger: '21' },
+        { value: 2, label: 'Go back', trigger: '4' },
+      ],
+  },
+  {
+    id: '50',
+    message: 'I am a Product Manager with an experienced background in product, marketing, and management.',
+    trigger: '51',
+  },
+  {
+    id: '51',
+    message: 'My aim is to to impact individuals by providing experiences that drive change and add value to them',
+    trigger: '52',
+  },
+  {
+    id: '52',
+    options: [
+      { value: 1, label: 'How do you put that into practice? ', trigger: '53' },
+      { value: 2, label: 'Go back', trigger: '4' },
+    ],
+  },
+  {
+    id: '53',
+    message: '1️⃣ Challenging myself and people around me',
+    trigger: '54',
+  },
+  {
+    id: '54',
+    message: '2️⃣ Empowering people and teams to be at their best',
+    trigger: '55',
+  },
+  {
+    id: '55',
+    message: '3️⃣ Giving them purpose and perspective',
+    trigger: '55',
+    end: true,
+  },
+  
+]
  
 
 
@@ -138,8 +221,9 @@ const AboutPage = ({ data }) => {
     return (
     <>
   
-        
-  <ChatBot steps={steps} />
+      <ThemeProvider theme={theme}>
+        <ChatBot steps={steps} />
+      </ThemeProvider>
     
     </>
     )
