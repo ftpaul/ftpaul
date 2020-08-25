@@ -1,5 +1,6 @@
 import React  from "react"
 import ChatBot from 'react-simple-chatbot'
+import { Link } from "gatsby"
 import { ThemeProvider } from 'styled-components'
 import YellowTopBar from "../components/yellowTopBar"
 
@@ -223,6 +224,9 @@ const AboutPage = ({ data }) => {
       <YellowTopBar />
     <div className="flex h-screen align-middle justify-center ">
       <div className="w-1/2 p-12 visible xs:invisible xs:w-0 xs:p-0 flex align-middle justify-center">
+      <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded h-10 ml-12">
+        &larr; Back to ftpaul.io
+      </Link>
         <img src="https://hijiffy.com/wp-content/uploads/2018/10/LogoHiJiffy-1-smaller2.png" css={{height:`137px`,width:`201px`}} alt="HiJiffy" className="m-auto w-20 h-20" />
       </div>
       <div className="w-1/2 xs:w-full flex align-middle justify-center">
