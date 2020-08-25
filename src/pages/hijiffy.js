@@ -19,7 +19,7 @@ const theme = {
 const steps = [
     {
       id: '1',
-      message: 'Hey HiJiffy team! Hope that you are well rested after your holidays.',
+      message: 'Hey HiJiffy team! 👋🏽 Hope that you are well rested after your holidays.',
       trigger: '3',
     },
       {
@@ -33,7 +33,7 @@ const steps = [
         { value: 1, label: '▶️ Tell me more about yourself', trigger: '50' },
         { value: 2, label: '▶️ What others say about you', trigger: '20' },
         { value: 3, label: '▶️ Schedule check-in', trigger: '60' },
-        { value: 3, label: '▶️ I am done for now', trigger: '70' },
+        { value: 4, label: '▶️ I am done for now', trigger: '70' },
       ],
     },
     {
@@ -43,7 +43,7 @@ const steps = [
     },
     {
       id: '70',
-      message: 'Thank you for your time! Hope I could help :)',
+      message: 'Thank you for your time! Hope I could help. All the best,',
       end: true,
     },
     {
@@ -57,6 +57,7 @@ const steps = [
           { value: 1, label: 'Previous manager', trigger: '22' },
           { value: 2, label: 'Worked together but in different teams', trigger: '31' },
           { value: 3, label: 'Worked in the same team', trigger: '37' },
+          { value: 4, label: 'Go back', trigger: '4' },
         ],
     },
     {
@@ -185,7 +186,7 @@ const steps = [
   },
   {
     id: '51',
-    message: 'My aim is to to impact individuals by providing experiences that drive change and add value to them',
+    message: 'My aim is to to impact individuals by providing experiences that drive change and add value to them.',
     trigger: '52',
   },
   {
@@ -208,8 +209,7 @@ const steps = [
   {
     id: '55',
     message: '3️⃣ Giving them purpose and perspective',
-    trigger: '55',
-    end: true,
+    trigger: '80',
   },
   {
     id: '60',
@@ -219,7 +219,7 @@ const steps = [
   {
     id: '61',
     component: (
-      <a href="https://calendly.com/ftpaulio/let-s-meet?month=2020-08" target="_blank" class="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-16 w-48 mx-auto block">Schedule check-in date with Calendly</a>
+      <a href="https://calendly.com/ftpaulio/let-s-meet?month=2020-08" rel="noreferrer" target="_blank" class="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-16 w-48 mx-auto block">Schedule check-in date with Calendly</a>
     ),
     trigger: '62',
   },
@@ -228,7 +228,29 @@ const steps = [
     message: 'Let me know how can I help you more:',
     trigger: '4',
   },
-  
+  {
+    id: '80',
+    options: [
+      { value: 1, label: 'What are your values?', trigger: '63' },
+      { value: 2, label: 'Go back', trigger: '4' },
+    ],
+  },
+  {
+    id: '63',
+    message: 'Glad you ask! Here are they:',
+    trigger: '64',
+  },
+  {
+    id: '64',
+    message: '👨🏻‍🎤People-driven | 🤝Collaborative | 🧭 Focused | ⛳️ Goal-oriented | 🧘🏽‍♂️Zen | 🕵🏻‍♀️Knowledge seeker',
+    trigger: '90',
+  },
+  {
+    id: '90',
+    options: [
+      { value: 1, label: 'Thanks! What do you have more?', trigger: '4' },
+    ],
+  },
 ]
  
 
