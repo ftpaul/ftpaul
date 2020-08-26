@@ -5,7 +5,7 @@ import ContentColumn from '../contentColumn'
 export default () => (
 
 <ContentColumn>
-  <div class="pb-32 bg-white">
+  <div class="pb-32 pt-0 xs:pt-16 bg-white">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
