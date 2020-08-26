@@ -78,9 +78,9 @@ details:
             - Marketing Tech Stack
         - name: transversal
           individuals:
-            - Process & Project Management
+            - Process Management
+            - Solution Oriented
             - 360 Vision
-            - Empathy
     languages:
         - Portuguese (Native)
         - English (Professional)
