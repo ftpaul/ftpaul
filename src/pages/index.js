@@ -20,7 +20,7 @@ const AboutPage = ({ data }) => {
     
   <Navigation />
   
-  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-20 xs:my-6 mx-auto">
+  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-16 xs:my-6 mx-auto">
 
 
 
