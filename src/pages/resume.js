@@ -91,8 +91,8 @@ const ResumePage = ({ data }) => {
       <div className="pb-2 xs:hidden">
         <p className="text-base pb-2 font-bold text-gray-500">Skills &amp; Competencies</p>
         {resumeData.details.industry_knowledge.map(group => (
-          <div className="pb-3">
-            <p className="text-base capitalize text-gray-500 pb-0" key={group.name}>{group.name}</p>
+          <div className="pb-3" key={group.name}>
+            <p className="text-base capitalize text-gray-500 pb-0" >{group.name}</p>
             {group.individuals.map(individuals => (
               <p className="text-base capitalize text-gray-500" key={individuals}> - {individuals}</p>
             ))}
@@ -114,11 +114,10 @@ const ResumePage = ({ data }) => {
         ))}
       </div>
 
-          {console.log(resumeData.details.random)}
       <div className="pb-8">
         <p className="text-base font-bold text-gray-500">Random facts</p>
         {resumeData.details.random.map(fact => (
-          <>
+          <div key={fact.link}>
           <p className="text-base text-gray-500 pb-0" >
             {((fact.link.length > 0) ? (<a className="text-yellow-600 underline hover:text-yellow-400" href={fact.link}>{fact.description}</a>) :
             
@@ -126,7 +125,7 @@ const ResumePage = ({ data }) => {
             )}
             
           </p>
-          </>
+          </div>
         ))}
       </div>
 

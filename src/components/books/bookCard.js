@@ -29,7 +29,7 @@ export default ({ link, title, author, rating, image_url }) => (
 function cleanBookTitle(title) {
     if (title.indexOf(':') > 0 && title.length > 52) {
       const a = title.substring(0, title.indexOf(':'))
-      console.log(a)
+      //console.log(a)
       return a
     }
     return title
