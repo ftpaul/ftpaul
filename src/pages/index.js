@@ -37,7 +37,7 @@ const AboutPage = ({ data }) => {
               onFocus={ () => void 0 }>
                 Paulo Teixeira
             </button>.<br/> 
-            I am a Product Manager with an experienced background in product, marketing, and management. 
+            I am a Product Manager with an experienced background in engineering and marketing. 
         </h1>
       </div>
     </div>
