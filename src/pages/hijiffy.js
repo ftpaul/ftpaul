@@ -261,7 +261,7 @@ const AboutPage = () => {
     return (
       <> 
       <YellowTopBar />
-    <div className="flex h-screen align-middle justify-center ">
+    {/* <div className="flex h-screen align-middle justify-center ">
       <div className="w-1/2 p-12 visible md:w-1/2 md:visible sm:invisible sm:w-0 xs:invisible xs:w-0 xs:p-0 flex flex-col align-middle ">
         <div className="align-top">
           <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-10 w-48 mx-auto block ">
@@ -279,7 +279,7 @@ const AboutPage = () => {
         </ThemeProvider>
         </div>
       </div>
-    </div>
+    </div> */}
 
     </>
 
