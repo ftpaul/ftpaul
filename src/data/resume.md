@@ -1,7 +1,7 @@
 ---
 name: Paulo Teixeira
 title: Product Manager
-summary: Inspired by impacting individuals through experiences that drive change and add value, I am a Product Manager with an experienced background in product, marketing, and management.
+summary: Inspired by empowering people to make simple choices, I am a Product Manager with an experienced background in engineering and marketing.
 experience:
     - company: Unbabel
       role: Product Manager
