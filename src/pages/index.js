@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import ResumeCTA from "../components/about/resumeCTA"
 import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
+import SideProjects from "../components/about/sideProjects"
 import Img from "gatsby-image"
 
 
@@ -57,6 +58,8 @@ const AboutPage = ({ data }) => {
     
     
   <Testimonials />
+
+  <SideProjects />
 
  
   <div className="bg-yellow-600">
