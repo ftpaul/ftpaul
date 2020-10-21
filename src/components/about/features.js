@@ -12,7 +12,7 @@ export default () => (
         The features you will fall in love with
       </h3>
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-      When I was studying Computer Science,  I started a  company focused on building products, since then I acquired a set of competencies that will have an impact on your organization. 
+        My diverse background brings a together a unique set of competencies. 
       </p>
     </div>
 
