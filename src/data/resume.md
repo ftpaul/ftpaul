@@ -51,7 +51,7 @@ experience:
       end_date: Feb 2014
       description: 
         - Managed a portfolio of projects and products with clients
-        - Coordinated the design and development of serveral MVPs and web applications
+        - Coordinated the design and development of several MVPs and web applications
 education:
     - school: ISCTE-IUL
       course: Computer Engineer 
