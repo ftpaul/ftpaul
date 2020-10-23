@@ -59,7 +59,7 @@ const AboutPage = ({ data }) => {
     
   <Testimonials />
 
-  <SideProjects />
+  {/* <SideProjects /> */}
 
  
   <div className="bg-yellow-600">
