@@ -287,7 +287,7 @@ const ChatbotPage = () => {
       <div className="flex flex-wrap max-w-screen-lg mx-auto">
         <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">
           
-          <div className="align-middle my-48 ">
+          <div className="align-middle md:my-48 sm:my-0 xs:my-0">
             <div className="mx-auto">
               <Logo />
               <p className="lg:mr-24 sm:mr-24 xs:mr-0 text-base leading-6 text-gray-500">Built a simple chatbot to help people interact with a virtual and limited version of myself. Used a react component for the chatbot.</p>
