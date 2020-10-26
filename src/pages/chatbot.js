@@ -3,6 +3,9 @@ import ChatBot from 'react-simple-chatbot'
 import { Link } from "gatsby"
 import { ThemeProvider } from 'styled-components'
 import YellowTopBar from "../components/yellowTopBar"
+import Logo from "../components/logo"
+import SEO from "../components/seo"
+
 
 const theme = {
   background: '#f5f8fb',
@@ -14,6 +17,7 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
+  margin: '0 auto',
 };
 
 const steps = [
@@ -255,31 +259,50 @@ const steps = [
  
 
 
-const AboutPage = () => { 
+const ChatbotPage = () => { 
   
   
-    return (
-      <> 
+  const seo  = {
+    title: "Paulo Teixeira Chatbot", 
+    description: "Built a simple chatbot to help people interact with a virtual and limited version of myself!"
+  }
+  
+  
+  return (
+      
+    <> 
+
+      <SEO title={seo.title} description={seo.description} />
+
       <YellowTopBar />
-    <div className="flex h-screen align-middle justify-center ">
-      <div className="w-1/2 p-12 visible md:w-1/2 md:visible sm:invisible sm:w-0 xs:invisible xs:w-0 xs:p-0 flex flex-col align-middle ">
-        <div className="align-top">
-          <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-6 border border-yellow-500 hover:border-transparent rounded h-10 w-48 mx-auto block ">
-            &larr; Back to ftpaul.io
-          </Link>
-        </div>
-        <div className="align-middle my-48">
+
+      <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
+  
+        <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
+          &larr; Back to ftpaul.io
+        </Link>
+
+      </div>
+
+      <div className="flex flex-wrap max-w-screen-lg mx-auto">
+        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">
           
+          <div className="align-middle my-48 ">
+            <div className="mx-auto">
+              <Logo />
+              <p className="lg:mr-24 sm:mr-24 xs:mr-0 text-base leading-6 text-gray-500">Built a simple chatbot to help people interact with a virtual and limited version of myself. Used a react component for the chatbot.</p>
+              {/* (https://github.com/LucasBassetti/react-simple-chatbot) */}
+            </div>
+          </div>
+        </div>
+        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">
+          <div className="lg:mt-12 lg:ml-12 sm:mt-0 sm:ml-0 xs:mt-0 xs:ml-0">
+            <ThemeProvider theme={theme}>
+              <ChatBot steps={steps} />
+            </ThemeProvider>
+          </div>
         </div>
       </div>
-      <div className="w-1/2 sm:w-full xs:w-full flex align-middle justify-left">
-        <div className="my-auto ml-0">
-        <ThemeProvider theme={theme}>
-          <ChatBot steps={steps} />
-        </ThemeProvider>
-        </div>
-      </div>
-    </div>
 
     </>
 
@@ -288,4 +311,4 @@ const AboutPage = () => {
   
 
   
-  export default AboutPage
+  export default ChatbotPage
