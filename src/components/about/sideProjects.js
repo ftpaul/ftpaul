@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 
 export default () => (
@@ -17,20 +18,24 @@ export default () => (
     <div className="flex flex-wrap mt-8 justify-center ">
           
           <div className="w-1/4 lg:w-1/4 sm:w-1/3 xs:w-full pt-1 mb-4 mr-8">
-            <img src="/writing/00-okrs-personal-goals-setting-method.jpeg" alt="OKRs Tracking Template" />
-            <h4 className="mt-2 text-lg font-bold text-gray-900 ">
-                OKRs Tracking Template
-            </h4>
+            <Link to="/writing/okrs-as-persona-goal-method">
+              <img src="/writing/00-okrs-personal-goals-setting-method.jpeg" alt="OKRs Tracking Template" />
+              <h4 className="mt-2 text-lg font-bold text-gray-900 ">
+                  OKRs Tracking Template
+              </h4>
+            </Link>
             <p className="mt-2 text-base leading-6 text-gray-500">
                 Since 2017, I am using OKRs as a personal goal method setting. Here you can find a template spreadhseet to track them.  
             </p>    
           </div>
           
           <div className="w-1/4 lg:w-1/4 sm:w-1/3 xs:w-full pt-1 mb-4">
-            <img src="/writing/00-okrs-personal-goals-setting-method.jpeg" alt="OKRs Tracking Template" />
+            <Link to="/chatbot/">
+            <img src="/writing/ftpaul-chatbot.png" alt="ftpaul.io chatbot" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 ftpaul.io chatbot
             </h4>
+            </Link>
             <p className="mt-2 text-base leading-6 text-gray-500">
                 Built a simple chatbot to help people interact with a virtual and limited version of myself!
             </p>    
