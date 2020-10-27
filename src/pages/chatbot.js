@@ -1,8 +1,7 @@
 import React  from "react"
 import ChatBot from 'react-simple-chatbot'
-import { Link } from "gatsby"
 import { ThemeProvider } from 'styled-components'
-import YellowTopBar from "../components/navigation/yellowTopBar"
+import Navigation from "../components/navigation/navigation"
 import Logo from "../components/navigation/logo"
 import SEO from "../components/seo"
 
@@ -274,15 +273,7 @@ const ChatbotPage = () => {
 
       <SEO title={seo.title} description={seo.description} />
 
-      <YellowTopBar />
-
-      <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
-  
-        <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
-          &larr; Back to ftpaul.io
-        </Link>
-
-      </div>
+      <Navigation simplified={true} />
 
       <div className="flex flex-wrap max-w-screen-lg mx-auto">
         <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">

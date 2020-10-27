@@ -1,9 +1,9 @@
 import React from "react"
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
-import YellowTopBar from '../components/navigation/yellowTopBar'
+import Navigation from '../components/navigation/navigation'
 import '../assets/css/resume.css'
 
 
@@ -22,17 +22,7 @@ const ResumePage = ({ data }) => {
   <>
   <SEO title={seo.title} description={seo.description} />
   
-  <YellowTopBar />
-
-  <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
-  
-      <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
-        &larr; Back to ftpaul.io
-      </Link>
-
-  </div>
-
-
+  <Navigation simplified={true} />
 
   <div className="letter p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
 

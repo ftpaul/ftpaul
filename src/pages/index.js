@@ -19,7 +19,7 @@ const AboutPage = ({ data }) => {
   <>
   <SEO />
     
-  <Navigation />
+  <Navigation simplified={false} />
   
   <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-16 xs:my-6 mx-auto">
 
