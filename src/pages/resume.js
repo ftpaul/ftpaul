@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby'
 import SEO from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
-import YellowTopBar from '../components/yellowTopBar'
+import YellowTopBar from '../components/navigation/yellowTopBar'
 import '../assets/css/resume.css'
 
 

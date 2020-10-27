@@ -2,8 +2,8 @@ import React  from "react"
 import ChatBot from 'react-simple-chatbot'
 import { Link } from "gatsby"
 import { ThemeProvider } from 'styled-components'
-import YellowTopBar from "../components/yellowTopBar"
-import Logo from "../components/logo"
+import YellowTopBar from "../components/navigation/yellowTopBar"
+import Logo from "../components/navigation/logo"
 import SEO from "../components/seo"
 
 

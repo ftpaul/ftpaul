@@ -1,8 +1,8 @@
 import React, { useState }  from "react"
 import { graphql } from 'gatsby'
-import Navigation from '../components/navigation'
+import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
-import Footer from '../components/footer'
+import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
 import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
