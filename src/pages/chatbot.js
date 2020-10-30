@@ -189,7 +189,7 @@ const steps = [
   },
   {
     id: '51',
-    message: 'My aim is to to impact individuals by providing experiences that drive change and add value to them.',
+    message: 'My aim is to impact individuals by providing experiences that drive change and add value to them.',
     trigger: '52',
   },
   {
