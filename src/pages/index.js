@@ -57,9 +57,11 @@ const AboutPage = ({ data }) => {
   <ResumeCTA />
     
     
+  <SideProjects /> 
+  
   <Testimonials />
 
-  <SideProjects />
+  
 
  
   <div className="bg-yellow-600">

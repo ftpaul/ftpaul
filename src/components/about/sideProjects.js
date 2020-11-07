@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 export default () => (
 
-<div className="py-18 sm:py-24 xs:py-24 bg-gray-100">
+<div className="py-20 xs:py-20 bg-gray-100">
   <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
