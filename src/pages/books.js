@@ -19,7 +19,7 @@ const BooksPage = ({ data }) => {
   <SEO />
   <Navigation />
   <ContentColumn shorterColumn={true}>
-      <p className="text-xl text-gray-500">Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. I look to deep dive in technical books and occasional nonfiction, both in Portuguese and in English. You can follow my reading and reviews on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.</p>
+      <p className="text-xl text-gray-500"></p>
       
       <h3 className="text-xl text-gray-500 pt-6 pb-2">Currently Reading</h3>
 
@@ -35,9 +35,18 @@ const BooksPage = ({ data }) => {
       </div>
         
 
-      <h3 className="text-xl text-gray-500 pt-8 pb-2">Last 10 reads</h3>
-
-      <div className="grid grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
+      <div className="">
+        <h3 className="mt-2 text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          Bookshelf
+        </h3>
+        <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
+        Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. You can follow my reading and reviews on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">my Goodreads account</a>.
+        </p>
+      </div>
+      </ContentColumn>
+      <ContentColumn largerColumn>
+      
+      <div className="grid grid-cols-3 xs:grid-cols-1 gap-3 xs:gap-4">
       {readBooks.map((review) => (
         <BookCard 
           link={review.book.link} 
@@ -48,9 +57,10 @@ const BooksPage = ({ data }) => {
           key={review.book.id} />
       ))}
       </div>
+      </ContentColumn>
 
       <p className="text-xl text-gray-500 py-2 "></p>
-      </ContentColumn>
+      
       <Footer />
   </>
   )
@@ -78,7 +88,7 @@ export const query = graphql`
       }
     }
   }
-  read: allGoodreadsShelf(filter: {name: {eq: "read"}}, sort: {fields: reviews___read_at, order: DESC}, limit: 10) {
+  read: allGoodreadsShelf(filter: {name: {eq: "ftpaul-io"}}, sort: {fields: reviews___read_at, order: DESC}, limit: 10) {
     edges {
       node {
         reviews {
