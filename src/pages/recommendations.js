@@ -11,7 +11,8 @@ const BooksPage = ({ data }) => {
   
   //const currentlyReadingBooks = data.currently_reading.edges[0].node.reviews
   const readBooks = data.read.edges[0].node.reviews.slice(0,10)
-
+  const articles = data.articles.edges
+  
   const seo  = {
     title: "Paulo Teixeira Recommendations | ftpaul.io", 
     description: "Here's a list of books, articles, videos, and others that I recommend to everyone that is into Product Management or looking for great content."
@@ -73,6 +74,38 @@ const BooksPage = ({ data }) => {
       </div>
       </ContentColumn>
 
+      <ContentColumn>
+
+      <hr className="border-yellow-600 my-16" />
+
+      <h3 className="text-gray-900 text-3xl font-bold tracking-tight mt-10">
+      Articles
+      </h3>
+
+      <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 ">
+      Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. You can follow my reading habits on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">Pocket</a>.
+      </p>
+      </ContentColumn>
+      <ContentColumn largerColumn>
+      <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
+        {articles.map((article) => 
+        <div key={article.node.url}>
+          {/* {article.node.image ? <img src={article.node.image.src} alt={article.node.title} /> : ""} */}
+          <a className="text-gray-400 text-xl leading-loose border-yellow-600 border-b-2 hover:text-yellow-600" href={article.node.url}>
+            {article.node.title}
+          </a>
+          <br />
+        </div>
+        
+        )}
+      </div>
+
+      </ContentColumn>
+
+      <ContentColumn>
+      <hr className="border-yellow-600 my-8" />
+      </ContentColumn>
+
       <br />
       
       <Footer />
@@ -118,6 +151,22 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+  }
+  articles: allPocketArticle(filter: {favorite: {eq: true}, tags: {in: "ftpaul.io"}}, limit: 10) {
+    edges {
+      node {
+        url
+        title
+        favorite
+        image {
+          src
+        }
+        word_count
+        tags
+        articleDomain
+        domainFavicon
       }
     }
   }
