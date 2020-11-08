@@ -1,16 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import Navigation from '../components/navigation/navigation'
 import '../assets/css/resume.css'
+//import Img from "gatsby-image"
 
 
 const ResumePage = ({ data }) => { 
   
-  const resumeData = data.allMarkdownRemark.edges[0].node.frontmatter
 
+  const [isOnHover, toggleExpansion] = useState(false)
+
+  const resumeData = data.resume.edges[0].node.frontmatter
 
   const seo  = {
     title: "Paulo Teixeira Resume", 
@@ -31,18 +34,25 @@ const ResumePage = ({ data }) => {
       <div className="w-4/6  pt-4 pr-1 xs:pr-2 div-w-title">
             
           <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
-            {resumeData.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
+          <button className="focus:outline-none outline-none cursor-default hover:cursor-default" 
+              onMouseOver={() => toggleExpansion(true)} 
+              onMouseLeave={() => toggleExpansion(false)}
+              onFocus={ () => void 0 }>
+                {resumeData.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
+            </button>
           </h1>
           <h2 className="text-4xl xs:text-2xl font-normal text-gray-300 pb-4">{resumeData.title}</h2>
 
       </div>
 
   <div className="w-2/6 div-w-image " >
-
-    <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4  z-10 rounded-full" />
-    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20  z-20 rounded-full -mt-40 xs:-mt-20  hover:opacity-0 transition ease-linear duration-500" />
-      
-
+ 
+    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
+    <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
+      className={isOnHover ? 
+        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-100 hover:opacity-0` : 
+        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} />
+    
   </div>
 
    
@@ -132,7 +142,7 @@ const ResumePage = ({ data }) => {
 
 export const query = graphql`
 {
-  allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/resume/"}}) {
+  resume: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/resume/"}}) {
     edges {
       node {
         frontmatter {
@@ -182,6 +192,13 @@ export const query = graphql`
           }
         }
         fileAbsolutePath
+      }
+    }
+  }
+  secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 750) {
+        ...GatsbyImageSharpFluid
       }
     }
   }
