@@ -37,7 +37,7 @@ const AboutPage = ({ data }) => {
               onMouseLeave={() => toggleExpansion(!isOnHover)}
               onFocus={ () => void 0 }>
                 Paulo Teixeira
-            </button>.<br/> 
+            </button><span className="text-yellow-600">.</span><br/> 
             I am a Product Manager with an experienced background in engineering and marketing. 
         </h1>
       </div>

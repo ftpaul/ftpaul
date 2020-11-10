@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
 import BookCard from '../components/books/bookCard'
+import Img from "gatsby-image"
 
 
 const BooksPage = ({ data }) => { 
@@ -23,32 +24,35 @@ const BooksPage = ({ data }) => {
   <SEO title={seo.title} description={seo.description} />
   <Navigation />
 
+  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-16 xs:my-6 mx-auto">
+
+
+
+    <div className="flex w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full items-center px-4">
+      <div >
+        <h1 className="heroTitle text-2xl xs:text-2xl text-gray-600 font-bold tracking-tight text-left m-auto">
+          Recommendations<span className="text-yellow-600">.</span> 
+        </h1>
+        <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400">
+          Here you can find a handpicked list of books, articles, videos, and other relevant content that had a significant impact on how I approach my career and the Product Management area.
+        </p>
+      </div>
+    </div>
+
+    <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
+        <Img fluid={data.heroImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-88 h-auto mx-auto p-0 xs:p-4" />
+    </div>
+    </div>
+
+
+
   <ContentColumn>
 
-
-      {/* {currentlyReadingBooks.map((book) => (
-        <BookCard 
-          link={book.book.link} 
-          title={book.book.title} 
-          author={book.book.authors[0].name} 
-          image_url={book.book.image_url}
-          key={book.book.id} />
-      ))} */}
-
-      <h1 className="mt-2 text-xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 block">
-        Recommendations
-      </h1>
+     
 
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400">
-        Here you can find a handpicked list of books, articles, videos, and other relevant content that had a significant impact on how I approach my career and Product Management area.
-      </p>
-
-      <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400">
-        This area is a work in progress. It should be updated automaticly because it's getting data from my Goodreads account and Pocket account. Follow me on those accounts for real time updates. // missing links
+        {/* This area is a work in progress. It should be updated automaticly because it's getting data from my Goodreads account and Pocket account. Follow me on those accounts for real time updates. // missing links */}
       </p>  
-
-      
-      <hr className="border-yellow-600 my-16" />
 
       <h3 className="text-gray-900 text-3xl font-bold tracking-tight mt-10">
       Books
@@ -167,6 +171,13 @@ export const query = graphql`
         tags
         articleDomain
         domainFavicon
+      }
+    }
+  }
+  heroImage: file(relativePath: {eq: "bermuda-507.png"}) {
+    childImageSharp {
+      fluid(maxWidth: 100) {
+        ...GatsbyImageSharpFluid
       }
     }
   }
