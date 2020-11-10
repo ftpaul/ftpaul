@@ -93,11 +93,15 @@ const BooksPage = ({ data }) => {
       <ContentColumn largerColumn>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
         {articles.map((article) => 
-        <div key={article.node.url}>
-          {/* {article.node.image ? <img src={article.node.image.src} alt={article.node.title} /> : ""} */}
-          <a className="text-gray-400 text-xl leading-loose border-yellow-600 border-b-2 hover:text-yellow-600" href={article.node.url}>
-            {article.node.title}
-          </a>
+        <div key={article.node.url} className="flex">
+          {/* <div className="w-40 h-24 overflow-hidden flex mr-4" >
+            {article.node.image ? <img src={article.node.image.src} alt={article.node.title} /> : <img src="https://source.unsplash.com/400x400/?nature" alt={article.node.title} />} 
+          </div> */}
+          <div>
+            <a className="text-gray-400 text-xl leading-loose border-yellow-600 border-b-2 hover:text-yellow-600" href={article.node.url}>
+              {article.node.title}
+            </a>
+          </div>
           <br />
         </div>
         
@@ -158,7 +162,7 @@ export const query = graphql`
       }
     }
   }
-  articles: allPocketArticle(filter: {favorite: {eq: true}, tags: {in: "ftpaul.io"}}, limit: 10) {
+  articles: allPocketArticle(filter: {favorite: {eq: true}, tags: {in: "ftpaul.io"}}, limit: 15) {
     edges {
       node {
         url
@@ -176,7 +180,7 @@ export const query = graphql`
   }
   heroImage: file(relativePath: {eq: "bermuda-507.png"}) {
     childImageSharp {
-      fluid(maxWidth: 100) {
+      fluid(maxWidth: 500) {
         ...GatsbyImageSharpFluid
       }
     }
