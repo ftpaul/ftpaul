@@ -40,7 +40,7 @@ const BooksPage = ({ data }) => {
     </div>
 
     <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
-        <Img fluid={data.heroImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-88 h-auto mx-auto p-0 xs:p-4" />
+        <Img fluid={data.heroImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="h-auto mx-auto p-0 xs:p-4" />
     </div>
     </div>
 
@@ -178,9 +178,9 @@ export const query = graphql`
       }
     }
   }
-  heroImage: file(relativePath: {eq: "bermuda-507.png"}) {
+  heroImage: file(relativePath: {eq: "icons8-bermuda-illustration-001.png"}) {
     childImageSharp {
-      fluid(maxWidth: 500) {
+      fluid(maxWidth: 750) {
         ...GatsbyImageSharpFluid
       }
     }

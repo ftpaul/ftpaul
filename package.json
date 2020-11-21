@@ -31,6 +31,7 @@
     "gatsby-transformer-remark": "^2.8.19",
     "gatsby-transformer-sharp": "^2.3.2",
     "react": "^16.11.0",
+    "react-calendly": "^1.2.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-simple-chatbot": "^0.6.1",

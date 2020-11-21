@@ -134,6 +134,9 @@ const ResumePage = ({ data }) => {
     </div>
     </div>
     
+    <div className="py-1">
+
+    </div>
     <Footer />
   </>
   )
