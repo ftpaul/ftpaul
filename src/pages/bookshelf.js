@@ -82,13 +82,13 @@ const BooksPage = ({ data }) => {
 
       <hr className="border-yellow-600 my-16" />
 
-      <h3 className="text-gray-900 text-3xl font-bold tracking-tight mt-10">
+      {/* <h3 className="text-gray-900 text-3xl font-bold tracking-tight mt-10">
       Articles
       </h3>
 
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 ">
       Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. You can follow my reading habits on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">Pocket</a>.
-      </p>
+      </p> */}
       </ContentColumn>
       <ContentColumn largerColumn>
       <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">

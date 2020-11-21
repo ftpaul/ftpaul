@@ -1,5 +1,5 @@
 import React, { useState }  from "react"
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
@@ -65,19 +65,17 @@ const AboutPage = ({ data }) => {
 
  
   <div className="bg-yellow-600">
-    <div className="max-w-screen-xl flex flex-wrap mx-auto py-24 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between lg:text-center">
-      <div className="w-full">
-      <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-3xl xs:font-bold xs:text-2xl sm:leading-10 flex-shrink">
-        Ready to step up your game?
-        <br/>
-        <span className="">Get in touch today:</span>
-      </h2>
+    <div className="max-w-screen-xl mx-auto text-center">
+      <div className="py-24">
+      <h3 className="text-4xl text-gray-500 font-bold tracking-tight">
+        Ready to step up your game?</h3>
+        <h3 className="text-4xl text-gray-500 font-bold tracking-tight mt-2">
+        <Link to="/contact" className="border-b-4 border-white hover:text-white ">
+          Get in touch today here.
+          </Link>
+      </h3>
       <br/>
-      <h1 className="text-5xl leading-9 font-extrabold tracking-tight text-white sm:text-5xl xs:font-bold xs:text-3xl sm:leading-10 flex-shrink">
-        <a href="mailto:hey@ftpaul.io?subject=I%20saw%20your%20website%20and..." className="hover:border-4 hover:border-white hover:underline focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-          hey@ftpaul.io
-        </a>
-        </h1>
+        
       </div>
    
   </div>
