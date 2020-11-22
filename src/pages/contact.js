@@ -23,7 +23,7 @@ const ContactPage = ({ data }) => {
 
   <HeroSection
     headline="Let's talk"
-    description="Book a free call directly with me for below. I can help with regarding mentoring, consulting, or we can catch up."      
+    description="Book a free call directly with me below. I can help with mentoring, consulting, or we can simply catch up."      
     imageFluid={data.heroImage.childImageSharp.fluid}
     imageAlt="Contact | Bermuda Illustration"
   />
@@ -67,7 +67,7 @@ const ContactPage = ({ data }) => {
             <div className="ml-4">
               <h4 className="text-lg leading-6 font-medium text-gray-900">Consulting</h4>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                I work in the intersection of product and marketing to align the customer journey with the organization purpose.
+                I work in the intersection of product and marketing to align the customer journey with the purpose of the organization.
               </p>
             </div>
           </div>
@@ -84,7 +84,7 @@ const ContactPage = ({ data }) => {
             <div className="ml-4">
               <h4 className="text-lg leading-6 font-medium text-gray-900">Connecting</h4>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                I believe in connecting deeply with humans and that we can lear weith everyone. If you need a peer to discuss something, let's do it.
+                I believe in connecting deeply with humans and that we can learn with everyone. If you need a peer to discuss anything, let's do it.
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ const ContactPage = ({ data }) => {
     <InlineWidget url="https://calendly.com/ftpaulio/meeting" />
 
     <p className="mt-4 text-base leading-7 text-gray-400 text-center">
-      Don't want to jump into a call? Reach me out at <strong>hey@ftpaul.io</strong>
+      Don't want to jump into a call? Reach out to me at <strong>hey@ftpaul.io</strong>
     </p>
 
   </ContentColumn>
