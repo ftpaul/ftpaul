@@ -187,4 +187,10 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 800px) 
     @apply max-w-screen-lg;
     @apply my-24;
   }
+
+
+  .heroSectionImage  {
+    max-height: 400px;
+   
+  }
 }
