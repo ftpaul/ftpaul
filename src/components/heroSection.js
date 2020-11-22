@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 
 export default ({ headline, description, imageFluid, imageAlt }) => (
 
-    <div className="flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto 4 sm:px-0">
+    <div className="flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4 sm:px-0">
 
     <div className="flex w-1/2 xs:w-full items-center pr-4">
       <div className="">
