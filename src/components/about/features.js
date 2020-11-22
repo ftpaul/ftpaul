@@ -6,7 +6,7 @@ export default () => (
 
 <ContentColumn>
   <div className="pb-32 pt-0 xs:pt-16 bg-white">
-  <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="max-w-screen-xl mx-auto sm:px-6">
     <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
         The features you will fall in love with

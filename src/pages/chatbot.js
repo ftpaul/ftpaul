@@ -276,7 +276,7 @@ const ChatbotPage = () => {
       <Navigation simplified={true} />
 
       <div className="flex flex-wrap max-w-screen-lg mx-auto">
-        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">
+        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:py-6 xs:py-0 sm:px-4 xs:px-4">
           
           <div className="align-middle md:my-48 sm:my-0 xs:my-0">
             <div className="mx-auto">
@@ -286,7 +286,7 @@ const ChatbotPage = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:p-6 xs:p-6">
+        <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:py-6 xs:py-6 sm:px-4 xs:px-4">
           <div className="lg:mt-12 lg:ml-12 sm:mt-0 sm:ml-0 xs:mt-0 xs:ml-0">
             <ThemeProvider theme={theme}>
               <ChatBot steps={steps} />

@@ -21,11 +21,11 @@ const AboutPage = ({ data }) => {
     
   <Navigation simplified={false} />
   
-  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-16 xs:my-6 mx-auto">
+  <div className="heroWidth flex flex-wrap max-w-screen-md py-0 my-16 xs:my-6 mx-auto px-4 sm:px-0">
 
 
 
-    <div className="flex w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full items-center px-4">
+    <div className="flex w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full items-center ">
       <div >
         <p className="heroHello text-xl xs:text-xl leading-tight text-gray-500 py-4 m-auto">
           Hey there <span role="img" aria-label="Wave">👋🏽</span>
