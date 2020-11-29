@@ -24,8 +24,6 @@ const BooksPage = ({ data }) => {
   <SEO title={seo.title} description={seo.description} />
   <Navigation />
 
-  
-    {/* Follow my reading habits on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">Goodreads</a>. */}
     <HeroSection
       headline="Bookshelf"
       description="Books are one of my primary sources of knowledge, to grasp new topics, and shape how I think. Here's a list of book I recommend to everyone who's into Product. "
@@ -37,7 +35,7 @@ const BooksPage = ({ data }) => {
 
 
     <ContentColumn>
-      
+
       <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
       {readBooks.map((review) => (
         <BookCard 
@@ -50,6 +48,9 @@ const BooksPage = ({ data }) => {
       ))}
       </div>
 
+      <p className="my-4 max-w-2xl text-lg leading-7 text-gray-400">
+        PS: Follow my reading habits on <a className="text-yellow-600 underline hover:text-yellow-400" href="https://www.goodreads.com/ftpaul">Goodreads</a>. 
+      </p>
       {/* <hr className="border-yellow-600 my-8" /> */}
 
       <br /> 
