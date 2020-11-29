@@ -12,7 +12,7 @@ export default () => (
             My curriculum
           </h3>
           <p className="my-4 text-lg leading-6 text-white">
-                Have a glance at my career path, get to know my career path and some of my achivements.
+          Have a glance at my career path, my different experiences, and some of my achievements.
             </p>    
           <Link to="/resume/" className="inline-flex items-center justify-center text-xl tracking-tight hover:text-yellow-600 px-4 pt-2 pb-3 hover:bg-white rounded-md bg-transparent border-2 border-white text-white">
             Get my resume &rarr;

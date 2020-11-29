@@ -39,6 +39,7 @@ const AboutPage = ({ data }) => {
                 Paulo Teixeira
             </button><span className="text-yellow-600">.</span><br/> 
             I am a Product Manager with an experienced background in engineering and marketing. 
+            {/* Working in the intersection of Product and Marketing to align the customer experience with the organization purpose. */}
         </h1>
       </div>
     </div>
