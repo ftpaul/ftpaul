@@ -21,8 +21,7 @@ export default () => (
         </div>
         <div className="w-1/3 lg:w-1/3 sm:1/2 xs:w-full pt-4 pr-1 xs:pr-2 ">
           <Link to="/resume/" className="text-3xl xs:text-2xl font-extrabold tracking-tight text-white hover:underline hover:ml-4">
-            <img src="/about/resume.jpg" alt="Paulo Teixeira Resume CV | ftpaul.io" className="shakeEffect h-64 mx-auto z-20" /> 
-            {/* <img src="/writing/00-okrs-personal-goals-setting-method.jpeg" alt="Paulo Teixeira Resume CV | ftpaul.io" className="shakeEffect mx-auto z-20" /> */}
+            <img src="/about/resume.jpg" alt="Paulo Teixeira Resume CV | ftpaul.io" className="shakeEffect h-64 mx-auto z-20 transform  rotate-6" /> 
           </Link> 
         </div>
     </div>
