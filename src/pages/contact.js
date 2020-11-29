@@ -33,7 +33,7 @@ const ContactPage = ({ data }) => {
   <ContentColumn>
   <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-        Find how can I help
+        Find how can we synergize
       </h3>
     </div>
   <div className="mt-10">
@@ -50,7 +50,7 @@ const ContactPage = ({ data }) => {
             <div className="ml-4">
               <h4 className="text-lg leading-6 font-medium text-gray-900">Mentoring</h4>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                I help individuduals to have a meaningful career and to navigate through diferent contexts in their lifes. 
+                I help individuals to have a meaningful career and to navigate through different contexts in their lives.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const ContactPage = ({ data }) => {
             <div className="ml-4">
               <h4 className="text-lg leading-6 font-medium text-gray-900">Consulting</h4>
               <p className="mt-2 text-base leading-6 text-gray-500">
-                I work in the intersection of product and marketing to align the customer journey with the purpose of the organization.
+                I believe in connecting deeply with humans and that we can learn with everyone. If you need a peer to discuss anything, let's do it.
               </p>
             </div>
           </div>
