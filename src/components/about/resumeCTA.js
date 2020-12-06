@@ -1,4 +1,5 @@
 import React from "react"
+import Button from '../button'
 import { Link } from 'gatsby'
 
 
@@ -14,9 +15,9 @@ export default () => (
           <p className="my-4 text-lg leading-6 text-white">
           Have a glance at my career path, my different experiences, and some of my achievements.
             </p>    
-          <Link to="/resume/" className="inline-flex items-center justify-center text-xl tracking-tight hover:text-yellow-600 px-4 pt-2 pb-3 hover:bg-white rounded-md bg-transparent border-2 border-white text-white">
+          <Button to="/resume/" transparent >
             Get my resume &rarr;
-          </Link>
+          </Button>
           </div>
         </div>
         <div className="w-1/3 lg:w-1/3 sm:1/2 xs:w-full pt-4 pr-1 xs:pr-2 ">

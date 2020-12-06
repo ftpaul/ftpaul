@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import YellowTopBar from "./yellowTopBar"
 import Logo from "./logo"
+import Button from '../button'
 
 
 const Navigation = ({simplified}) => {
@@ -17,9 +18,9 @@ const Navigation = ({simplified}) => {
             
             (
                 <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
-            <Link to="/" className="bg-transparent hover:bg-yellow-500 text-gray-400 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded">
+            <Button to="/" yellow transparent>
                 &larr; Back to ftpaul.io
-            </Link>
+            </Button>
             </div>
             )
             

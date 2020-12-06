@@ -24,8 +24,12 @@ module.exports = {
     { resolve: `gatsby-source-filesystem`, 
       options: { 
         path: `./src/assets/images/`, 
-        // quality: 100, 
-        // loading: `lazy`  
+      } 
+    },
+    { resolve: `gatsby-source-filesystem`, 
+      options: { 
+        name: `documents`,
+        path: `./src/assets/documents/`,   
       } 
     },
     {
