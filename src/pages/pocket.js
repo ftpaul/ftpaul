@@ -25,12 +25,6 @@ const ComponentName = ({ data }) => (
 
 export const query = graphql`
   {
-    addedArticles: allPocketArticle(sort: {fields: fields___month_added}) {
-      group(field: fields___month_added) {
-        totalCount
-        fieldValue
-      }
-    }
     readArticles: allPocketArticle(sort: {fields: fields___month_read}) {
       group(field: fields___month_read) {
         totalCount
@@ -39,5 +33,11 @@ export const query = graphql`
     }
   }
 `
+// addedArticles: allPocketArticle(sort: {fields: fields___month_added}) {
+//   group(field: fields___month_added) {
+//     totalCount
+//     fieldValue
+//   }
+// }
 
 export default ComponentName
