@@ -82,17 +82,17 @@ module.exports = {
         includeInDevelopment: false,
       }
     },
-    {
-      resolve: `gatsby-source-pocket`,
-      options: {
-        consumerKey: `92512-8ff61a3de059f2bbd382f7b5`,
-        accessToken: `2b8a4ad7-69dc-0719-09fb-7a6a9a`,
-        weeksOfHistory: 300,
-        apiMaxRecordsToReturn: 10000,
-        getCurrentWeekOnly: `n`,
-        tagFilter: true,
-        stateFilterString: `all`,
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-pocket`,
+    //   options: {
+    //     consumerKey: `92512-8ff61a3de059f2bbd382f7b5`,
+    //     accessToken: `2b8a4ad7-69dc-0719-09fb-7a6a9a`,
+    //     weeksOfHistory: 300,
+    //     apiMaxRecordsToReturn: 10000,
+    //     getCurrentWeekOnly: `n`,
+    //     tagFilter: true,
+    //     stateFilterString: `all`,
+    //   }
+    // },
   ]
 }
