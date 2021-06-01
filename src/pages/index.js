@@ -58,7 +58,7 @@ const AboutPage = ({ data }) => {
   <ResumeCTA />
     
     
-  <SideProjects /> 
+  {/* <SideProjects />  */}
   
   <Testimonials />
 

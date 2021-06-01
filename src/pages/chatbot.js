@@ -1,6 +1,6 @@
 import React  from "react"
-import ChatBot from 'react-simple-chatbot'
-import { ThemeProvider } from 'styled-components'
+// import ChatBot from 'react-simple-chatbot'
+// import { ThemeProvider } from 'styled-components'
 import Navigation from "../components/navigation/navigation"
 import Logo from "../components/navigation/logo"
 import SEO from "../components/seo"
@@ -288,9 +288,9 @@ const ChatbotPage = () => {
         </div>
         <div className="lg:w-1/2 md:w-1/2 sm:w-full xs:w-full sm:py-6 xs:py-6 sm:px-4 xs:px-4">
           <div className="lg:mt-12 lg:ml-12 sm:mt-0 sm:ml-0 xs:mt-0 xs:ml-0">
-            <ThemeProvider theme={theme}>
+            {/* <ThemeProvider theme={theme}>
               <ChatBot steps={steps} />
-            </ThemeProvider>
+            </ThemeProvider> */}
           </div>
         </div>
       </div>
