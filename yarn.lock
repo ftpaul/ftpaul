@@ -2744,14 +2744,6 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.2.1.tgz#2e50bcf10ee5b819014f6e342e41e45096239e34"
   integrity sha512-evY7DN8qSIbsW2H/TWQ1bX3sXN1d4MNb5Vb4n7BzPuCwRHdkZ1H2eNLuSh73EoQqkGKUtju2G2HCcjCfhvZIAA==
 
-axios@^0.17.1:
-  version "0.17.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
-  integrity sha1-LY4+XQvb1zJ/kbyBT1xXZg+Bgk0=
-  dependencies:
-    follow-redirects "^1.2.5"
-    is-buffer "^1.1.5"
-
 axios@^0.21.0, axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
@@ -6119,7 +6111,7 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.10.0, follow-redirects@^1.2.5:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
@@ -6569,14 +6561,6 @@ gatsby-source-filesystem@^2.3.14:
     progress "^2.0.3"
     valid-url "^1.0.9"
     xstate "^4.14.0"
-
-gatsby-source-goodreads@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-goodreads/-/gatsby-source-goodreads-0.2.0.tgz#bc54921cfe49edff80be9dc6a63e900b99778de4"
-  integrity sha512-gkv75I+L3lvLFs6I//AmkSLdkbkN3zJv9xEkIZxRw1jwzmaQDNt5ziQcqiO8pxDXpachBiBNpCKanQ+HZt1t0g==
-  dependencies:
-    axios "^0.17.1"
-    xml2js "^0.4.19"
 
 gatsby-source-pocket@^2.3.1:
   version "2.3.1"

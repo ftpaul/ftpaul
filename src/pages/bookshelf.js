@@ -37,7 +37,7 @@ const BooksPage = ({ data }) => {
     <ContentColumn>
 
       <div className="grid lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 gap-3 xs:gap-4">
-      {readBooks.map((review) => (
+      {/* {readBooks.map((review) => (
         <BookCard 
           link={review.book.link} 
           title={review.book.title} 
@@ -45,7 +45,7 @@ const BooksPage = ({ data }) => {
           rating={review.rating} 
           image_url={review.book.image_url}
           key={review.book.id} />
-      ))}
+      ))} */}
       </div>
 
       <p className="my-4 max-w-2xl text-lg leading-7 text-gray-400">
@@ -69,25 +69,8 @@ const BooksPage = ({ data }) => {
 
 export const query = graphql`
 {
-  read: allGoodreadsShelf(filter: {name: {eq: "ftpaul-io"}}, sort: {fields: reviews___read_at, order: DESC}) {
-    edges {
-      node {
-        reviews {
-          rating
-          read_at
-          book {
-            id
-            title
-            image_url
-            link
-            authors {
-              name
-            }
-          }
-        }
-      }
-    }
-  }
+  
+  
   heroImage: file(relativePath: {eq: "icons8-bermuda-illustration-001.png"}) {
     childImageSharp {
       fluid(maxWidth: 750) {
@@ -99,3 +82,24 @@ export const query = graphql`
 `
 
 export default BooksPage
+
+
+
+// read: allGoodreadsShelf(filter: {name: {eq: "ftpaul-io"}}, sort: {fields: reviews___read_at, order: DESC}) {
+//   edges {
+//     node {
+//       reviews {
+//         rating
+//         read_at
+//         book {
+//           id
+//           title
+//           image_url
+//           link
+//           authors {
+//             name
+//           }
+//         }
+//       }
+//     }
+//   }}
