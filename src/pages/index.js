@@ -96,14 +96,14 @@ export const query = graphql`
 {
   firstImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 750) {
+      fluid {
         ...GatsbyImageSharpFluid
       }
     }
   }
   secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 750) {
+      fluid {
         ...GatsbyImageSharpFluid
       }
     }
