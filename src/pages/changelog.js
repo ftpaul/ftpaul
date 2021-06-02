@@ -4,8 +4,6 @@ import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
-import HeroSection from "../components/heroSection"
-import { InlineWidget } from "react-calendly";
 
 
 const ContactPage = ({ data }) => { 
@@ -20,13 +18,6 @@ const ContactPage = ({ data }) => {
   <>
   <SEO title={seo.title} description={seo.description} />
   <Navigation />
-
-  {/* <HeroSection
-    headline="Let's talk"
-    description="Book a free call directly with me below. I can help with mentoring, consulting, or we can simply catch up."      
-    imageFluid={data.heroImage.childImageSharp.fluid}
-    imageAlt="Contact | Bermuda Illustration"
-  /> */}
 
 
 

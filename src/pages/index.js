@@ -6,7 +6,7 @@ import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
 import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
-import SideProjects from "../components/about/sideProjects"
+// import SideProjects from "../components/about/sideProjects"
 import Img from "gatsby-image"
 
 
