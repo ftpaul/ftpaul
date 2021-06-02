@@ -198,13 +198,6 @@ export const query = graphql`
       }
     }
   }
-  secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
-    childImageSharp {
-      fluid(maxWidth: 750) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
 }
 `
 

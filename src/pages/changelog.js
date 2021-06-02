@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from 'gatsby'
+//import { graphql } from 'gatsby'
 import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
@@ -69,17 +69,7 @@ const ContactPage = ({ data }) => {
 
 
 
-export const query = graphql`
-{
-  
-  heroImage: file(relativePath: {eq: "icons8-bermuda-illustration-002.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 1500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-`
+
+
 
 export default ContactPage
