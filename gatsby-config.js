@@ -56,13 +56,6 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
     },
-    // {
-    //   resolve: "gatsby-source-goodreads",
-    //   options: {
-    //       key: 'K5MS7p74EdlcKjCIEcILag',
-    //       id: '63617698'
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
