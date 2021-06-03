@@ -44,10 +44,10 @@ const AboutPage = ({ data }) => {
       </div>
     </div>
 
-    <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
-        <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-full" />
+     <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
+    {/*    <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-full" />
         <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" 
-            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />
+            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} /> */}
     </div>
     </div>
 
@@ -92,23 +92,23 @@ const AboutPage = ({ data }) => {
   )
 }
 
-export const query = graphql`
-{
-  firstImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-  secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-`
+// export const query = graphql`
+// {
+//   firstImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
+//     childImageSharp {
+//       fluid {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+//   secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
+//     childImageSharp {
+//       fluid {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// }
+// `
 
 export default AboutPage
