@@ -62,6 +62,40 @@ const ContactPage = ({ data }) => {
                 03-06-2021
               </td>
             </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Simplify Index and Contact pages</div>
+                <div class="text-sm text-gray-500">Cut unecessary things, make the pages straight foward. Reduce things to its bare minimum.</div> 
+              </td>
+              <td class="px-6 py-4 whitespace">
+                {/* <span class="text-sm font-medium uppercase bg-green-600 py-1 px-2 rounded text-green-100 align-middle">
+                  Done
+                </span> */}
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                02-06-2021
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                03-06-2021
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Implement Backlog Area</div>
+                <div class="text-sm text-gray-500">Backlog items should some from somehwere</div> 
+              </td>
+              <td class="px-6 py-4 whitespace">
+                {/* <span class="text-sm font-medium uppercase bg-green-600 py-1 px-2 rounded text-green-100 align-middle">
+                  Done
+                </span> */}
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                02-06-2021
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                03-06-2021
+              </td>
+            </tr>
 
           </tbody>
         </table>
