@@ -64,8 +64,9 @@ details:
       email: ftpaul@gmail.com
       phone: "+351914475179"
     location: 
-      city: Lisbon
-      country: Portugal
+      city: Berlin
+      country: Germany
+      emoji: "&#127465;&#127466;" 
       description: Open to remote postions or realocation to Germany.
     industry_knowledge:
         - name: Product
@@ -84,8 +85,8 @@ details:
             - Solution Oriented
             - 360 Vision
     languages:
-        - Portuguese (Native)
         - English (Professional)
+        - Portuguese (Native)
     projects:
         - name: João Pedro Reis
           link: https://joaopedroreis.com

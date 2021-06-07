@@ -5,7 +5,7 @@ import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import Navigation from '../components/navigation/navigation'
 import '../assets/css/resume.css'
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 
 const ResumePage = ({ data }) => { 
@@ -47,11 +47,11 @@ const ResumePage = ({ data }) => {
 
   <div className="w-2/6 div-w-image " >
  
-    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
-    <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
+    <Img fluid={data.profileImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
+    {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
       className={isOnHover ? 
         `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-100 hover:opacity-0` : 
-        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} />
+        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} /> */}
     
   </div>
 
@@ -78,7 +78,7 @@ const ResumePage = ({ data }) => {
     <div className="w-2/6 xs:w-full p-4 " >
 
       <div className="pt-6 pb-8 xs:hidden">
-        <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label="Portugal">🇵🇹</span></p>
+        <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label={resumeData.details.location.country}  dangerouslySetInnerHTML={{ __html: resumeData.details.location.emoji }}></span></p>
       </div>
 
       <div className="pb-8">
@@ -176,7 +176,7 @@ export const query = graphql`
             location {
               city
               country
-              description
+              emoji
             }
             projects {
               name
@@ -195,6 +195,13 @@ export const query = graphql`
           }
         }
         fileAbsolutePath
+      }
+    }
+  }
+  profileImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid
       }
     }
   }
