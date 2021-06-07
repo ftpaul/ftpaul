@@ -4,7 +4,7 @@ import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
-import Testimonials from "../components/about/testimonials"
+//import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
 // import SideProjects from "../components/about/sideProjects"
 import Img from "gatsby-image"
@@ -60,12 +60,12 @@ const AboutPage = ({ data }) => {
     
   {/* <SideProjects />  */}
   
-  <Testimonials />
+  {/* <Testimonials /> */}
 
   
 
  
-  <div className="bg-yellow-600">
+  {/* <div className="bg-yellow-600">
     <div className="max-w-screen-xl mx-auto text-center">
       <div className="py-24">
       <h3 className="text-4xl text-gray-500 font-bold tracking-tight">
@@ -80,7 +80,7 @@ const AboutPage = ({ data }) => {
       </div>
    
   </div>
-</div>
+</div> */}
 
       
     
