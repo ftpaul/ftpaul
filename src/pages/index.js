@@ -94,7 +94,7 @@ const AboutPage = ({ data }) => {
 
 export const query = graphql`
 {
-  firstImage: file(relativePath: {eq: "paulo-teixeira-square-2.jpg"}) {
+  firstImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
     childImageSharp {
       fluid {
         ...GatsbyImageSharpFluid
