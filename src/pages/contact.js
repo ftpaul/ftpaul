@@ -21,23 +21,24 @@ const ContactPage = ({ data }) => {
   <SEO title={seo.title} description={seo.description} />
   <Navigation />
 
-  <HeroSection
+  {/* <HeroSection
     headline="Let's talk"
     description="Book a free call directly with me below. I can help with mentoring, consulting, or we can simply catch up."      
     imageFluid={data.heroImage.childImageSharp.fluid}
     imageAlt="Contact | Bermuda Illustration"
-  />
+  /> */}
 
 
 
   <ContentColumn>
-  <div className="lg:text-center">
+  <div className=" grid grid-cols-3 ">
+    <div>
       <h3 className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
         Find how can we synergize
       </h3>
-    </div>
-  <div className="mt-10">
-      <ul className="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+    
+
+      <ul className="mt-10 gap-x-8 gap-y-10">
         <li>
           <div className="flex">
             <div className="flex-shrink-0">
@@ -90,9 +91,11 @@ const ContactPage = ({ data }) => {
           </div>
         </li>
       </ul>
+      </div>
+      <div className=" col-span-2 ">
+    <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1" /></div>
     </div>
-
-    <InlineWidget url="https://calendly.com/ftpaulio/meeting" />
+    
 
     <p className="mt-4 text-base leading-7 text-gray-400 text-center">
       Don't want to jump into a call? Reach out to me at <strong>hey@ftpaul.io</strong>
