@@ -33,7 +33,7 @@ const ContactPage = ({ data }) => {
   <ContentColumn>
   <div className=" grid grid-cols-3 ">
     <div>
-      <h3 className="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+      <h3 className="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 mt-20">
         Find how can we synergize
       </h3>
     
@@ -56,7 +56,7 @@ const ContactPage = ({ data }) => {
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
@@ -73,7 +73,7 @@ const ContactPage = ({ data }) => {
             </div>
           </div>
         </li>
-        <li className="mt-10 md:mt-0">
+        <li className="mt-10">
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-600 text-white">
@@ -92,8 +92,8 @@ const ContactPage = ({ data }) => {
         </li>
       </ul>
       </div>
-      <div className=" col-span-2 ">
-    <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1" /></div>
+      <div className=" col-span-2 calendly-inline-widget">
+    <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1&hide_event_type_details=1" /></div>
     </div>
     
 
