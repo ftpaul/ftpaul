@@ -4,7 +4,6 @@ import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
-import HeroSection from "../components/heroSection"
 import { InlineWidget } from "react-calendly";
 
 
@@ -27,7 +26,7 @@ const ContactPage = ({ data }) => {
   <div className=" grid grid-cols-1 md:grid-cols-3 ">
     <div>
       <h3 className="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 mt-20">
-        Find how can we synergize
+        How can we synergize?
       </h3>
     
 

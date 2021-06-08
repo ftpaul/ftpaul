@@ -8,7 +8,7 @@ export default ( ) => {
     
 
 
-    console.log(pdf)
+    //console.log(pdf)
 
 
     return (

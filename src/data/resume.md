@@ -4,13 +4,14 @@ title: Product Manager
 summary: Driven by empowering people to make simple choices, I am a Product Manager with an experienced background in engineering and marketing. 
 experience:
     - company: Adjust
-      role: Product Manager
+      role: Web Product Manager
       logo: /adjust.png
       location: Berlin
       start_date: Jan 2020 
       end_date: Present
       description: 
         - Decreased deploy time by 10x
+        - Led a complete relaunch of
     - company: Unbabel
       role: Product Manager
       logo: /unbabel.png
