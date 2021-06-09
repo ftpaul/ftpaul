@@ -53,41 +53,16 @@ const AboutPage = ({ data }) => {
     </div>
 
 
-  <Features />
+        <Features />
 
 
-  <ResumeCTA />
-    
-    
-  {/* <SideProjects />  */}
-  
-  {/* <Testimonials /> */}
-
-  
-
- 
-  {/* <div className="bg-yellow-600">
-    <div className="max-w-screen-xl mx-auto text-center">
-      <div className="py-24">
-      <h3 className="text-4xl text-gray-500 font-bold tracking-tight">
-        Ready to step up your game?</h3>
-        <h3 className="text-4xl text-gray-500 font-bold tracking-tight mt-2">
-        <Link to="/contact" className="border-b-4 border-white hover:text-white ">
-          Get in touch today here.
-          </Link>
-      </h3>
-      <br/>
+        <ResumeCTA />
+          
+          
+        {/* <SideProjects />  */}
         
-      </div>
-   
-  </div>
-</div> */}
-
-      
+        {/* <Testimonials /> */}
     
-      
-      
-      
       <Footer />
   </>
   )
