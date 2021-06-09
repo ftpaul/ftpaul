@@ -11,7 +11,8 @@ import Img from "gatsby-image"
 const ResumePage = ({ data }) => { 
   
 
-  const [isOnHover, toggleExpansion] = useState(false)
+  //const [isOnHover, toggleExpansion] = useState(false)
+  const [toggleExpansion] = useState(false)
 
   const resumeData = data.resume.edges[0].node.frontmatter
 
