@@ -14,7 +14,7 @@ export default ({ job }) => (
       </div>
     <ul className="list-disc pl-6 pb-4 exp-ul-bullets">
       {job.description.map((point, i) => (
-        <li key={point} class={i%2===0?"":"xs:hidden"}>{point}</li>
+        <li key={point} className={i%2===0?"":"xs:hidden"}>{point}</li>
       ))}
     </ul>
     </>
