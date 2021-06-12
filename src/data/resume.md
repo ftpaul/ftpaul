@@ -10,8 +10,8 @@ experience:
       start_date: Jan 2020 
       end_date: Present
       description: 
-        - Decreased deploy time by 10x
-        - Led a complete relaunch of
+        - Coordinated the relaunch of a complete new website
+        - Decreased deployment time by 10 times impacting the work of 20+ people
     - company: Unbabel
       role: Product Manager
       logo: /unbabel.png
@@ -30,7 +30,6 @@ experience:
       start_date: Feb 2018 
       end_date: Mar 2019
       description: 
-        - Managed the marketing automation stack (Hubspot, Pardot, Salesforce) and analytics tools (GA, Hotjar, Chart.io)
         - Coordinated cross-team Inbound initiatives 
         - Built and executed performance strategy (5 digits per quarter)
     - company: Landing.jobs
@@ -49,7 +48,6 @@ experience:
       start_date: Jun 2014 
       end_date: Dec 2016
       description:
-        - Increased the growth of users through organic and paid channels and managing the product experience
         - Conducted 100+ users interviews for product feedback and idea validation
         - Achieved growth rates over 100% every year 
     - company: Inspiring Code
