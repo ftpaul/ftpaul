@@ -76,7 +76,7 @@ const ResumePage = ({ data }) => {
 
 
     {/* Details Column */}
-    <div className="w-2/6 xs:w-full p-4 " >
+    <div className="w-2/6 xs:w-full p-4 xs:pl-0 " >
 
       <div className="pt-6 pb-8 xs:hidden">
         <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label={resumeData.details.location.country}  dangerouslySetInnerHTML={{ __html: resumeData.details.location.emoji }}></span></p>
