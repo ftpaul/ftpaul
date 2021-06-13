@@ -85,7 +85,10 @@ const ContactPage = ({ data }) => {
       </ul>
       </div>
       <div className=" col-span-2 calendly-inline-widget xs:mt-10">
-      <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1&hide_event_type_details=1" /></div>
+      <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1&hide_event_type_details=1" />
+      {/* // https://medium.com/swlh/how-to-integrate-calendly-reactjs-frontend-edition-feb7ce923927 */}
+      
+      </div>
       </div>
     
 

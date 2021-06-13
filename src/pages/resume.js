@@ -26,7 +26,9 @@ const ResumePage = ({ data }) => {
   <>
   <SEO title={seo.title} description={seo.description} />
   
-  <Navigation simplified={false} />
+  {/* <Navigation simplified={false} /> */}
+
+  <Navigation  />
 
   <div className="letter p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
 
