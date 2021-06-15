@@ -1,20 +1,32 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { InlineWidget, PopupButton } from "react-calendly"
 import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
-import { InlineWidget } from "react-calendly";
 
 
-const ContactPage = ({ data }) => { 
+const seo  = {
+  title: "Paulo Teixeira Recommendations | ftpaul.io", 
+  description: "Here's a list of books, articles, videos, and others that I recommend to everyone that is into Product Management or looking for great content."
+}
+
+
+const calendlySettings = {
+  "backgroundColor": "ffffff",
+  "hideEventTypeDetails": true,
+  "hideLandingPageDetails": true,
+  "primaryColor": "00a2ff",
+  "textColor": "4d5055"
+}
+
+class ContactPage extends React.Component { 
   
   
-  const seo  = {
-    title: "Paulo Teixeira Recommendations | ftpaul.io", 
-    description: "Here's a list of books, articles, videos, and others that I recommend to everyone that is into Product Management or looking for great content."
-  }
+  
 
+  
+render() {
   return (
   <>
   <SEO title={seo.title} description={seo.description} />
@@ -22,7 +34,7 @@ const ContactPage = ({ data }) => {
 
 
 
-  <ContentColumn>
+   <ContentColumn>
   <div className=" grid grid-cols-1 md:grid-cols-3 ">
     <div>
       <h3 className="text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 mt-20">
@@ -84,11 +96,11 @@ const ContactPage = ({ data }) => {
         </li>
       </ul>
       </div>
-      <div className=" col-span-2 calendly-inline-widget xs:mt-10">
-      <InlineWidget url="https://calendly.com/ftpaulio/meeting?hide_landing_page_details=1&hide_gdpr_banner=1&hide_event_type_details=1" />
-      {/* // https://medium.com/swlh/how-to-integrate-calendly-reactjs-frontend-edition-feb7ce923927 */}
+      <div className=" col-span-2 xs:mt-10"> 
+        <InlineWidget text="Click here to schedule!"  url="https://calendly.com/ftpaulio/meeting" pageSettings={calendlySettings} />
+     
       
-      </div>
+       </div>
       </div>
     
 
@@ -98,27 +110,17 @@ const ContactPage = ({ data }) => {
 
   </ContentColumn>
       
-  
+   
   
   <Footer />
   </>
-  )
+  )}
 }
 
 
+ {/* // https://medium.com/swlh/how-to-integrate-calendly-reactjs-frontend-edition-feb7ce923927
+      https://stackoverflow.com/questions/63694950/how-do-i-embed-the-calandly-widget-into-an-angular-app
+      */}
 
-
-export const query = graphql`
-{
-  
-  heroImage: file(relativePath: {eq: "icons8-bermuda-illustration-002.png"}) {
-    childImageSharp {
-      fluid(maxWidth: 1500) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-}
-`
 
 export default ContactPage

@@ -194,8 +194,3 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 800px) 
    
   }
 }
-
-.calendly-inline-widget {
-  height: 700px !important;
-
-}

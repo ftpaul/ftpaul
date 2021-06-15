@@ -29,7 +29,7 @@
     "gatsby-transformer-remark": "^2.8.19",
     "gatsby-transformer-sharp": "^2.3.2",
     "react": "^16.11.0",
-    "react-calendly": "^1.2.0",
+    "react-calendly": "^2.0.4",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "styled-components": "^5.1.1",
