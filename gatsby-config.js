@@ -11,7 +11,7 @@ module.exports = {
     description:
       "A Product Manager with a solid background in product, marketing, and management. Impacting digital products since 2013.",
     url: "https://ftpaul.io", // No trailing slash allowed!
-    image: "/ftpaul-sharing-image.png", // Path to your image you placed in the 'static' folder
+    image: "/ftpaul-sharing-image.jpg", // Path to your image you placed in the 'static' folder
     favicon: "/favicon.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@iamftpaul",
   },
