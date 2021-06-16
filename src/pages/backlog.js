@@ -1,17 +1,17 @@
 import React from "react"
-//import { graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Navigation from '../components/navigation/navigation'
 import SEO from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
 
 
-const ContactPage = ({ data }) => { 
+const Backlog = ({ data }) => { 
   
   
   const seo  = {
     title: "Paulo Teixeira | Changelog | ftpaul.io", 
-    description: "Here's a list of books, articles, videos, and others that I recommend to everyone that is into Product Management or looking for great content."
+    description: "..."
   }
 
   return (
@@ -115,9 +115,12 @@ const ContactPage = ({ data }) => {
 }
 
 
+// export const query = graphql`
+// {
+ 
+// }
+// `
 
 
 
-
-
-export default ContactPage
+export default Backlog
