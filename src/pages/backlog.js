@@ -22,7 +22,7 @@ const Backlog = ({data}) => {
  
 
   <ContentColumn>
-     <table className="min-w-full divide-gray-200">
+     <table className="min-w-full table-auto divide-gray-200">
       <thead>
         <tr>
           <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -44,16 +44,16 @@ const Backlog = ({data}) => {
          console.log("your node data is", node.node.id);       
          return (
           <tr key={node.node.id}>
-              <td className="px-6 py-4 whitespace-nowrap">
-                {node.node.id}
-              </td>
-              <td className="px-6 py-4 whitespace-nowrap">
+              <td className="px-6 py-4  max-w-md ">
                 {node.node.description}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">
+              <td className="px-6 py-4 ">
                 {node.node.createdDate}
               </td>
-              <td className="px-6 py-4 whitespace-nowrap">
+              <td className="px-6 py-4 ">
+                {node.node.priority}
+              </td>
+              <td className="px-6 py-4 ">
                 {node.node.status}
               </td>
               </tr>)
@@ -80,6 +80,7 @@ export const query = graphql`
         description
         createdDate
         status
+        priority
       }
     }
   }
