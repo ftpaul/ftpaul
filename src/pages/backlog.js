@@ -115,11 +115,20 @@ const Backlog = ({ data }) => {
 }
 
 
-// export const query = graphql`
-// {
- 
-// }
-// `
+export const query = graphql`
+{
+  allGoogleSheet1Sheet {
+    edges {
+      node {
+        id
+        description
+        createdDate
+        status
+      }
+    }
+  }
+}
+`
 
 
 
