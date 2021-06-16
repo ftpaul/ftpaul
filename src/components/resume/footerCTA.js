@@ -31,7 +31,6 @@ const FooterCTA = () => {
 
             <Button to={pdf.file.publicURL} >
             Download full CV (PDF)
-            {pdf.file.publicURL}
             </Button>
     </p>
 </div>

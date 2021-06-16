@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { graphql } from 'gatsby'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import Navigation from '../components/navigation/navigation'
@@ -24,7 +24,7 @@ const ResumePage = ({ data }) => {
 
   return (
   <>
-  <SEO title={seo.title} description={seo.description} />
+  <Seo title={seo.title} description={seo.description} />
   
   {/* <Navigation simplified={false} /> */}
 

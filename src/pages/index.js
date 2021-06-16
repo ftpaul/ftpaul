@@ -1,13 +1,10 @@
 import React, { useState }  from "react"
-// import { graphql, Link } from 'gatsby'
 import { graphql } from 'gatsby'
 import Navigation from '../components/navigation/navigation'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
-//import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
-// import SideProjects from "../components/about/sideProjects"
 import Img from "gatsby-image"
 
 
@@ -18,7 +15,7 @@ const AboutPage = ({ data }) => {
 
   return (
   <>
-  <SEO />
+  <Seo />
     
   <Navigation simplified={false} />
   
