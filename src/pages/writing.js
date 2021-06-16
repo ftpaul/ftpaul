@@ -1,14 +1,14 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Navigation from '../components/navigation/navigation'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
 
 
 const WritingPage = ({ data }) => { return (
   <>
-  <SEO />
+  <Seo />
     
   <Navigation />
   <ContentColumn shorterColumn={true}>

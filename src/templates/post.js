@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Navigation from '../components/navigation/navigation'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ContentColumn from '../components/contentColumn'
 
@@ -13,7 +13,7 @@ export default function Template({
   const { frontmatter, html, excerpt } = markdownRemark
   return (
     <>
-    <SEO image={frontmatter.image} title={frontmatter.title} article={true} description={excerpt} />
+    <Seo image={frontmatter.image} title={frontmatter.title} article={true} description={excerpt} />
       
     <Navigation />
     

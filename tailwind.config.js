@@ -11,7 +11,6 @@ module.exports = {
     './src/**/*.jsx',
     './src/**/*.css',
   ],
-  target: 'relaxed',
   prefix: '',
   important: false,
   separator: ':',
@@ -46,6 +45,10 @@ module.exports = {
         500: '#ecc94b',
         600: '#F8B500', // primary yellow
       },
+      green: {
+        100: '#D1FAE5',
+        600: '#059669',
+      }
     },
     spacing: {
       px: '1px',

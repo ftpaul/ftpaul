@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from '../components/seo'
-import { graphql , Link} from 'gatsby'
+import Seo from '../components/seo'
+import { Link} from 'gatsby'
 
-const IndexPage = ({ data }) => { return (
+const IndexPage =  () => { return (
   <>
-  <SEO />
+  <Seo />
 
   <Layout>
     <div className="text-center">
@@ -18,17 +18,5 @@ const IndexPage = ({ data }) => { return (
   </Layout>
   </>)
 }
-
-export const query = graphql`
-{
-  file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
-    childImageSharp {
-      fixed {
-        src
-      }
-    }
-  }
-}
-`
 
 export default IndexPage

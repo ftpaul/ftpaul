@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <>
   <Helmet bodyAttributes={{
         class: 'bg-gray-100'
@@ -17,3 +17,5 @@ export default ({ children }) => (
   </div>
   </>
 )
+
+export default Layout

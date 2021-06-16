@@ -1,17 +1,18 @@
 import React, { useState } from "react"
 import { graphql } from 'gatsby'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import Navigation from '../components/navigation/navigation'
 import '../assets/css/resume.css'
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 
 const ResumePage = ({ data }) => { 
   
 
-  const [isOnHover, toggleExpansion] = useState(false)
+  //const [isOnHover, toggleExpansion] = useState(false)
+  const [toggleExpansion] = useState(false)
 
   const resumeData = data.resume.edges[0].node.frontmatter
 
@@ -23,9 +24,11 @@ const ResumePage = ({ data }) => {
 
   return (
   <>
-  <SEO title={seo.title} description={seo.description} />
+  <Seo title={seo.title} description={seo.description} />
   
-  <Navigation simplified={true} />
+  {/* <Navigation simplified={false} /> */}
+
+  <Navigation  />
 
   <div className="letter p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
 
@@ -47,11 +50,11 @@ const ResumePage = ({ data }) => {
 
   <div className="w-2/6 div-w-image " >
  
-    <img src={resumeData.details.picture} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
-    <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
+    <Img fluid={data.profileImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
+    {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
       className={isOnHover ? 
         `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-100 hover:opacity-0` : 
-        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} />
+        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} /> */}
     
   </div>
 
@@ -75,10 +78,10 @@ const ResumePage = ({ data }) => {
 
 
     {/* Details Column */}
-    <div className="w-2/6 xs:w-full p-4 " >
+    <div className="w-2/6 xs:w-full p-4 xs:pl-0 " >
 
       <div className="pt-6 pb-8 xs:hidden">
-        <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label="Portugal">🇵🇹</span></p>
+        <p className="text-base font-bold text-gray-500">Based in {resumeData.details.location.city} <span role="img" aria-label={resumeData.details.location.country}  dangerouslySetInnerHTML={{ __html: resumeData.details.location.emoji }}></span></p>
       </div>
 
       <div className="pb-8">
@@ -176,7 +179,7 @@ export const query = graphql`
             location {
               city
               country
-              description
+              emoji
             }
             projects {
               name
@@ -198,9 +201,9 @@ export const query = graphql`
       }
     }
   }
-  secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
+  profileImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 750) {
+      fluid {
         ...GatsbyImageSharpFluid
       }
     }

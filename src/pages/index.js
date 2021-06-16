@@ -1,12 +1,10 @@
 import React, { useState }  from "react"
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Navigation from '../components/navigation/navigation'
-import SEO from '../components/seo'
+import Seo from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
-import Testimonials from "../components/about/testimonials"
 import Features from "../components/about/features"
-import SideProjects from "../components/about/sideProjects"
 import Img from "gatsby-image"
 
 
@@ -17,7 +15,7 @@ const AboutPage = ({ data }) => {
 
   return (
   <>
-  <SEO />
+  <Seo />
     
   <Navigation simplified={false} />
   
@@ -44,49 +42,24 @@ const AboutPage = ({ data }) => {
       </div>
     </div>
 
-    <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
+     <div className="w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full ">
         <Img fluid={data.secondImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-full" />
         <Img fluid={data.firstImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" 
-            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />
+            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} /> 
     </div>
     </div>
 
 
-  <Features />
+        <Features />
 
 
-  <ResumeCTA />
-    
-    
-  {/* <SideProjects />  */}
-  
-  <Testimonials />
-
-  
-
- 
-  <div className="bg-yellow-600">
-    <div className="max-w-screen-xl mx-auto text-center">
-      <div className="py-24">
-      <h3 className="text-4xl text-gray-500 font-bold tracking-tight">
-        Ready to step up your game?</h3>
-        <h3 className="text-4xl text-gray-500 font-bold tracking-tight mt-2">
-        <Link to="/contact" className="border-b-4 border-white hover:text-white ">
-          Get in touch today here.
-          </Link>
-      </h3>
-      <br/>
+        <ResumeCTA />
+          
+          
+        {/* <SideProjects />  */}
         
-      </div>
-   
-  </div>
-</div>
-
-      
+        {/* <Testimonials /> */}
     
-      
-      
-      
       <Footer />
   </>
   )
@@ -96,14 +69,14 @@ export const query = graphql`
 {
   firstImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 750) {
+      fluid {
         ...GatsbyImageSharpFluid
       }
     }
   }
   secondImage: file(relativePath: {eq: "paulo-teixeira-square-bowtie.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 750) {
+      fluid {
         ...GatsbyImageSharpFluid
       }
     }
