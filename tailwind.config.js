@@ -11,7 +11,6 @@ module.exports = {
     './src/**/*.jsx',
     './src/**/*.css',
   ],
-  target: 'relaxed',
   prefix: '',
   important: false,
   separator: ':',

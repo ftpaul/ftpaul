@@ -2,13 +2,21 @@ import React from "react"
 import Button from '../button'
 import { useStaticQuery, graphql } from "gatsby"
 
-export default ( ) => {
-    
-    const pdf = useStaticQuery(query)
-    
 
+const FooterCTA = () => {
+    
+  
 
-    //console.log(pdf)
+    const pdf = useStaticQuery(graphql`
+    query PDF {
+       file(relativePath: {eq: "2020_Paulo_Teixeira_resume.pdf"}) {
+           publicURL
+         }
+       }
+   `)
+   
+
+    console.log(pdf)
 
 
     return (
@@ -23,6 +31,7 @@ export default ( ) => {
 
             <Button to={pdf.file.publicURL} >
             Download full CV (PDF)
+            {pdf.file.publicURL}
             </Button>
     </p>
 </div>
@@ -30,11 +39,5 @@ export default ( ) => {
 )}
 
 
-const query = graphql`
- {
-    file(relativePath: {eq: "2020_Paulo_Teixeira_resume.pdf"}) {
-        id
-        publicURL
-      }
-    }
-`
+
+export default FooterCTA

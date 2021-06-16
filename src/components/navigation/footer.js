@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-export default ( ) => (
+const Footer = () => (
 
 
   <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4 justify-center md:justify-center sm:justify-start xs:justify-start">
@@ -9,3 +9,5 @@ export default ( ) => (
   </div>
   
 )
+
+export default Footer

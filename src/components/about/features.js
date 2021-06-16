@@ -2,7 +2,7 @@ import React from "react"
 import ContentColumn from '../contentColumn'
 
 
-export default () => (
+const Features = () => (
 
 <ContentColumn>
   <div className="pb-32 pt-0 xs:pt-16 bg-white">
@@ -93,3 +93,4 @@ export default () => (
   </ContentColumn>
 )
 
+export default Features

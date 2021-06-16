@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ job }) => (
+const ExperienceBlock = ({ job }) => (
     <>
       <div className="exp-main-info">
         <img src={job.logo} alt={job.company} className="my-2 mr-2 w-10 h-10 xs:w-10 xs:h-10 align-top inline-block" />
@@ -19,3 +19,5 @@ export default ({ job }) => (
     </ul>
     </>
 )
+
+export default ExperienceBlock

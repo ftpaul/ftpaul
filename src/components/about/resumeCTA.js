@@ -3,7 +3,7 @@ import Button from '../button'
 import { Link } from 'gatsby'
 
 
-export default () => (
+const ResumeCTA = () => (
 
     <div className=" w-full  py-10 bg-yellow-600">
       <div className="max-w-screen-xl flex-wrap flex mx-auto justify-center xs:px-6">
@@ -30,3 +30,5 @@ export default () => (
   
 )
 
+
+export default ResumeCTA
