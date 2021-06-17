@@ -22,20 +22,20 @@ const Backlog = ({data}) => {
  
 
   <ContentColumn>
-     <table className="min-w-full table-auto divide-gray-200">
+     <table className="min-w-full table-auto divide-gray-200 ">
       <thead>
-        <tr>
+        <tr className="bg-gray-100">
           <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             Description
-          </th>
-          <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-            Status
           </th>
           <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
             Entry Date
           </th>
           <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-            Released Date
+            Priority
+          </th>
+          <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            Status
           </th>
         </tr>
       </thead>
