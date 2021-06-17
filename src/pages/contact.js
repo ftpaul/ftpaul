@@ -92,7 +92,7 @@ const ContactPage = () => {
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Consulting</h4>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    I believe in connecting deeply with humans and that we can learn with everyone. If you need a peer to discuss anything, let's do it.
+                    I work in the intersection of product and marketing to align the customer journey with the purpose of the organization.
                   </p>
                 </div>
               </div>
