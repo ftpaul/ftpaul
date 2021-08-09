@@ -7,7 +7,7 @@ experience:
       role: Web Product Manager
       logo: /adjust.png
       location: Berlin
-      start_date: Jan 2020 
+      start_date: Jan 2021 
       end_date: Present
       description: 
         - Coordinated the relaunch of a complete new website
