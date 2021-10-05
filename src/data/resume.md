@@ -10,8 +10,8 @@ experience:
       start_date: Jan 2021 
       end_date: Present
       description: 
-        - Coordinated the relaunch of a complete new website
         - Decreased deployment time by 10 times impacting the work of 20+ people
+        - Coordinated the relaunch of a complete new website and a standalone ranking tool 
     - company: Unbabel
       role: Product Manager
       logo: /unbabel.png
