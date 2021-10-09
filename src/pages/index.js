@@ -6,6 +6,7 @@ import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
 import Features from "../components/about/features"
 import Img from "gatsby-image"
+import CompanyHistory from "../components/about/companyHistory"
 
 
 
@@ -56,7 +57,7 @@ const AboutPage = ({ data }) => {
         <ResumeCTA />
           
           
-        {/* <SideProjects />  */}
+        <CompanyHistory /> 
         
         {/* <Testimonials /> */}
     
