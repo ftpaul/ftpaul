@@ -10,14 +10,14 @@ import React from "react"
         What have I been up to
       </h3>
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-        {/* Something else as a sub headline */}
+        Over than 7 years of experience scalling companies. A Product Manager that started as a Computer Science student and moved into Marketing/Growth.
       </p>
     </div>
 
     <div className="flex flex-wrap mt-8 justify-center ">
           
 
-          <div className="w-1/5 lg:w-1/5 sm:w-1/5 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
          
             <img src="/adjust.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -31,7 +31,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/5 lg:w-1/5 sm:w-1/5 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
          
             <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -45,31 +45,45 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/5 lg:w-1/5 sm:w-1/5 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
          
             <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Unbabel
             </h4>
             <p className="text-base leading-6 text-gray-500">
-                Performance Marketing Manager
+                Marketing Manager
             </p> 
             <p className="text-base  text-gray-400">
-                2018
+                2018 - 2019
             </p>    
           </div>
 
-          <div className="w-1/5 lg:w-1/5 sm:w-1/5 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
          
             <img src="/landingjobs.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Landing.jobs
             </h4>
             <p className="text-base leading-6 text-gray-500">
-                Marketing Lead
+                Marketing / Growth
             </p> 
             <p className="text-base  text-gray-400">
-                2017
+                2014-2017
+            </p>    
+          </div>
+
+          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+         
+            <img src="/inspiringcode.png" className="w-12 ml-auto mr-auto " alt="" />
+            <h4 className="mt-2 text-lg font-bold text-gray-900 ">
+                Inspiring Code
+            </h4>
+            <p className="text-base leading-6 text-gray-500">
+                Co-founder
+            </p> 
+            <p className="text-base  text-gray-400">
+                2013
             </p>    
           </div>
           

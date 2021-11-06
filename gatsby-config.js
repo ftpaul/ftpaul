@@ -26,13 +26,13 @@ module.exports = {
     `gatsby-plugin-postcss`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
-        path: `./src/assets/images/`, 
+        path: `${__dirname}/src/assets/images/`, 
       } 
     },
     { resolve: `gatsby-source-filesystem`, 
       options: { 
         name: `documents`,
-        path: `./src/assets/documents/`,   
+        path: `${__dirname}/src/assets/documents/`,   
       } 
     },
     {
