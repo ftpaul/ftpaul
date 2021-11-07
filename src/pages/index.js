@@ -54,12 +54,12 @@ const AboutPage = ({ data }) => {
         <Features />
 
 
+        <CompanyHistory /> 
+
+
         <ResumeCTA />
           
           
-        <CompanyHistory /> 
-        
-        {/* <Testimonials /> */}
     
       <Footer />
   </>
