@@ -1,7 +1,7 @@
 {
   "name": "ftpaul-personal-website",
   "private": true,
-  "description": "A simple website for pauloteixeira.pt",
+  "description": "A simple website for ftpaul.io",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
