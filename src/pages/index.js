@@ -4,6 +4,7 @@ import Seo from '../components/seo'
 import Footer from '../components/navigation/footer'
 import ResumeCTA from "../components/about/resumeCTA"
 import Features from "../components/about/features"
+import Contact from "../components/about/contact"
 import { StaticImage } from "gatsby-plugin-image"
 import CompanyHistory from "../components/about/companyHistory"
 
@@ -57,7 +58,7 @@ const AboutPage = ({ data }) => {
 
         <ResumeCTA />
           
-          
+        <Contact />
     
       <Footer />
   </>
