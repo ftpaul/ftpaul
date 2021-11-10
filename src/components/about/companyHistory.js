@@ -10,14 +10,14 @@ import React from "react"
         What have I been up to
       </h3>
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-        Over than 7 years of experience scalling companies. A Product Manager that started as a Computer Science student and moved into Marketing/Growth.
+        Over than 6 years of experience scalling companies. A Product Manager that started as a Computer Science student and moved into Marketing/Growth.
       </p>
     </div>
 
     <div className="flex flex-wrap mt-8 justify-center ">
           
 
-          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/adjust.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -31,7 +31,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -45,7 +45,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -59,7 +59,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/landingjobs.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -73,7 +73,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/6 lg:w-1/6 sm:w-1/6 xs:w-full pt-1 mb-4  mr-8 text-center">
+          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/inspiringcode.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
