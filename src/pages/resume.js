@@ -47,7 +47,7 @@ const ResumePage = ({ data }) => {
 
   <div className="w-2/6 div-w-image " >
  
-   <StaticImage src="../assets/images/paulo-teixeira-square.jpg" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
+   <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
     
     
   </div>

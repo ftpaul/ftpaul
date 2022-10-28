@@ -1,5 +1,5 @@
 import React from "react"
-
+import Button from '../button'
 
  const companyHistory = () => (
 
@@ -10,12 +10,26 @@ import React from "react"
         What have I been up to
       </h3>
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-        Over than 6 years of experience scalling companies. A Product Manager that started as a Computer Science student and moved into Marketing/Growth.
+        Over than 6 years of experience scalling companies. 
       </p>
     </div>
 
     <div className="flex flex-wrap mt-8 justify-center ">
           
+
+    <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
+         
+         <img src="/AppLovin.png" className="w-12 ml-auto mr-auto " alt="" />
+         <h4 className="mt-2 text-lg font-bold text-gray-900 ">
+             AppLovin
+         </h4>
+         <p className="text-base leading-6 text-gray-500">
+             Project Manager (Web)
+         </p> 
+         <p className="text-base  text-gray-400">
+             2022 
+         </p>    
+       </div>
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
@@ -27,7 +41,7 @@ import React from "react"
                 Web Product Manager
             </p> 
             <p className="text-base  text-gray-400">
-                2021
+                2021 
             </p>    
           </div>
 
@@ -59,7 +73,7 @@ import React from "react"
             </p>    
           </div>
 
-          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
+          {/* <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
             <img src="/landingjobs.png" className="w-12 ml-auto mr-auto " alt="" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
@@ -85,11 +99,18 @@ import React from "react"
             <p className="text-base  text-gray-400">
                 2013
             </p>    
-          </div>
+          </div> */}
           
           
   </div>
   </div>
+
+  <div className="lg:text-center pt-6">
+    <Button to="/resume/" yellow transparent >
+      See my resume &rarr;
+    </Button>
+  </div>
+
   </div>
   
 )
