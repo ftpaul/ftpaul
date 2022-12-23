@@ -3,10 +3,9 @@ import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import YellowTopBar from "./yellowTopBar"
 import Logo from "./logo"
-import Button from '../button'
 
 
-const Navigation = ({simplified}) => {
+const Navigation = () => {
 
     const [isExpanded, toggleExpansion] = useState(false)
 
@@ -14,19 +13,9 @@ const Navigation = ({simplified}) => {
         <>
             <YellowTopBar />
             
-            {simplified ? 
-            
-            (
-                <div className="flex flex-wrap max-w-screen-lg mx-auto py-8 px-4">
-            <Button to="/" yellow transparent>
-                &larr; Back to ftpaul.io
-            </Button>
-            </div>
-            )
-            
-            : 
+           
 
-            (<nav className="flex flex-1 items-center justify-between max-w-screen-lg mx-auto pt-8 px-4 sm:px-0 xs:pt-4">
+            <nav className="flex flex-1 items-center justify-between max-w-screen-lg mx-auto pt-8 px-4 sm:px-0 xs:pt-4">
                 <div className="flex">
                     <Logo />
                 </div>
@@ -41,24 +30,15 @@ const Navigation = ({simplified}) => {
                         <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6 ">
                             <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/">About</Link>
                         </li>
-                        {/* <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
-                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" partiallyActive={true} to="/writing/">Writing</Link>
-                        </li> */}
-                        {/* <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
-                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/bookshelf/">Bookshelf</Link>
-                        </li> */}
                         <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
                             <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/resume/">Resume</Link>
                         </li>
-                        {/* <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
-                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/contact/">Let's talk</Link>
-                        </li> */}
                     </ul>
 
                     </div>
                     
                 
-            </nav>)}
+            </nav>
         </>
     )
 }
