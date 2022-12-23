@@ -11,11 +11,7 @@ const Features = () => (
     <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
       How can we synergize?
-
       </h3>
-      {/* <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-        My diverse background brings a together a unique set of competencies. 
-      </p> */}
     </div>
 
     <div className="mt-10 items-center">
@@ -59,8 +55,8 @@ const Features = () => (
           </ul>
           </div>
           <div className="mt-10 items-center text-center">
-              <p className="text-base leading-7 text-gray-400"> Reach out to my email:</p>
-              <h2 className="text-xl leading-8 font-bold tracking-tight text-gray-600 sm:leading-10">hey [at] ftpaul.io</h2>
+              <p className="text-base leading-7 text-gray-400"> Reach out to: &nbsp;
+              <h2 className="text-xl leading-8 inline font-bold tracking-tight text-gray-600 sm:leading-10">hey [at] ftpaul.io</h2></p>
             </div>  
         </div></div>
   </ContentColumn>
