@@ -43,11 +43,11 @@ module.exports = {
         300: '#faf089',
         400: '#f6e05e',
         500: '#ecc94b',
-        600: '#F8B500', // primary yellow
+        600: '#F8B500', // primary yellow - previously: F8B500
       },
       green: {
         100: '#D1FAE5',
-        600: '#059669',
+        600: '#4A7D36',
       }
     },
     spacing: {

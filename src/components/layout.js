@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
     </Helmet>
     
   <div className="flex flex-wrap content-center h-screen">
-  <div className="w-screen h-2 bg-yellow-500 absolute t-0 l-0 "></div>
+  <div className="w-screen h-2 bg-green-600 absolute t-0 l-0 "></div>
     <div className="mx-auto mt-2" >
       {children}
     </div>
