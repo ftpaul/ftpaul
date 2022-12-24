@@ -5,7 +5,7 @@ import YellowTopBar from "./yellowTopBar"
 import Logo from "./logo"
 
 
-const Navigation = () => {
+const Navigation = ({isDashboard}) => {
 
     const [isExpanded, toggleExpansion] = useState(false)
 
@@ -33,6 +33,12 @@ const Navigation = () => {
                         <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
                             <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/resume/">Resume</Link>
                         </li>
+                        {isDashboard ? (
+                            <li className="mr-6 xs:text-gray-600 xs:text-2xl xs:mb-6">
+                            <Link className="text-gray-500  hover:text-yellow-600 xs:hover:text-gray-100" activeClassName="border-b-2 border-yellow-600 xs:border-gray-100" to="/dashboard/">Dashboard</Link>
+                        </li>
+                        ) : ("")}
+
                     </ul>
 
                     </div>
