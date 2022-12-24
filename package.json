@@ -18,7 +18,7 @@
     "@emotion/styled": "^11.3.0",
     "chart.js": "^4.1.1",
     "dependencies": "^0.0.1",
-    "gatsby": "^3.9.0",
+    "gatsby": "^4.0.0",
     "gatsby-image": "^3.7.1",
     "gatsby-plugin-emotion": "^6.7.1",
     "gatsby-plugin-google-tagmanager": "^3.7.1",
