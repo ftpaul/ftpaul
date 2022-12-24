@@ -108,6 +108,6 @@ details:
         - description: Since 2016 tracking my own weight in a spreadsheet
           link: ""
         - description: OKRs used as personal goal setting method
-          link: "https://ftpaul.io/writing/okrs-as-persona-goal-method" 
+          link: "" 
         
 ---
