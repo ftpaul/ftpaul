@@ -5,6 +5,7 @@ import { ColumnChart } from 'react-chartkick'
 // import Layout from '../components/layout'
 // import SEO from '../components/SEO'
 import ContentColumn from '../components/contentColumn'
+import Navigation from '../components/navigation/navigation'
 
 const DashboardPage = ({ data }) => {
   
@@ -32,34 +33,39 @@ const DashboardPage = ({ data }) => {
 
   
   return (
-    <ContentColumn>
-    {/* <SEO title="Home" /> */}
-    <h2>Articles Read</h2>
-    <ColumnChart 
-      data={finalDataRead.slice(-40)} 
-      colors={["#EF4155"]}
-      xtitle="Months" 
-      ytitle="Articles Read" 
-    />
-
-
-<ColumnChart 
-      data={finalDataYear.slice(-40)} 
-      colors={["#EF4155"]}
-      xtitle="Years" 
-      ytitle="Articles Read" 
-    />
-
-    <h2>Articles Added</h2>
-    <ColumnChart 
-        data={finalDataAdded.slice(-40)} 
+    <>
+        <Navigation isDashboard={true} />
+    
+        <ContentColumn>
+    
+        <h2>Articles Read</h2>
+        
+        <ColumnChart 
+        data={finalDataRead.slice(-40)} 
         colors={["#EF4155"]}
         xtitle="Months" 
-        ytitle="Articles Added" 
-      />
+        ytitle="Articles Read" 
+        />
 
-<pre>{JSON.stringify(data.readArticlesYear, null, 4)}</pre>
-  </ContentColumn>
+
+        <ColumnChart 
+            data={finalDataYear.slice(-40)} 
+            colors={["#EF4155"]}
+            xtitle="Years" 
+            ytitle="Articles Read" 
+            />
+
+            <h2>Articles Added</h2>
+            <ColumnChart 
+                data={finalDataAdded.slice(-40)} 
+                colors={["#EF4155"]}
+                xtitle="Months" 
+                ytitle="Articles Added" 
+            />
+
+        <pre>{JSON.stringify(data.readArticlesYear, null, 4)}</pre>
+        </ContentColumn>
+    </>
 
 )}
 
