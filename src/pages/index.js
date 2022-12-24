@@ -36,8 +36,8 @@ const AboutPage = ({ data }) => {
             <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
               // onMouseOver={() => toggleExpansion(!isOnHover)} 
               // onMouseLeave={() => toggleExpansion(!isOnHover)}
-              onMouseOver={() => toggleExpansion(false)} 
-              onMouseLeave={() => toggleExpansion(false)}
+              //onMouseOver={() => toggleExpansion(false)} 
+              //onMouseLeave={() => toggleExpansion(false)}
                onFocus={ () => void 0 }>
                 Paulo Teixeira
             </button><span className="text-yellow-600">.</span><br/> 
