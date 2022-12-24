@@ -1,5 +1,6 @@
 import React from "react"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
+//import { GatsbyImage } from "gatsby-plugin-image"
 
 export default ({ headline, description, imageFluid, imageAlt }) => (
 
@@ -17,7 +18,7 @@ export default ({ headline, description, imageFluid, imageAlt }) => (
       </div>
 
       <div className="w-1/2 xs:w-full ">
-          <Img fluid={imageFluid} alt={imageAlt} className="heroSectionImage my-12 mx-auto p-0 xs:p-4" imgStyle={{ objectFit: 'contain' }} />
+          {/* <Img fluid={imageFluid} alt={imageAlt} className="heroSectionImage my-12 mx-auto p-0 xs:p-4" imgStyle={{ objectFit: 'contain' }} /> */}
       </div>
 
     </div>

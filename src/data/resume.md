@@ -3,12 +3,18 @@ name: Paulo Teixeira
 title: Product Manager
 summary: Driven by empowering people to make simple choices, I am a Product Manager with an experienced background in engineering and marketing. 
 experience:
+    - company: AppLovin
+      role: Project Manager (Web)
+      logo: /AppLovin.png
+      location: Berlin
+      start_date: Jan 2022 
+      end_date: Present
     - company: Adjust
       role: Web Product Manager
       logo: /adjust.png
       location: Berlin
       start_date: Jan 2021 
-      end_date: Present
+      end_date: Dec 2021
       description: 
         - Decreased deployment time by 10 times impacting the work of 20+ people
         - Coordinated the relaunch of a complete new website and a standalone ranking tool 

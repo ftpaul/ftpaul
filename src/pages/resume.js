@@ -1,18 +1,18 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from 'gatsby'
 import Seo from '../components/seo'
 import Footer from '../components/resume/footerCTA'
 import ExperienceBlock from '../components/resume/experienceBlock'
 import Navigation from '../components/navigation/navigation'
 import '../assets/css/resume.css'
-import Img from "gatsby-image"
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 const ResumePage = ({ data }) => { 
   
 
   //const [isOnHover, toggleExpansion] = useState(false)
-  const [toggleExpansion] = useState(false)
+  // const toggleExpansion = useState(false)
 
   const resumeData = data.resume.edges[0].node.frontmatter
 
@@ -37,12 +37,9 @@ const ResumePage = ({ data }) => {
       <div className="w-4/6  pt-4 pr-1 xs:pr-2 div-w-title">
             
           <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
-          <button className="focus:outline-none outline-none cursor-default hover:cursor-default" 
-              onMouseOver={() => toggleExpansion(true)} 
-              onMouseLeave={() => toggleExpansion(false)}
-              onFocus={ () => void 0 }>
+          <button className="focus:outline-none outline-none cursor-default hover:cursor-default" >
                 {resumeData.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
-            </button>
+            </button> 
           </h1>
           <h2 className="text-4xl xs:text-2xl font-normal text-gray-300 pb-4">{resumeData.title}</h2>
 
@@ -50,11 +47,8 @@ const ResumePage = ({ data }) => {
 
   <div className="w-2/6 div-w-image " >
  
-    <Img fluid={data.profileImage.childImageSharp.fluid} alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
-    {/* <img src="/paulo-teixeira-smiling.gif" alt="Paulo Teixeira | ftpaul.io" 
-      className={isOnHover ? 
-        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-100 hover:opacity-0` : 
-        `w-40 h-40 xs:p-4 z-0 -mt-40 rounded-full transition ease-linear duration-1000 opacity-0 hover:opacity-100`} /> */}
+   <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" />
+    
     
   </div>
 
@@ -201,14 +195,14 @@ export const query = graphql`
       }
     }
   }
-  profileImage: file(relativePath: {eq: "paulo-teixeira-square.jpg"}) {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
+  
 }
 `
+
+// profileImage: file(relativePath: {eq: "images/paulo-teixeira-square.jpg"}) {
+//   childImageSharp {
+//     gatsbyImageData(layout: FIXED)
+//   }
+// }
 
 export default ResumePage

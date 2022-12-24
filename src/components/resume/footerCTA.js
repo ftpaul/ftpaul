@@ -9,7 +9,7 @@ const FooterCTA = () => {
 
     const pdf = useStaticQuery(graphql`
     query PDF {
-       file(relativePath: {eq: "2020_Paulo_Teixeira_resume.pdf"}) {
+       file(relativePath: {eq: "2022_Paulo_Teixeira_CV.pdf"}) {
            publicURL
          }
        }
@@ -29,9 +29,9 @@ const FooterCTA = () => {
             Download full CV (PDF)
         </a> */}
 
-            <Button to={pdf.file.publicURL} >
-            Download full CV (PDF)
-            </Button>
+    <Button to={pdf.file.publicURL} >
+        Download full CV (PDF)
+    </Button>
     </p>
 </div>
   

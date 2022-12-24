@@ -21,18 +21,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`, 
-    `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     { resolve: `gatsby-source-filesystem`, 
       options: { 
-        path: `./src/assets/images/`, 
+        path: `${__dirname}/src/assets/images/`, 
       } 
     },
     { resolve: `gatsby-source-filesystem`, 
       options: { 
         name: `documents`,
-        path: `./src/assets/documents/`,   
+        path: `${__dirname}/src/assets/documents/`,   
       } 
     },
     {
