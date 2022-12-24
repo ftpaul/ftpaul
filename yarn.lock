@@ -1557,6 +1557,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@kurkle/color@^0.3.0":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@kurkle/color/-/color-0.3.1.tgz#ef72bc8022ccf77cdd2715097f062ee591ec145c"
+  integrity sha512-hW0GwZj06z/ZFUW2Espl7toVDjghJN+EKqyXzPSV8NV89d5BYp5rRMBJoc+aUN0x5OXDMeRQHazejr2Xmqj2tw==
+
 "@lmdb/lmdb-darwin-arm64@2.5.3":
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/@lmdb/lmdb-darwin-arm64/-/lmdb-darwin-arm64-2.5.3.tgz#c423b068165df18da57a81dce5c95f98c6ab9265"
@@ -3262,6 +3267,27 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
+chart.js@>=3.0.2, chart.js@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-4.1.1.tgz#9bd96ddaa444205ec55dd103f713f65530e9a2df"
+  integrity sha512-P0pCosNXp+LR8zO/QTkZKT6Hb7p0DPFtypEeVOf+6x06hX13NIb75R0DXUA4Ksx/+48chDQKtCCmRCviQRTqsA==
+  dependencies:
+    "@kurkle/color" "^0.3.0"
+
+chartjs-adapter-date-fns@>=2.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/chartjs-adapter-date-fns/-/chartjs-adapter-date-fns-3.0.0.tgz#c25f63c7f317c1f96f9a7c44bd45eeedb8a478e5"
+  integrity sha512-Rs3iEB3Q5pJ973J93OBTpnP7qoGwvq3nUnoMdtxO+9aoJof7UFcRbWcIDteXuYd1fgAvct/32T9qaLyLuZVwCg==
+
+chartkick@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/chartkick/-/chartkick-4.2.0.tgz#106fc5ff7eef5343a9e6977f259a8a8a1ea57bf9"
+  integrity sha512-7yYZyxeFhOh/LA7gc1VwDFgc6t4ZM9RrbBjgb4dJoFukk2+94QkK0yulYI2OUH1cjcfrf1qmj04FkjZx7kZDeg==
+  optionalDependencies:
+    chart.js ">=3.0.2"
+    chartjs-adapter-date-fns ">=2.0.0"
+    date-fns ">=2.0.0"
+
 chokidar@^3.5.2, chokidar@^3.5.3:
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
@@ -3900,12 +3926,7 @@ dataloader@2.0.0:
   resolved "https://registry.yarnpkg.com/dataloader/-/dataloader-2.0.0.tgz#41eaf123db115987e21ca93c005cd7753c55fe6f"
   integrity sha512-YzhyDAwA4TaQIhM5go+vCLmU0UikghC/t9DTQYZR2M/UvZ1MdOhPezSDZcjj9uqQJOMqjLcpWtyW2iNINdlatQ==
 
-date-fns@^1.29.0:
-  version "1.30.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
-  integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
-
-date-fns@^2.14.0:
+date-fns@>=2.0.0, date-fns@^2.14.0, date-fns@^2.25.0:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.29.3.tgz#27402d2fc67eb442b511b70bbdf98e6411cd68a8"
   integrity sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==
@@ -5394,14 +5415,6 @@ gatsby-link@^3.15.0:
     "@types/reach__router" "^1.3.9"
     prop-types "^15.7.2"
 
-gatsby-node-helpers@^0.1.3:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/gatsby-node-helpers/-/gatsby-node-helpers-0.1.4.tgz#0ffc854a72d06f554af3f9acdf3976545a093299"
-  integrity sha512-3zyiLxq6iTcvvYCa8bSQUOK1viivBXlM4d+D0nA7v2WOU3C7Bn3EjkXnQZ6JCuBC9u8JTvG7YyunOIn0beZgWQ==
-  dependencies:
-    json-stringify-safe "^5.0.1"
-    lodash "^4.17.4"
-
 gatsby-page-utils@^1.15.0:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-1.15.0.tgz#4e60f84681d6f82fce97fbcd0f11a402c253e96d"
@@ -5654,15 +5667,13 @@ gatsby-source-google-spreadsheets@^3.0.8:
     google-spreadsheet "^3.1.15"
     uuid "^7.0.3"
 
-gatsby-source-pocket@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-pocket/-/gatsby-source-pocket-2.3.1.tgz#eb81fdb6e5bdf4cdb367683708bc1da61cf88b80"
-  integrity sha512-ozuMy7IaHd2d+UTsbl1iPlgFrS5nr0zpmT8QGtuVs1xGbpftjdFmIaW3bOmy5Y5A2WosFVjxRQ5UEX8AgvedDA==
+gatsby-source-pocket@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-pocket/-/gatsby-source-pocket-3.0.1.tgz#af03eefba19b4576c1730c8e59f9e6876e694a1d"
+  integrity sha512-l6mOBWDQ6GhWAmJuLXNw6KIeYIm5ntXObmy/MBAL1B7k4vjKSrFmm1/KYm0roi5c+YOT/auwQWIGKxljJjUdcQ==
   dependencies:
-    date-fns "^1.29.0"
-    gatsby-node-helpers "^0.1.3"
+    date-fns "^2.25.0"
     node-getpocket "^1.0.0"
-    stdio "^0.2.7"
 
 gatsby-telemetry@^2.15.0:
   version "2.15.0"
@@ -7368,7 +7379,7 @@ json-stable-stringify-without-jsonify@^1.0.1:
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
 
-json-stringify-safe@^5.0.1, json-stringify-safe@~5.0.1:
+json-stringify-safe@~5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
@@ -9939,6 +9950,13 @@ react-calendly@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-calendly/-/react-calendly-2.2.3.tgz#3ed3fca006a02bbeca7d3b257787e376f54b3d34"
   integrity sha512-+OkZE4ZrOYoeEbhOEw9mljruvnMlT6a114mpNx27tL5FEmRiJA+Tn1NJvTqYuF1p+BF7p3WQTWO+ZD45Uu7iBQ==
 
+react-chartkick@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/react-chartkick/-/react-chartkick-0.5.3.tgz#ee219074d02cf6236a6694d1b28f0c8159aea060"
+  integrity sha512-HOAONZ8PunkemVpAXzbDz8eOSpyY1H5MARRvPsF8ZVWmiVMkDsJeo12PcLuBiZzVhQ1FCL4sABV9AyfbO5coUA==
+  dependencies:
+    chartkick "^4.0.0"
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -11030,11 +11048,6 @@ statuses@2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
-stdio@^0.2.7:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/stdio/-/stdio-0.2.7.tgz#a1c57da10fe1cfaa0c3bf683c9d0743d1b660839"
-  integrity sha512-q7zge680s4BhYx91a8RqHWfiyHM9b+2ZwrNEJJkL6Y6I3F78p9Ag56enyMlpLckCH+bL1shV7YEK1cLXOaA3Bg==
-
 stream-parser@~0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/stream-parser/-/stream-parser-0.3.1.tgz#1618548694420021a1182ff0af1911c129761773"
@@ -12036,27 +12049,6 @@ url-parse-lax@^3.0.0:
   integrity sha512-NjFKA0DidqPa5ciFcSrXnAltTtzz84ogy+NebPvfEgAck0+TNg4UJ4IN+fB7zRZfbgUf0syOo9MDxFkDSMuFaQ==
   dependencies:
     prepend-http "^2.0.0"
-
-url-parse@^1.4.3, url-parse@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.1.tgz#d5fa9890af8a5e1f274a2c98376510f6425f6e3b"
-  integrity sha512-HOfCOUJt7iSYzEx/UqgtwKRMC6EU91NFhsCHMv9oM03VJcVo2Qrp8T8kI9D7amFf1cu+/3CEhgb3rF9zL7k85Q==
-  dependencies:
-    querystringify "^2.1.1"
-    requires-port "^1.0.0"
-
-url-to-options@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/url-to-options/-/url-to-options-1.0.1.tgz#1505a03a289a48cbd7a434efbaeec5055f5633a9"
-  integrity sha1-FQWgOiiaSMvXpDTvuu7FBV9WM6k=
-
-url@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
-  integrity sha1-ODjpfPxgUh63PFJajlW/3Z4uKPE=
-  dependencies:
-    punycode "1.3.2"
-    querystring "0.2.0"
 
 use@^3.1.0:
   version "3.1.1"
