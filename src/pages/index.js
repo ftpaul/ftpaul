@@ -12,8 +12,8 @@ import CompanyHistory from "../components/about/companyHistory"
 
 const AboutPage = ({ data }) => { 
   
-  const [isOnHover, toggleExpansion] = useState(false)
-
+  //const [isOnHover, toggleExpansion] = useState(false)
+  const [toggleExpansion] = useState(false)
 
 
   return (

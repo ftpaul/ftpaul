@@ -22,7 +22,7 @@
     "gatsby-plugin-emotion": "^6.7.1",
     "gatsby-plugin-google-tagmanager": "^3.7.1",
     "gatsby-plugin-image": "^2.1.0",
-    "gatsby-plugin-postcss": "^4.7.1",
+    "gatsby-plugin-postcss": "^4.8.1",
     "gatsby-plugin-react-helmet": "^4.7.1",
     "gatsby-plugin-sharp": "^4.1.0",
     "gatsby-plugin-webfonts": "^2.1.0",
