@@ -19,7 +19,7 @@ import Button from '../button'
 
     <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-         <img src="/AppLovin.png" className="w-12 ml-auto mr-auto " alt="" />
+         <img src="/AppLovin.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="AppLovin" />
          <h4 className="mt-2 text-lg font-bold text-gray-900 ">
              AppLovin
          </h4>
@@ -33,7 +33,7 @@ import Button from '../button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/adjust.png" className="w-12 ml-auto mr-auto " alt="" />
+            <img src="/adjust.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Adjust" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Adjust
             </h4>
@@ -47,7 +47,7 @@ import Button from '../button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
+            <img src="/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Unbabel
             </h4>
@@ -61,7 +61,7 @@ import Button from '../button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/unbabel.png" className="w-12 ml-auto mr-auto " alt="" />
+            <img src="/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Unbabel
             </h4>
@@ -73,34 +73,6 @@ import Button from '../button'
             </p>    
           </div>
 
-          {/* <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
-         
-            <img src="/landingjobs.png" className="w-12 ml-auto mr-auto " alt="" />
-            <h4 className="mt-2 text-lg font-bold text-gray-900 ">
-                Landing.jobs
-            </h4>
-            <p className="text-base leading-6 text-gray-500">
-                Marketing / Growth
-            </p> 
-            <p className="text-base  text-gray-400">
-                2014-2017
-            </p>    
-          </div>
-
-          <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
-         
-            <img src="/inspiringcode.png" className="w-12 ml-auto mr-auto " alt="" />
-            <h4 className="mt-2 text-lg font-bold text-gray-900 ">
-                Inspiring Code
-            </h4>
-            <p className="text-base leading-6 text-gray-500">
-                Co-founder
-            </p> 
-            <p className="text-base  text-gray-400">
-                2013
-            </p>    
-          </div> */}
-          
           
   </div>
   </div>
