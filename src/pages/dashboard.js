@@ -10,6 +10,7 @@ const DashboardPage = ({ data }) => {
   
 
   const queryReadArticles = data.readArticles.group
+  const queryReadArticlesYear = data.readArticlesYear.group
   const queryAddedArticles = data.addedArticles.group
   
 
@@ -17,6 +18,11 @@ const DashboardPage = ({ data }) => {
   var finalDataRead = []
   queryReadArticles.map(element => (
     finalDataRead.push([element.fieldValue, element.totalCount])
+  ))
+
+  var finalDataYear = []
+  queryReadArticlesYear.map(element => (
+    finalDataYear.push([element.fieldValue, element.totalCount])
   ))
 
   var finalDataAdded = []
@@ -36,6 +42,14 @@ const DashboardPage = ({ data }) => {
       ytitle="Articles Read" 
     />
 
+
+<ColumnChart 
+      data={finalDataYear.slice(-40)} 
+      colors={["#EF4155"]}
+      xtitle="Years" 
+      ytitle="Articles Read" 
+    />
+
     <h2>Articles Added</h2>
     <ColumnChart 
         data={finalDataAdded.slice(-40)} 
@@ -44,7 +58,7 @@ const DashboardPage = ({ data }) => {
         ytitle="Articles Added" 
       />
 
-<pre>{JSON.stringify(data.readArticles, null, 4)}</pre>
+<pre>{JSON.stringify(data.readArticlesYear, null, 4)}</pre>
   </ContentColumn>
 
 )}
@@ -60,6 +74,14 @@ export const query = graphql`
         fieldValue
       }
     }
+
+    readArticlesYear: allPocketArticle(sort: {fields: fields___year_read},filter: {fields: {year_read: {nin: "Invalid date", , ne: "1970"}}}) {
+        group(field: fields___year_read) {
+          totalCount
+          fieldValue
+        }
+      }
+
     addedArticles: allPocketArticle(sort: {fields: fields___month_read},filter: {fields: {month_read: {nin: "Invalid date"}}}) {
       group(field: fields___month_added) {
         totalCount
