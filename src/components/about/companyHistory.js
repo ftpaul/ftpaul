@@ -10,7 +10,7 @@ import Button from '../button'
         What have I been up to
       </h3>
       <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-        Over than 6 years of experience scalling companies. 
+        Scalling companies in the digital world for over than six years.
       </p>
     </div>
 

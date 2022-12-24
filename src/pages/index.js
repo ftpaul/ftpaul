@@ -41,7 +41,7 @@ const AboutPage = ({ data }) => {
                onFocus={ () => void 0 }>
                 Paulo Teixeira
             </button><span className="text-yellow-600">.</span><br/> 
-            I am a Product Manager with an experienced background in engineering and marketing. 
+            . I am a Product Manager with an experienced background in engineering and marketing. Based in Berlin.
         </h1>
       </div>
     </div>

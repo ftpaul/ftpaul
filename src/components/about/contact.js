@@ -28,7 +28,7 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Connecting</h4>
                   <p className="mt-2 text-base leading-6 text-gray-500">
-                    I believe in connecting deeply with humans and that we can learn with everyone. If you need a peer to discuss your current challenges, let's do it.
+                  I believe in connecting deeply with humans and that we can learn with everyone. I am the peer who can help you to overcome your challenges.
                   </p>
                 </div>
               </div>
