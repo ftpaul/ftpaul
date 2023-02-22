@@ -4,11 +4,13 @@ title: Product Manager
 summary: Driven by empowering people to make simple choices, I am a Product Manager with an experienced background in engineering and marketing. 
 experience:
     - company: AppLovin
-      role: Project Manager (Web)
-      logo: /AppLovin.png
+      role: Web Project Manager 
+      logo: /adjust.png
       location: Berlin
       start_date: Jan 2022 
       end_date: Present
+      description: 
+        - Lead the technical implementation of a new Design System and revamp of a CMS experience
     - company: Adjust
       role: Web Product Manager
       logo: /adjust.png
@@ -107,7 +109,7 @@ details:
     random:
         - description: Since 2016 tracking my own weight in a spreadsheet
           link: ""
-        - description: OKRs used as personal goal setting method
+        - description: Using OKRs as personal goal setting method
           link: "" 
         
 ---
