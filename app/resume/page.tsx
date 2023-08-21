@@ -6,9 +6,6 @@
 // import Image from 'next/image';
 // import { ResumeDataType } from '../types'; 
 
-type ResumeProps = {
-  resumeData: ResumeDataType;
-};
 
 //const ResumePage: React.FC<ResumeProps> = ({ resumeData }) => {
   export default async function ResumePage() {
