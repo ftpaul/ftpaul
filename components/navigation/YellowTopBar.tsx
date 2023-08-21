@@ -1,9 +1,9 @@
 
 
-const YellowTopBar= () => {
+const YellowTopBar = () => {
     return (
-        <div className="w-screen h-2 bg-yellow-600 absolute t-0 l-0"></div>
+        <div className="bg-yellow-600 w-screen h-4 bg-red absolute t-0 l-0"></div>
     )
 }
 
-export default YellowTopBar;
+export default YellowTopBar
