@@ -2,6 +2,9 @@ import Image from "next/image"
 import Features from "../components/Features"
 import CompanyHistory from "../components/CompanyHistory"
 import Contact from "../components/Contact"
+import 'chartkick/chart.js'
+import { LineChart, PieChart } from 'react-chartkick'
+
 
 export default async function IndexPage() {
 
@@ -46,7 +49,7 @@ export default async function IndexPage() {
             className={`heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 rounded-full opacity`} />   */}
     </div>
     </div>
-
+    
     <Features />
 
     <CompanyHistory />
