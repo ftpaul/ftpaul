@@ -2,19 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { LineChart, PieChart, ColumnChart } from 'react-chartkick'
 import 'chartkick/chart.js'
 
-async function getData() {
-  try {
-    const res = await fetch(`https://getpocket.com/v3/get?access_token=${process.env.NEXT_PUBLIC_POCKET_ACCESS_TOKEN}&consumer_key=${process.env.NEXT_PUBLIC_POCKET_CONSUMER_KEY}&since=1577833200`);
 
-    if (!res.ok) {
-      throw new Error(`Failed to fetch data with status: ${res.status}`);
-    }
-    return res.json();
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    throw error;
-  }
-}
+
 
 function getReadArticlesByMonth(articles) {
   // Filter articles with time_read different than 0
@@ -68,28 +57,45 @@ export default function DashboardPage() {
     const [orderedByMonth, setOrderedByMonth] = useState({});
 
     useEffect(() => {
-        async function fetchData() {
-            const data = await getData();
-            setDataList(Object.values(data.list));
-
-            const readArticlesByMonth = getReadArticlesByMonth(Object.values(data.list));
-            const orderedData = orderByMonth(readArticlesByMonth);
-
-            setOrderedByMonth(orderedData);
-        }
-
-        fetchData();
-    }, []);
+      async function fetchData() {
+          try {
+              const response = await fetch('/api/get-pocket-data');
+              
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              
+              const result = await response.json();
+              
+              setDataList(Object.values(result.list));
+              
+              const readArticlesByMonth = getReadArticlesByMonth(Object.values(result.list));
+              const orderedData = orderByMonth(readArticlesByMonth);
+  
+              setOrderedByMonth(orderedData);
+          } catch (error) {
+              console.error("There was a problem fetching the data:", error);
+          }
+      }
+  
+      fetchData();
+  }, []);
 
     // ... rest of the component
 
-    if (dataList.length === 0) {
-        return <div>Loading...</div>;
-    }
+   
 
     return (
         <>
-            <PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} /> 
+            <PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} id="something" /> 
+
+            <LineChart 
+                        data={orderedByMonth} 
+                        colors={["#EF4155"]}
+                        xtitle="Months" 
+                        ytitle="Articles Added" 
+                        id="loading"
+                    />
         </>
     );
 }
