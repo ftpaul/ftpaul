@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { LineChart, PieChart, ColumnChart } from 'react-chartkick'
+import Layout from '../components/Layout'
+import { LineChart, PieChart } from 'react-chartkick'
 import 'chartkick/chart.js'
-import { Console } from 'console';
 
 
 
@@ -40,7 +40,6 @@ export default function DashboardPage() {
   const [dataList, setDataList] = useState([]);
   const [readArticlesByMonth, setReadArticlesByMonth] = useState({});
   const [addedArticlesByMonth, setAddedArticlesByMonth] = useState({});
-  var data = []
 
   useEffect(() => {
     async function fetchData() {
@@ -56,12 +55,10 @@ export default function DashboardPage() {
             setDataList(Object.values(result.list));
             
             const readArticlesByMonth = getGroupArticlesByMonth(Object.values(result.list), "time_read");
+            setReadArticlesByMonth(readArticlesByMonth);
 
             const addedArticlesByMonth = getGroupArticlesByMonth(Object.values(result.list), "time_added");
-            
             setAddedArticlesByMonth(addedArticlesByMonth);
-            setReadArticlesByMonth(readArticlesByMonth);
-            
             
         } catch (error) {
             console.error("There was a problem fetching the data:", error);
@@ -73,30 +70,28 @@ export default function DashboardPage() {
   
 
   return (
-      <>
-          <PieChart data={[["Blueberry", 44], ["Strawberry", 23]]} id="something" /> 
-
+      <Layout>
           <LineChart 
-                      data={[{name: "read articles", data: readArticlesByMonth}, {name: "added articles", data: addedArticlesByMonth}]} 
-                      colors={["#EF4155"]}
-                      xtitle="Months" 
-                      ytitle="Articles Added" 
-                      id="loading"
-                  />
-                  <LineChart 
-                      data={readArticlesByMonth} 
-                      colors={["#EF4155"]}
-                      xtitle="Months" 
-                      ytitle="Articles Read" 
-                      id="loading"
-                  />
-                  <LineChart 
-                      data={addedArticlesByMonth} 
-                      colors={["#EF4155"]}
-                      xtitle="Months" 
-                      ytitle="Articles Added" 
-                      id="loading"
-                  />
-      </>
+              data={[{name: "read articles", data: readArticlesByMonth}, {name: "added articles", data: addedArticlesByMonth}]} 
+              colors={["#EF4155"]}
+              xtitle="Months" 
+              ytitle="Articles Added vs Read" 
+              id="loading"
+          />
+          <LineChart 
+              data={readArticlesByMonth} 
+              colors={["#EF4155"]}
+              xtitle="Months" 
+              ytitle="Articles Read" 
+              id="loading"
+          />
+          <LineChart 
+              data={addedArticlesByMonth} 
+              colors={["#EF4155"]}
+              xtitle="Months" 
+              ytitle="Articles Added" 
+              id="loading"
+          />
+      </Layout>
   );
 }

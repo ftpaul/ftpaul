@@ -2,9 +2,11 @@ import Image from "next/image"
 import Features from "../components/Features"
 import CompanyHistory from "../components/CompanyHistory"
 import Contact from "../components/Contact"
-import 'chartkick/chart.js'
-import { LineChart, PieChart } from 'react-chartkick'
 
+export const metadata = {
+  title: 'Paulo Teixeira · Product Manager · ftpaul.io',
+  description: 'Generate a meta description that\'s not meh later on',
+}
 
 export default async function IndexPage() {
 
