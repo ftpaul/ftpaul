@@ -18,7 +18,7 @@ import Button from './Button'
 
     <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-         <img src="/AppLovin.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="AppLovin" />
+         <img src="/images/AppLovin.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="AppLovin" />
          <h4 className="mt-2 text-lg font-bold text-gray-900 ">
              AppLovin
          </h4>
@@ -32,7 +32,7 @@ import Button from './Button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/adjust.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Adjust" />
+            <img src="/images/adjust.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Adjust" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Adjust
             </h4>
@@ -46,7 +46,7 @@ import Button from './Button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
+            <img src="/images/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Unbabel
             </h4>
@@ -60,7 +60,7 @@ import Button from './Button'
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          
-            <img src="/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
+            <img src="/images/unbabel.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="Unbabel" />
             <h4 className="mt-2 text-lg font-bold text-gray-900 ">
                 Unbabel
             </h4>
