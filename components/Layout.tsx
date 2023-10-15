@@ -1,6 +1,8 @@
 import Navigation from "../components/navigation/Navigation"
 import YellowTopBar from "../components/navigation/YellowTopBar"
 import Footer from "../components/navigation/Footer"
+
+import Section from "./Section"
 import "./../styles/global.css"
 
 
@@ -10,17 +12,14 @@ export default function Layout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <head />
-      <body>
+    <>
         <YellowTopBar />
         <Navigation />
-
+          <Section>
             {children}
-
+          </Section>
         <Footer />
 
-      </body>
-    </html>
+    </>
   )
 }

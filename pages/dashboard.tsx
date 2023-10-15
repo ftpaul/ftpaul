@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../components/Layout'
 import { LineChart, PieChart } from 'react-chartkick'
 import 'chartkick/chart.js'
+import Head from 'next/head'
 
 
 
@@ -71,26 +72,29 @@ export default function DashboardPage() {
 
   return (
       <Layout>
+          <Head>
+            <title>My page title</title>
+          </Head>
           <LineChart 
               data={[{name: "read articles", data: readArticlesByMonth}, {name: "added articles", data: addedArticlesByMonth}]} 
               colors={["#EF4155"]}
               xtitle="Months" 
               ytitle="Articles Added vs Read" 
-              id="loading"
+              id="Articles Added vs Read"
           />
           <LineChart 
               data={readArticlesByMonth} 
               colors={["#EF4155"]}
               xtitle="Months" 
               ytitle="Articles Read" 
-              id="loading"
+              id="Articles Read"
           />
           <LineChart 
               data={addedArticlesByMonth} 
               colors={["#EF4155"]}
               xtitle="Months" 
               ytitle="Articles Added" 
-              id="loading"
+              id="Articles Added"
           />
       </Layout>
   );
