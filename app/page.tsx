@@ -43,7 +43,8 @@ export default async function IndexPage() {
         alt="Paulo Teixeira" 
         className="w-96 h-96 mx-auto p-0 xs:p-4 z-20 rounded-full"
         width="400" 
-        height="400" />
+        height="400" 
+        priority={true}/>
      {/* <StaticImage src="../assets/images/paulo-teixeira-square-bowtie.jpg" alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-full" /> */}
         {/* <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" 
             className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />   */}

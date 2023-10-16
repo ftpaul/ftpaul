@@ -1,25 +1,21 @@
-import Navigation from "../components/navigation/Navigation"
-import YellowTopBar from "../components/navigation/YellowTopBar"
-import Footer from "../components/navigation/Footer"
+import React from 'react'
+import YellowTopBar from './navigation/YellowTopBar'
+import Navigation from './navigation/Navigation'
+import Footer from './navigation/Footer'
+import './../styles/global.css'
 
-import Section from "./Section"
-import "./../styles/global.css"
 
-
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+function OldLayout({ children }) {
   return (
-    <>
-        <YellowTopBar />
+    
+    
+      <div>
         <Navigation />
-          <Section>
-            {children}
-          </Section>
+        {children}
         <Footer />
-
-    </>
-  )
+      </div>
+    
+  );
 }
+
+export default OldLayout;

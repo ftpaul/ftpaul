@@ -72,9 +72,6 @@ export default function DashboardPage() {
 
   return (
       <Layout>
-          <Head>
-            <title>My page title</title>
-          </Head>
           <LineChart 
               data={[{name: "read articles", data: readArticlesByMonth}, {name: "added articles", data: addedArticlesByMonth}]} 
               colors={["#EF4155"]}
