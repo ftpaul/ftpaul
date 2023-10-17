@@ -1,13 +1,13 @@
 // import React from "react";
 // import Seo from '../components/seo';
-import ExperienceBlock from '../../components/resume/ExperienceBlock';
-import ResumeFooter from '../../components/resume/DownloadFooter';
+import ExperienceBlock from '../../components/resume/ExperienceBlock'
 // import Navigation from '../components/navigation/navigation';
-// import Image from 'next/image';
-// import { contentType } from '../types'; 
+import Image from 'next/image'
 import '../../styles/resume.css'
 
 import content from '../../content/resume.json'
+import jobHistory from '../../content/jobHistory.json'
+import Button from '../../components/Button';
 
 
 //const ResumePage: React.FC<ResumeProps> = ({ content }) => {
@@ -18,8 +18,6 @@ import content from '../../content/resume.json'
     description: "Find and download Paulo Teixeira's curriculum. A Product Manager with 5+ years of experience in digital businesses."
   };
 
-  // The component body remains largely unchanged
-  // ... 
 
   return (
     <>
@@ -47,8 +45,15 @@ import content from '../../content/resume.json'
 
   <div className="w-2/6 div-w-image " >
  
-   {/* <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" /> */}
-    
+   
+   <Image 
+        src="/images/paulo-teixeira-main-image.jpeg" 
+        alt="Paulo Teixeira" 
+        className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full"
+        width="400" 
+        height="400" 
+        priority={true}
+        key="somethingelse"/>
     
   </div>
 
@@ -63,7 +68,7 @@ import content from '../../content/resume.json'
 
       <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
 
-      {content.experience.map((job) => (
+      {jobHistory.map((job) => (
         <ExperienceBlock job={job} key={job.end_date} />
       ))}
       
@@ -114,10 +119,9 @@ import content from '../../content/resume.json'
       <div className="pb-8">
         <p className="text-base font-bold text-gray-500">Random facts</p>
         {content.random.map(fact => (
-          <div key={fact.link}>
+          <div key={fact.description}>
           <p className="text-base text-gray-500 pb-0" >
             {((fact.link.length > 0) ? (<a className="text-yellow-600 underline hover:text-yellow-400" href={fact.link}>{fact.description}</a>) :
-            
               fact.description
             )}
             
@@ -126,15 +130,15 @@ import content from '../../content/resume.json'
         ))} 
       </div>
 
+
     </div>
+      <div className='w-full mt-4 text-center'>
+        <a href='#' className="text-yellow-600 hover:text-yellow-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
+      </div>
       
     </div>
     </div>
     
-    <div className="py-1">
-
-    </div>
-    <ResumeFooter />
     </>
   )
 }

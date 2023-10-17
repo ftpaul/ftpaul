@@ -1,6 +1,6 @@
 import Button from './Button'
 
- const CompanyHistory = () => (
+ const CompanyHistory = ({jobHistory}) => (
 
 <div className="py-20 xs:py-20 bg-gray-100">
   <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,21 +14,24 @@ import Button from './Button'
     </div>
 
     <div className="flex flex-wrap mt-8 justify-center ">
-          
 
-    <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
-         
-         <img src="/images/AppLovin.png" className="w-12 ml-auto mr-auto" width="48" height="48" alt="AppLovin" />
+
+     {jobHistory.slice(0, 1).map((job) => (
+        <div key={job.end_date} className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
+           <img src={job.logo} className="w-12 ml-auto mr-auto" width="48" height="48" alt={job.company} />
          <h4 className="mt-2 text-lg font-bold text-gray-900 ">
-             AppLovin
+             {job.company}
          </h4>
          <p className="text-base leading-6 text-gray-500">
-             Project Manager (Web)
+             {job.role}
          </p> 
          <p className="text-base  text-gray-400">
-             2022 
-         </p>    
+          {job.start_date} - {job.end_date} 
+         </p>   
        </div>
+      ))}
+         
+       
 
           <div className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center">
          

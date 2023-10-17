@@ -3,6 +3,8 @@ import Features from "../components/Features"
 import CompanyHistory from "../components/CompanyHistory"
 import Contact from "../components/Contact"
 
+import jobHistory from '../content/jobHistory.json'
+
 export const metadata = {
   title: 'Paulo Teixeira · Product Manager · ftpaul.io',
   description: 'Generate a meta description that\'s not meh later on',
@@ -54,8 +56,8 @@ export default async function IndexPage() {
     </div>
     
     <Features />
-
-    <CompanyHistory />
+            {/* TO DO Add a feautre to decide which job is picked uo here */}
+    <CompanyHistory jobHistory={jobHistory} />
 
     <Contact />
 
