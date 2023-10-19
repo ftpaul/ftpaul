@@ -25,15 +25,9 @@ export default async function IndexPage() {
             </p>
         <h1 className="heroTitle text-2xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
           My name is&nbsp; 
-            <button className="border-yellow-600 border-b-2 focus:outline-none outline-none cursor-default hover:cursor-default" 
-              // onMouseOver={() => toggleExpansion(!isOnHover)} 
-              // onMouseLeave={() => toggleExpansion(!isOnHover)}
-              //onMouseOver={() => toggleExpansion(false)} 
-              //onMouseLeave={() => toggleExpansion(false)}
-              // onFocus={ () => void 0 }
-               >
+            <span className="border-yellow-600 border-b-2" >
                 Paulo Teixeira
-            </button><span className="text-yellow-600">.</span><br/> 
+            </span><span className="text-yellow-600">.</span><br/> 
             I am a Product Manager with an experienced background in engineering and marketing. 
         </h1>
       </div>
@@ -47,11 +41,6 @@ export default async function IndexPage() {
         width="400" 
         height="400" 
         priority={true}/>
-     {/* <StaticImage src="../assets/images/paulo-teixeira-square-bowtie.jpg" alt="Paulo Teixeira | ftpaul.io" className="heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-10 rounded-full" /> */}
-        {/* <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" 
-            className={isOnHover ? `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity-0 transition ease-linear duration-1000 heroSecondImage` : `heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 -mt-64 rounded-full opacity hover:opacity-0 transition ease-linear duration-1000 heroSecondImage`} />   */}
-            {/* <StaticImage src="../assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" 
-            className={`heroImage w-64 h-64 mx-auto p-0 xs:p-4 z-20 rounded-full opacity`} />   */}
     </div>
     </div>
     
