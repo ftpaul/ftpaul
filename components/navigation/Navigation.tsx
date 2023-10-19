@@ -1,14 +1,18 @@
-//import { useState } from "react";
-import Link from "next/link";
-import Head from "next/head";
-import YellowTopBar from "./YellowTopBar";
+"use client"
+
+import { useState } from "react"
+import Link from "next/link"
+import Head from "next/head"
+import YellowTopBar from "./YellowTopBar"
 import Logo from "./Logo"
+
+
 
 const Navigation = ({ isDashboard }: { isDashboard?: boolean }) => {
 
-  //const [isExpanded, toggleExpansion] = useState(false);
+  const [isExpanded, toggleExpansion] = useState(false);
 
-  const isExpanded = true
+  //const isExpanded = true
 
   return (
     <>
@@ -20,7 +24,7 @@ const Navigation = ({ isDashboard }: { isDashboard?: boolean }) => {
         </div>
         {/* <button className="hidden xs:display xs:flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-40 outline-none focus:outline-none"
           onClick={() => toggleExpansion(!isExpanded)}> */}
-        <button className="hidden xs:display xs:flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-40 outline-none focus:outline-none">
+        <button className="hidden xs:display xs:flex items-center px-3 py-2 text-yellow-600 bg-organd-300 z-40 outline-none focus:outline-none" onClick={() => toggleExpansion(!isExpanded)}>
           <span className={isExpanded ? `text-xl text-gray-500 hover:text-gray-100 border-b-2 border-yellow-600` : `text-xl text-gray-500 hover:text-yellow-600 border-b-2 border-yellow-600`}>
             {isExpanded ? "Close" : "Menu"}
           </span>
