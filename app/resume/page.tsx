@@ -133,7 +133,7 @@ import Button from '../../components/Button';
 
     </div>
       <div className='w-full mt-4 text-center'>
-        <a href='#' className="text-yellow-600 hover:text-yellow-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
+        <a href={content.download_link} target="_blank" className="text-yellow-600 hover:text-yellow-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
       </div>
       
     </div>

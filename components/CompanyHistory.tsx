@@ -17,7 +17,7 @@ import Button from './Button'
 
 
      {jobHistory.slice(0, 3).map((job) => (
-        <div key={job.end_date} className="w-1/2 md:w-1/6 lg:w-1/6 pt-1 mb-4 text-center ">
+        <div key={job.end_date} className="w-1/2 md:w-1/5 lg:w-1/5 pt-1 mb-4 text-center ">
            <img src={job.logo} className="w-12 ml-auto mr-auto" width="48" height="48" alt={job.company} />
          <h4 className="mt-2 text-lg font-bold text-gray-900 ">
              {job.company}
@@ -26,7 +26,7 @@ import Button from './Button'
              {job.role}
          </p> 
          <p className="text-base  text-gray-400">
-          {job.start_date} - {job.end_date} 
+          {job.featured_date}
          </p>   
        </div>
       ))}
