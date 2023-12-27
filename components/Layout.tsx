@@ -7,15 +7,12 @@ import './../styles/global.css'
 
 function OldLayout({ children }) {
   return (
-    
-    
       <div>
         <Navigation />
         {children}
         <Footer />
       </div>
-    
-  );
+  )
 }
 
 export default OldLayout;

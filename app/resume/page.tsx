@@ -1,22 +1,17 @@
-// import React from "react";
-// import Seo from '../components/seo';
 import ExperienceBlock from '../../components/resume/ExperienceBlock'
-// import Navigation from '../components/navigation/navigation';
 import Image from 'next/image'
 import '../../styles/resume.css'
 
 import content from '../../content/resume.json'
 import jobHistory from '../../content/jobHistory.json'
-import Button from '../../components/Button';
 
 
-//const ResumePage: React.FC<ResumeProps> = ({ content }) => {
-  export default async function ResumePage() {
+export default async function ResumePage() {
 
   const seo = {
     title: "Paulo Teixeira Resume",
-    description: "Find and download Paulo Teixeira's curriculum. A Product Manager with 5+ years of experience in digital businesses."
-  };
+    description: "Find and download Paulo Teixeira's curriculum. A Project Manager with 10+ years of experience in digital businesses."
+  }
 
 
   return (
