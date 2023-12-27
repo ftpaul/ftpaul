@@ -35,7 +35,7 @@ export default async function IndexPage() {
         <Image 
           src="/images/paulo-teixeira-main-image.jpeg" 
           alt="Paulo Teixeira" 
-          className="w-96 h-96 mx-auto p-0 xs:p-4 z-20 rounded-full"
+          className="w-96 max-h-96 mx-auto p-0 xs:p-4 rounded-full"
           width="400" 
           height="400" 
           priority={true}/>
