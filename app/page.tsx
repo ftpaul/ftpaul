@@ -14,7 +14,7 @@ export default async function IndexPage() {
 
     return (
       <>
-      <div className="heroWidth flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4 sm:px-0">
+      <div className="heroWidth flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4">
 
       <div className="flex w-1/2 lg:w-1/2 sm:w-1/2 xs:w-full items-center ">
         <div >

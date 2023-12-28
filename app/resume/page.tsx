@@ -13,7 +13,6 @@ export default async function ResumePage() {
     description: "Find and download Paulo Teixeira's curriculum. A Project Manager with 10+ years of experience in digital businesses."
   }
 
-
   return (
     <>
       {/*
@@ -23,11 +22,11 @@ export default async function ResumePage() {
   
    */}
 
-  <div className="letter p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
+  <div className="letter xs:p-2 p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
 
     <div className="flex flex-wrap">
       
-      <div className="w-4/6  pt-4 pr-1 xs:pr-2 div-w-title">
+      <div className="w-4/6  pt-4 pr-1 xs:pr-0 div-w-title">
             
           <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
           <button className="focus:outline-none outline-none cursor-default hover:cursor-default" >
@@ -56,7 +55,7 @@ export default async function ResumePage() {
 
 
     {/* Summary and Experience       */}
-    <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-2 ">
+    <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-0 ">
 
       <h4 className="uppercase text-xs text-gray-300 tracking-widest">Summary</h4>
       <p className="text-lg text-gray-500 pb-6">{content.summary}</p>
@@ -72,7 +71,7 @@ export default async function ResumePage() {
 
 
     {/* Details Column */}
-    <div className="w-2/6 xs:w-full p-4 xs:pl-0 " >
+    <div className="w-2/6 xs:w-full p-4 xs:pl-0 xs:pr-0 " >
 
       <div className="pt-6 pb-8 xs:hidden">
         <p className="text-base font-bold text-gray-500">Based in {content.details.location.city} <span role="img" aria-label="content.details.location.country"  ></span></p>
@@ -127,7 +126,7 @@ export default async function ResumePage() {
 
 
     </div>
-      <div className='w-full mt-4 text-center'>
+      <div className='w-full mt-4 xs:mt-0 xs:mb-4 text-center'>
         <a href={content.download_link} target="_blank" className="text-yellow-600 hover:text-yellow-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
       </div>
       

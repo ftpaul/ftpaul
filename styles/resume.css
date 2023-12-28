@@ -32,18 +32,18 @@
  @media only screen and (max-width: 400px) {
    .letter:before {
      background: #fafafa;
-     box-shadow: 0 0 4px rgba(0,0,0,0.2);
-     left: -3px;
-     top: 4px;
-     transform: rotate(-2.5deg);
+     box-shadow: 0 0 0 rgba(0,0,0,0.2);
+     left: 0;
+     top: 0;
+     transform: none;
    }
    .letter:after {
-     background: #f6f6f6;
-     box-shadow: 0 0 2px rgba(0,0,0,0.2);
-     right: -2px;
-     top: 1px;
-     transform: rotate(1.4deg);
-   }
+    background: #f6f6f6;
+     box-shadow: 0 0 0 rgba(0,0,0,0.2);
+     right: 0;
+     top: 0;
+     transform: none;
+  }
    .div-w-image {
      display: none;
    }
