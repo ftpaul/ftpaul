@@ -46,7 +46,7 @@ export default async function IndexPage() {
               
       <CompanyHistory jobHistory={jobHistory} />
 
-      {/* <Contact /> */}
+      <Contact />
 
     </>
     )

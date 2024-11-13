@@ -10,12 +10,12 @@ const Contact = () => (
   <div className="max-w-screen-xl mx-auto sm:px-6">
     <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      How can we synergize?
+      How can to get in touch 
       </h3>
     </div>
 
     <div className="mt-10 items-center">
-      <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+      {/* <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             <li>
               <div className="flex">
                 <div className="flex-shrink-0">
@@ -52,11 +52,11 @@ const Contact = () => (
               </div>
             </li>
             
-          </ul>
+          </ul> */}
           </div>
           <div className="mt-10 items-center text-center">
               <p className="text-base leading-7 text-gray-400"> Reach out to: &nbsp;</p>
-              <h2 className="text-xl leading-8 inline font-bold tracking-tight text-gray-600 sm:leading-10">hey [at] ftpaul.io</h2>
+              <h2 className="text-xl leading-8 inline font-bold tracking-tight text-gray-600 sm:leading-10">hey [at] pauloteixeira.de</h2>
             </div>  
         </div></div>
   </Section>
