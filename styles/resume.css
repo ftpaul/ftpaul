@@ -1,9 +1,6 @@
  /* inspirtation 
     https://codepen.io/mlms13/pen/LKFoy
  */
- body {
-    /* overflow-x: hidden; */
-  }
   .letter {
      box-shadow: 0 0 10px rgba(0,0,0,0.3);
    }

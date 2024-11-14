@@ -11,22 +11,7 @@ const Navigation = () => {
 
   const [isExpanded, toggleExpansion] = useState(false);
 
-  useEffect(() => {
-    if (isExpanded) {
-      document.body.style.overflow = 'hidden';
-      window.scroll({
-        top: 0, 
-        left: 0
-      });
-    } else {
-      document.body.style.overflow = 'unset';
-      
-    }
-
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isExpanded]);
+  
 
   
   return (
