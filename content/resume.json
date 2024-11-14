@@ -26,12 +26,14 @@
     },
     "industry_knowledge": [
       {
-        "name": "Project Management",
+        "name": "",
         "individuals": [
-          "Project Planning, Execution, and Delivery",
+          "Project planning, execution, and delivery",
           "Stakeholder Management",
           "Team Leadership and Collaboration",
-          "Agile Team Management"
+          "Agile Team Management",
+          "Enterprise Contract Management",
+          "Training and enablement "
         ]
       },
       {
@@ -58,19 +60,12 @@
     ],
     "projects": [
       {
-        "name": "João Pedro Reis",
-        "link": "https://joaopedroreis.com",
-        "description": "Working with João Pedro Reis on all aspects of his digital business, namely positioning, experience, and go to market strategy."
+        
       }
     ],
     "random": [
       {
-        "description": "Since 2016 tracking my own weight in a spreadsheet",
-        "link": ""
-      },
-      {
-        "description": "Using OKRs as personal goal setting method",
-        "link": ""
+       
       }
     ],
     "download_link": "/2022_Paulo_Teixeira_CV.pdf"

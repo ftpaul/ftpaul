@@ -98,30 +98,11 @@ export default async function ResumePage() {
 
 
       <div className="pb-8">
-        <p className="text-base font-bold text-gray-500">Projects</p>
-        {content.projects.map(project => (
-          <div key={project.name} >
-          <p className="text-base text-gray-500 pb-0 underline">
-            <a href={project.link} className="text-yellow-600 underline hover:text-yellow-400">
-            {project.name}</a>
-            </p>
-          <p className="text-base text-gray-500 pb-0">{project.description}</p>
-          </div>
-        ))} 
+       
       </div>
 
       <div className="pb-8">
-        <p className="text-base font-bold text-gray-500">Random facts</p>
-        {content.random.map(fact => (
-          <div key={fact.description}>
-          <p className="text-base text-gray-500 pb-0" >
-            {((fact.link.length > 0) ? (<a className="text-yellow-600 underline hover:text-yellow-400" href={fact.link}>{fact.description}</a>) :
-              fact.description
-            )}
-            
-          </p>
-          </div>
-        ))} 
+        
       </div>
 
 
