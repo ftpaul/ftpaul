@@ -1,7 +1,20 @@
 [
     {
       "company": "Adjust",
-      "role": "Project Manager (Web)",
+      "role": "Project Manager, Web",
+      "logo": "/images/adjust.png",
+      "location": "Berlin",
+      "start_date": "Jan 2022",
+      "end_date": "Present",
+      "featured_date": "2022 - Present",
+      "description": [
+        "Lead the technical implementation of a new Design System",
+        "Coordinated the launch of standalone tool for Landing Pages"
+      ]
+    },
+    {
+      "company": "Adjust",
+      "role": "Project Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
       "start_date": "Jan 2022",
@@ -34,9 +47,7 @@
       "end_date": "Apr 2020",
       "featured_date": "2019 - 2020",
       "description": [
-        "Managed the customer experience (B2B)",
         "Responsible for driving 40% of new business",
-        "Spearheaded discovery, wireframing, and testing sessions (besides all Scrum rituals)",
         "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)"
       ]
     },
@@ -55,24 +66,14 @@
     },
     {
       "company": "Landing.jobs",
-      "role": "Marketing Lead",
-      "logo": "/images/landingjobs.png",
-      "location": "Lisbon",
-      "start_date": "Jan 2017",
-      "end_date": "Jun 2017",
-      "description": [
-        "Managed the work and rituals of a team with 5 people (SCRUM)",
-        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog"
-      ]
-    },
-    {
-      "company": "Landing.jobs",
-      "role": "Growth Marketing Manager",
+      "role": "Marketing Lead / Growth Marketing Manager",
       "logo": "/images/landingjobs.png",
       "location": "Lisbon",
       "start_date": "Jun 2014",
-      "end_date": "Dec 2016",
+      "end_date": "Jun 2017",
       "description": [
+        "Managed the work and rituals of a team with 5 people (SCRUM)",
+        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog",
         "Conducted 100+ users interviews for product feedback and idea validation",
         "Achieved growth rates over 100% every year"
       ]
