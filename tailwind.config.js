@@ -46,7 +46,7 @@ module.exports = {
       },
       green: {
         100: '#D1FAE5',
-        600: '#4A7D36',
+        600: '#0a3c30',
       }
     },
     spacing: {

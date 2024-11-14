@@ -90,10 +90,21 @@ export default async function ResumePage() {
           <div className="pb-3" key={group.name}>
             <p className="text-base capitalize text-gray-500 pb-0" >{group.name}</p>
              {group.individuals.map(individuals => (
-              <p className="text-base capitalize text-gray-500" key={individuals}> - {individuals}</p>
+              <p className="text-base text-gray-500" key={individuals}> - {individuals}</p>
             ))} 
           </div>
         ))} 
+      </div>
+
+      <div className="pb-2 xs:hidden">
+        <p className="text-base pb-2 font-bold text-gray-500">Education</p>
+        
+          <div className="pb-3" >
+            <p className="text-base capitalize text-gray-500 pb-0" >{content.education.school}</p>
+            <p className="text-base text-gray-500" >{content.education.course}</p> 
+            <p className="text-base text-gray-300" >{content.education.description}</p> 
+          </div>
+      
       </div>
 
 

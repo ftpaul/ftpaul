@@ -1,5 +1,5 @@
 import React from 'react'
-import YellowTopBar from '../components/navigation/YellowTopBar'
+import TopBar from '../components/navigation/TopBar'
 import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/navigation/Footer'
 import './../styles/global.css'
@@ -10,7 +10,7 @@ function MainLayout({ children }) {
     
     <html lang="en">
       <body>
-        <YellowTopBar />
+        <TopBar />
         <Navigation />
         {children}
         <Footer />

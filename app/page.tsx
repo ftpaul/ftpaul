@@ -23,9 +23,9 @@ export default async function IndexPage() {
               </p>
           <h1 className="heroTitle text-3xl xs:text-2xl leading-snug text-gray-500 pb-4 text-left m-auto">
             My name is&nbsp; 
-              <span className="border-yellow-600 border-b-2" >
+              <span className="border-green-600 border-b-2" >
                   Paulo Teixeira
-              </span><span className="text-yellow-600">.</span><br/> 
+              </span><span className="text-green-600">.</span><br/> 
               I am a Senior Project Manager with 10+ years of experience delivering digital projects. 
           </h1>
         </div>
