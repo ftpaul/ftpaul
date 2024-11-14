@@ -1,7 +1,7 @@
 {
     "name": "Paulo Teixeira",
     "title": "Senior Project Manager, Web",
-    "summary": "Driven by empowering people to make simple choices, I am a Project Manager with an experienced background in engineering and marketing.",
+    "summary": "I am Senior Project Manager with a strong IT and marketing background, skilled at aligning technical and business goals. I lead cross-functional teams globally, foster agile collaboration, and build trusted relationships with senior stakeholders.",
     "education": [
       {
         "school": "ISCTE-IUL",
@@ -26,19 +26,21 @@
     },
     "industry_knowledge": [
       {
+        "name": "Project Management",
+        "individuals": [
+          "Project Planning, Execution, and Delivery",
+          "Stakeholder Management",
+          "Team Leadership and Collaboration",
+          "Agile Team Management"
+        ]
+      },
+      {
         "name": "Product",
         "individuals": [
           "User Experience",
           "Data Analysis",
           "Agile Methodologies & Scrum",
           "Prioritization & Roadmap"
-        ]
-      },
-      {
-        "name": "marketing",
-        "individuals": [
-          "SEO & Advertising",
-          "Marketing Tech Stack"
         ]
       },
       {
