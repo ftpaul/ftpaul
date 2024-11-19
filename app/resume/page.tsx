@@ -1,7 +1,7 @@
 import ExperienceBlock from '../../components/resume/ExperienceBlock'
 import Image from 'next/image'
 import '../../styles/resume.css'
-
+import Link from "next/link";
 import content from '../../content/resume.json'
 import jobHistory from '../../content/jobHistory.json'
 
@@ -119,7 +119,7 @@ export default async function ResumePage() {
 
     </div>
       <div className='w-full mt-4 xs:mt-0 xs:mb-4 text-center'>
-        <a href={content.download_link} target="_blank" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
+        <Link href={content.download_link} target="_blank" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500">Download full CV (PDF)</Link>
       </div>
       
     </div>

@@ -15,9 +15,11 @@ const Contact = () => (
       </h3>
     </div>
           <div className="mt-10 items-center text-center">
-              <p className="text-base leading-7 text-gray-400"> Reach out to: &nbsp;</p>
+              {/* <p className="text-base leading-7 text-gray-400"> Reach out to: &nbsp;</p> */}
               <h2 className="text-xl leading-8 inline font-bold tracking-tight text-gray-600 sm:leading-10">
-              <Link href="https://www.linkedin.com/in/ftpaul/">LinkedIn</Link> OR <Link mailto="hey+website@pauloteixeira.de">email me.</Link></h2>
+              <Link href="https://www.linkedin.com/in/ftpaul/" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">LinkedIn</Link> 
+              &nbsp;or&nbsp; 
+              <Link href="mailto:hey+website@pauloteixeira.de" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">email</Link>.</h2>
             </div>  
         </div></div>
   </Section>
