@@ -1,15 +1,14 @@
 [
     {
       "company": "Adjust",
-      "role": "Project Manager, Web",
+      "role": "Senior Project Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
-      "start_date": "Jan 2022",
+      "start_date": "Jan 2024",
       "end_date": "Present",
-      "featured_date": "2022 - Present",
+      "featured_date": "2024 - Present",
       "description": [
-        "Lead the technical implementation of a new Design System",
-        "Coordinated the launch of standalone tool for Landing Pages"
+        "Led the migration of the main website from a legacy infrastructure, rebuilding it with a modern tech stack to boost performance. Achieved a 4x reduction in deployment time and significantly improved speed and key performance metrics, enhancing user experience globally and operational efficiency."
       ]
     },
     {
@@ -17,17 +16,16 @@
       "role": "Project Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
-      "start_date": "Jan 2022",
-      "end_date": "Present",
-      "featured_date": "2022 - Present",
+      "start_date": "2022",
+      "end_date": "2023",
+      "featured_date": "2022 - 2023",
       "description": [
-        "Lead the technical implementation of a new Design System",
-        "Coordinated the launch of standalone tool for Landing Pages"
+        "Spearheaded the implementation of a new design system, unifying the look, feel, and functionality across our digital products"
       ]
     },
     {
       "company": "Adjust",
-      "role": "Web Product Manager",
+      "role": "Product Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
       "start_date": "Jan 2021",
