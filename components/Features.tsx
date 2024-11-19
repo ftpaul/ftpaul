@@ -47,7 +47,7 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Project execution</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                With a focus on efficiency and adaptability, I drive projects from concept to completion, establishing clear processes to meet timelines and deliver quality outcomes.
+                With a focus on efficiency and adaptability, I drive projects from concept to completion, establishing clear processes to meet timelines and deliver and high-quality results.
                 {/* With over 10 years of experience, I specialize in driving projects from concept to completion, optimizing processes, and adapting to evolving challenges to ensure timely delivery and high-quality results. */}
                 </p>
                 </div>
