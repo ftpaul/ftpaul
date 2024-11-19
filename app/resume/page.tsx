@@ -1,7 +1,7 @@
 import ExperienceBlock from '../../components/resume/ExperienceBlock'
 import Image from 'next/image'
 import '../../styles/resume.css'
-
+import Link from "next/link";
 import content from '../../content/resume.json'
 import jobHistory from '../../content/jobHistory.json'
 
@@ -30,7 +30,7 @@ export default async function ResumePage() {
             
           <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
           <button className="focus:outline-none outline-none cursor-default hover:cursor-default" >
-                {content.name}<span className="font-black text-6xl xs:text-3xl text-yellow-600">.</span>
+                {content.name}<span className="font-black text-6xl xs:text-3xl text-green-600">.</span>
             </button> 
           </h1>
           <h2 className="text-4xl xs:text-2xl font-normal text-gray-300 pb-4">{content.title}</h2>
@@ -90,10 +90,21 @@ export default async function ResumePage() {
           <div className="pb-3" key={group.name}>
             <p className="text-base capitalize text-gray-500 pb-0" >{group.name}</p>
              {group.individuals.map(individuals => (
-              <p className="text-base capitalize text-gray-500" key={individuals}> - {individuals}</p>
+              <p className="text-base text-gray-500" key={individuals}> - {individuals}</p>
             ))} 
           </div>
         ))} 
+      </div>
+
+      <div className="pb-2 xs:hidden">
+        <p className="text-base pb-2 font-bold text-gray-500">Education</p>
+        
+          <div className="pb-3" >
+            <p className="text-base capitalize text-gray-500 pb-0" >{content.education.school}</p>
+            <p className="text-base text-gray-500" >{content.education.course}</p> 
+            <p className="text-base text-gray-300" >{content.education.description}</p> 
+          </div>
+      
       </div>
 
 
@@ -108,7 +119,7 @@ export default async function ResumePage() {
 
     </div>
       <div className='w-full mt-4 xs:mt-0 xs:mb-4 text-center'>
-        <a href={content.download_link} target="_blank" className="text-yellow-600 hover:text-yellow-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500 ">Download full CV (PDF)</a>
+        <Link href={content.download_link} target="_blank" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500">Download full CV (PDF)</Link>
       </div>
       
     </div>

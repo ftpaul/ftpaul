@@ -1,14 +1,12 @@
 {
     "name": "Paulo Teixeira",
     "title": "Senior Project Manager, Web",
-    "summary": "I am Senior Project Manager with a strong IT and marketing background, skilled at aligning technical and business goals. I lead cross-functional teams globally, foster agile collaboration, and build trusted relationships with senior stakeholders.",
-    "education": [
-      {
-        "school": "ISCTE-IUL",
-        "course": "Computer Engineer",
-        "description": "something"
-      }
-    ],
+    "summary": "I am Senior Project Manager with a strong IT and marketing background, skilled at aligning technical and business goals. I lead cross-functional teams globally, foster agile collaboration, and build trusted relationships with senior stakeholders.  I’m committed to delivering results with clarity, from detailed roadmaps to accessible documentation, making every project a strategic win for the organization.",
+    "education": {
+      "school": "ISCTE-IUL",
+      "course": "Computer Science Engineering",
+      "description": "2010"
+    },
     "details": {
       "picture": "/paulo-teixeira-resume.png",
       "contacts": {
@@ -26,31 +24,28 @@
     },
     "industry_knowledge": [
       {
-        "name": "",
+        "name": "Hard skills",
         "individuals": [
-          "Project planning, execution, and delivery",
+          "Project Planning, Execution, and Delivery",
           "Stakeholder Management",
-          "Team Leadership and Collaboration",
-          "Agile Team Management",
-          "Enterprise Contract Management",
-          "Training and enablement "
-        ]
-      },
-      {
-        "name": "Product",
-        "individuals": [
+          "Agile Methodologies & Scrum",
           "User Experience",
           "Data Analysis",
-          "Agile Methodologies & Scrum",
-          "Prioritization & Roadmap"
+          "Prioritization & Roadmap",
+          "Vendor and Partner Relations",
+          "Quality Assurance"
         ]
       },
       {
-        "name": "transversal",
+        "name": "Soft skills",
         "individuals": [
-          "Process Management",
+          "Strategic thinking",
+          "Effective remote communication",
+          "Team Leadership and Collaboration",
+          "Cross-functional Team Leadership",
           "Solution Oriented",
-          "360 Vision"
+          "Attention to detail",
+          "Change adaptability"
         ]
       }
     ],
@@ -68,6 +63,6 @@
        
       }
     ],
-    "download_link": "/2022_Paulo_Teixeira_CV.pdf"
+    "download_link": "/2024_Paulo_Teixeira_CV.pdf"
   }
   

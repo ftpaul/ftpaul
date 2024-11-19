@@ -1,20 +1,31 @@
 [
     {
       "company": "Adjust",
-      "role": "Project Manager (Web)",
+      "role": "Senior Project Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
-      "start_date": "Jan 2022",
+      "start_date": "Jan 2024",
       "end_date": "Present",
-      "featured_date": "2022 - Present",
+      "featured_date": "2024 - Present",
       "description": [
-        "Lead the technical implementation of a new Design System",
-        "Coordinated the launch of standalone tool for Landing Pages"
+        "Led the migration of the main website from a legacy infrastructure, rebuilding it with a modern tech stack to boost performance. Achieved a 4x reduction in deployment time and significantly improved speed and key performance metrics, enhancing user experience globally and operational efficiency."
       ]
     },
     {
       "company": "Adjust",
-      "role": "Web Product Manager",
+      "role": "Project Manager, Web",
+      "logo": "/images/adjust.png",
+      "location": "Berlin",
+      "start_date": "2022",
+      "end_date": "2023",
+      "featured_date": "2022 - 2023",
+      "description": [
+        "Spearheaded the implementation of a new design system, unifying the look, feel, and functionality across our digital products"
+      ]
+    },
+    {
+      "company": "Adjust",
+      "role": "Product Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
       "start_date": "Jan 2021",
@@ -34,9 +45,7 @@
       "end_date": "Apr 2020",
       "featured_date": "2019 - 2020",
       "description": [
-        "Managed the customer experience (B2B)",
         "Responsible for driving 40% of new business",
-        "Spearheaded discovery, wireframing, and testing sessions (besides all Scrum rituals)",
         "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)"
       ]
     },
@@ -55,24 +64,14 @@
     },
     {
       "company": "Landing.jobs",
-      "role": "Marketing Lead",
-      "logo": "/images/landingjobs.png",
-      "location": "Lisbon",
-      "start_date": "Jan 2017",
-      "end_date": "Jun 2017",
-      "description": [
-        "Managed the work and rituals of a team with 5 people (SCRUM)",
-        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog"
-      ]
-    },
-    {
-      "company": "Landing.jobs",
-      "role": "Growth Marketing Manager",
+      "role": "Marketing Lead / Growth Marketing Manager",
       "logo": "/images/landingjobs.png",
       "location": "Lisbon",
       "start_date": "Jun 2014",
-      "end_date": "Dec 2016",
+      "end_date": "Jun 2017",
       "description": [
+        "Managed the work and rituals of a team with 5 people (SCRUM)",
+        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog",
         "Conducted 100+ users interviews for product feedback and idea validation",
         "Achieved growth rates over 100% every year"
       ]
