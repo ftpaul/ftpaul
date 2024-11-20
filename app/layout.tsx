@@ -3,6 +3,7 @@ import TopBar from '../components/navigation/TopBar'
 import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/navigation/Footer'
 import './../styles/global.css'
+import { Analytics } from "@vercel/analytics/react"
 
 
 function MainLayout({ children }) {
@@ -14,6 +15,7 @@ function MainLayout({ children }) {
         <Navigation />
         {children}
         <Footer />
+        <Analytics/>
       </body>
     </html>
   );
