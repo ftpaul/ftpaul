@@ -1,19 +1,33 @@
-import React from 'react';
+"use client"
+import React, { useState, useEffect } from 'react';
+
+const images = [
+  { src: '/images/gallery/20211217-Lisbon-Airplane.jpg', alt: 'Lisbon Airplane' },
+  { src: '/images/gallery/20220521-San-Francisco-Golden-Bridge.jpg', alt: 'San Francisco Golden Bridge' },
+  { src: '/images/gallery/20221016-Berlin-Victory-Column.jpg', alt: 'Berlin Victory Column' },
+  { src: '/images/gallery/20230630-Greece-European-Flag.jpg', alt: 'Greece European Flag' },
+  { src: '/images/gallery/20230826-Italy-Wedding-Car.jpg', alt: 'Italy Wedding Car' },
+];
+
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
 
 const ImageGallery = () => {
-  const images = [
-    { src: '/images/gallery/20211217-Lisbon-Airplane.jpg', alt: 'Lisbon Airplane' },
-    { src: '/images/gallery/20220521-San-Francisco-Golden-Bridge.jpg', alt: 'San Francisco Golden Bridge' },
-    { src: '/images/gallery/20221016-Berlin-Victory-Column.jpg', alt: 'Berlin Victory Column' },
-    { src: '/images/gallery/20230630-Greece-European-Flag.jpg', alt: 'Greece European Flag' },
-    { src: '/images/gallery/20230826-Italy-Wedding-Car.jpg', alt: 'Italy Wedding Car' },
-  ];
-
-  images.sort(() => Math.random() - 0.5);
   
+
+  const [shuffledImages, setShuffledImages] = useState([]);
+
+  useEffect(() => {
+    setShuffledImages(shuffleArray([...images])); // Shuffle images on component mount
+  }, []);
+
+
+  
+
   return (
     <div className="flex justify-center items-center space-x-12 xs:space-x-3 py-10">
-      {images.map((image, index) => (
+      {shuffledImages.map((image, index) => (
         <div
           key={index}
           className={`relative w-64 max-h-64  rounded-lg overflow-hidden shadow-lg transform ${
@@ -31,5 +45,9 @@ const ImageGallery = () => {
     </div>
   );
 };
+
+<script>
+  
+</script>
 
 export default ImageGallery;
