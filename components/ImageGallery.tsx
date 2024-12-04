@@ -2,26 +2,29 @@ import React from 'react';
 
 const ImageGallery = () => {
   const images = [
-    { src: '/images/20211217_155554.jpg', alt: 'Cockpit view' },
-    { src: '/images/20220521_134209_2.jpg', alt: 'Conference event' },
-    { src: '/images/20221016_181208_2.jpg', alt: 'Workstation with DO MORE screen' },
-    { src: '/images/20230113_155734_3.jpg', alt: 'Mountain view with clouds' },
-    { src: '/images/20230826_113331_2.jpg', alt: 'Astronaut in desert' },
+    { src: '/images/gallery/20211217-Lisbon-Airplane.jpg', alt: 'Lisbon Airplane' },
+    { src: '/images/gallery/20220521-San-Francisco-Golden-Bridge.jpg', alt: 'San Francisco Golden Bridge' },
+    { src: '/images/gallery/20221016-Berlin-Victory-Column.jpg', alt: 'Berlin Victory Column' },
+    { src: '/images/gallery/20230630-Greece-European-Flag.jpg', alt: 'Greece European Flag' },
+    { src: '/images/gallery/20230826-Italy-Wedding-Car.jpg', alt: 'Italy Wedding Car' },
   ];
 
+  images.sort(() => Math.random() - 0.5);
+  
   return (
-    <div className="flex justify-center items-center space-x-12 py-8">
+    <div className="flex justify-center items-center space-x-12 xs:space-x-3 py-10">
       {images.map((image, index) => (
         <div
           key={index}
-          className={`relative w-64 h-64 rounded-lg overflow-hidden shadow-lg transform ${
+          className={`relative w-64 max-h-64  rounded-lg overflow-hidden shadow-lg transform ${
             index % 2 === 0 ? 'rotate-2' : '-rotate-2'
-          } transition-transform duration-300 hover:scale-105`}
+          } transition-transform duration-300 hover:scale-105
+        ${index == 0 || index == (images.length-1)? "xs:hidden" : " -translate-x-2 xs:w-1/3"} `}
         >
           <img
             src={image.src}
             alt={image.alt}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover aspect-square"
           />
         </div>
       ))}

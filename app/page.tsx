@@ -29,7 +29,7 @@ export default async function IndexPage() {
           <h1 className="text-5xl font-bold tracking-tight text-green-600 mb-6 ">Senior Project Manager,<br /> Product Owner based in Berlin 🇩🇪</h1>
           
           <h2 className="text-xl xs:text-2xl text-gray-600 pb-4 text-left m-auto">
-          I am a Senior Project Manager with a strong IT and marketing background, skilled at aligning technical and business goals. I lead cross-functional teams globally, foster agile collaboration, and build trusted relationships with senior stakeholders. 
+          I am a Senior Project Manager with a strong IT and marketing background, skilled at aligning technical and business goals. I lead cross-functional teams globally, foster agile collaboration, and build trusted relationships with stakeholders. 
           {/* I’m committed to delivering results with clarity, from detailed roadmaps to accessible documentation, making every project a strategic win for the organization. */}
           </h2>
           
