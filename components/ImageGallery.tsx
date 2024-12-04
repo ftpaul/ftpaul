@@ -16,7 +16,7 @@ function shuffleArray(array) {
 const ImageGallery = () => {
   
 
-  const [shuffledImages, setShuffledImages] = useState([]);
+  const [shuffledImages, setShuffledImages] = useState<HTMLImageElement[]>([]);
 
   useEffect(() => {
     setShuffledImages(shuffleArray([...images])); // Shuffle images on component mount
@@ -33,7 +33,7 @@ const ImageGallery = () => {
           className={`relative w-64 max-h-64  rounded-lg overflow-hidden shadow-lg transform ${
             index % 2 === 0 ? 'rotate-2' : '-rotate-2'
           } transition-transform duration-300 hover:scale-105
-        ${index == 0 || index == (images.length-1)? "xs:hidden" : " -translate-x-2 xs:w-1/3"} `}
+        ${index == 0 || index == (shuffledImages.length-1)? "xs:hidden" : " -translate-x-2 xs:w-1/3"} `}
         >
           <img
             src={image.src}
