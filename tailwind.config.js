@@ -156,7 +156,9 @@ module.exports = {
       '1000': '1000ms',
     },
   },
-  corePlugins: {},
+  corePlugins: {
+    space: true
+  },
   plugins: [],
 }
 
