@@ -1,26 +1,17 @@
 [
     {
       "company": "Adjust",
-      "role": "Senior Project Manager, Web",
+      "role": "(Senior) Project Manager, Web",
       "logo": "/images/adjust.png",
       "location": "Berlin",
       "start_date": "Jan 2024",
       "end_date": "Present",
       "featured_date": "2024 - Present",
       "description": [
-        "Led the migration of the main website from a legacy infrastructure, rebuilding it with a modern tech stack to boost performance. Achieved a 4x reduction in deployment time and significantly improved speed and key performance metrics, enhancing user experience globally and operational efficiency."
-      ]
-    },
-    {
-      "company": "Adjust",
-      "role": "Project Manager, Web",
-      "logo": "/images/adjust.png",
-      "location": "Berlin",
-      "start_date": "2022",
-      "end_date": "2023",
-      "featured_date": "2022 - 2023",
-      "description": [
-        "Spearheaded the implementation of a new design system, unifying the look, feel, and functionality across our digital products"
+        "Led a team of developers, managing day-to-day workflows and team rituals such as stand-ups and retrospectives.",
+        "Coordinated cross-functional globally distributed teams, fostering collaboration among developers, designers, and marketers.",
+        "Leveraged data and analytics to track project performance, monitor key metrics, and drive informed decision-making. ",
+        "Achieved a 4x reduction in deployment time and significantly improved speed and enhancing user experience globally and operational efficiency."
       ]
     },
     {
@@ -32,8 +23,10 @@
       "end_date": "Dec 2021",
       "featured_date": "2021",
       "description": [
-        "Decreased deployment time by 10 times impacting the work of 20+ people",
-        "Coordinated the relaunch of a complete new website and a standalone ranking tool"
+        "Facilitated cross-team collaboration and transparent updates to different stakeholders across the globe.",
+        "Decreased deployment time by 10 times impacting the work of 20+ people.",
+        "Coordinated the relaunch of a complete new website and a standalone ranking tool.",
+        "Spearheaded the implementation of a new design system, unifying the look, feel, and functionality across our digital products. Enabled faster, consistent UI updates and improved collaboration between design and development teams, resulting in a more cohesive UX and streamlined workflows."
       ]
     },
     {
@@ -45,21 +38,20 @@
       "end_date": "Apr 2020",
       "featured_date": "2019 - 2020",
       "description": [
-        "Responsible for driving 40% of new business",
-        "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)"
+        "Drove 40% of new business through enhanced product sections, a new digital brand, and CRO initiatives.",
+        "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)."
       ]
     },
     {
       "company": "Unbabel",
-      "role": "Performance Marketing Manager",
+      "role": "Marketing Manager",
       "logo": "/images/unbabel.png",
       "location": "Lisbon",
       "start_date": "Feb 2018",
       "end_date": "Mar 2019",
       "featured_date": "2018",
       "description": [
-        "Coordinated cross-team Inbound initiatives",
-        "Built and executed performance strategy (5 digits per quarter)"
+        "Led reporting and analytics efforts using Chartio, Salesforce, Pardot, and GA to track KPIs, measure impact, and inform strategic adjustments."
       ]
     },
     {

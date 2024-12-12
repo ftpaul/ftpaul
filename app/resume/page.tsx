@@ -62,7 +62,7 @@ export default async function ResumePage() {
 
       <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
 
-      {jobHistory.map((job) => (
+      {jobHistory.slice(0, 4).map((job) => (
         <ExperienceBlock job={job} key={job.end_date} />
       ))}
       
@@ -71,7 +71,7 @@ export default async function ResumePage() {
 
 
     {/* Details Column */}
-    <div className="w-2/6 xs:w-full p-4 xs:pl-0 xs:pr-0 " >
+    <div className="w-2/6 xs:w-full pl-8 xs:pl-0 xs:pr-0 " >
 
       <div className="pt-6 pb-8 xs:hidden">
         <p className="text-base font-bold text-gray-500">Based in {content.details.location.city} <span role="img" aria-label="content.details.location.country"  ></span></p>
