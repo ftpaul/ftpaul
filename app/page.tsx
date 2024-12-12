@@ -15,7 +15,7 @@ export default async function IndexPage() {
 
     return (
       <>
-      <div className="heroWidth flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4">
+      <div className="flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4">
 
         <div className="w-2/3 lg:w-3/4 sm:w-full xs:w-full  ">
           
@@ -31,6 +31,8 @@ export default async function IndexPage() {
 
       
       </div>
+
+      <ImageGallery />
       
       <Features />
               
