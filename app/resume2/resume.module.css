@@ -1,0 +1,141 @@
+:root {
+  --primary:#0A3C30;
+  --text:#1C1C1C;
+  --bg:#ffffff;
+  --muted:#5f6b6b;
+  --side:#f3f5f4;         /* grey sidebar */
+  --divider:#e9eeec;
+}
+
+/* Stage centers the page and adds the “page” effect */
+.stage{
+  min-height: 100dvh;
+  background: #eef2f0;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding: 32px 16px;
+}
+
+/* The page “sheet” */
+.page{
+  width: 900px;                 /* desktop screen width */
+  background: var(--bg);
+  display:grid;
+  grid-template-columns: 1fr 280px;  /* sidebar + content */
+  box-shadow: 0 12px 30px rgba(10,60,48,.15);
+  border-radius: 12px;
+  overflow: hidden;             /* rounded corners for sidebar bg */
+}
+
+/* Sidebar */
+.side{
+  background: var(--side);
+  padding: 24px 20px;
+}
+.sideHeader{ margin-bottom: 16px; }
+.name{
+  font-size: 28px;
+  margin: 0 0 4px;
+  color: var(--primary);
+  letter-spacing: .2px;
+}
+.headline{
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+}
+.block{ margin-top: 16px; }
+.blockTitle{
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 8px;
+}
+.kv{
+  list-style: none; padding:0; margin:0;
+}
+.kv li{
+  display:flex; gap:8px; justify-content:space-between;
+  margin: 6px 0;
+  font-size: 13px;
+}
+.side a{
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+.listTight{ padding-left: 16px; margin: 0; }
+.listTight li{ margin: 4px 0; font-size: 13px; }
+.eduItem{ margin:6px 0; }
+.eduInst{ font-weight:600; font-size:13px; }
+.eduMeta{ color: var(--muted); font-size:12px; }
+
+/* Main content */
+.content{
+  padding: 28px 28px 24px 28px;
+}
+.section{ border-top:1px solid var(--divider); padding-top:12px; margin-top:16px; }
+.section:first-child{ border-top:0; padding-top:0; margin-top:0; }
+.sectionTitle{
+  color: var(--primary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 0 0 8px;
+}
+.summary{ margin: 0; line-height: 1.5; }
+
+.role{ margin: 10px 0 12px; }
+.roleHeader{ display:flex; flex-direction:column; gap:2px; }
+.roleTitle{ margin:0; font-weight:600; }
+.roleMeta{ color: var(--muted); font-size: 12px; }
+.roleSummary{ margin: 6px 0; }
+.bullets{ margin:6px 0 0; padding-left: 18px; }
+.bullets li{ margin: 4px 0; }
+
+/* Print button */
+.printButton{
+  position: fixed;
+  bottom: 20px; right: 20px;
+  background: var(--primary); color:#fff;
+  border: none; padding: 10px 16px; border-radius: 8px;
+  cursor: pointer; font-size:14px;
+  box-shadow: 0 6px 16px rgba(10,60,48,.25);
+}
+.printButton:hover{ opacity:.95; }
+
+/* LINKS IN CONTENT */
+.page a{
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--primary);
+}
+
+/* -------- ONE-PAGE FIT HELPERS -------- */
+
+/* Slightly tighter rhythm to save space */
+.content, .side { line-height: 1.45; }
+.bullets li, .listTight li { margin-bottom: 3px; }
+.role { margin-bottom: 10px; }
+
+/* Optional: shrink fonts a touch for print to ensure 1 page */
+@media print {
+  @page{ size: A4; margin: 10mm; }
+  .stage{ padding: 0; background: transparent; }
+  .page{
+    width: auto;
+    box-shadow: none; border-radius: 0;
+  }
+  /* Global shrink to help fit on one page */
+  .page{ font-size: 13px; }
+  .name{ font-size: 24px; }
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .page{ grid-template-columns: 1fr; }
+  .side{ padding-bottom: 12px; }
+  .content{ padding-top: 18px; }
+}
