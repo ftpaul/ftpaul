@@ -2,11 +2,15 @@
   "basics": {
     "url": {
       "href": "https://pauloteixeira.de",
-      "label": "Website"
+      "label": "pauloteixeira.de"
     },
     "name": "Paulo Teixeira",
     "email": "hey@pauloteixeira.de",
     "phone": "",
+    "linkedin": {
+      "href": "https://linkedin.com/in/ftpaul",
+      "label": "in/ftpaul"
+    },
     "picture": {
       "url": "",
       "size": 64,
@@ -94,25 +98,40 @@
       "name": "Skills",
       "items": [
         {
-          "name": "Project Management",
+          "name": "Delivery & Process Management",
           "description": "Agile delivery, stakeholder alignment, cross‑functional leadership.",
           "keywords": [
-            "Agile & Scrum",
-            "Strategic Planning",
-            "Stakeholder Management",
-            "Cross-functional Leadership"
+            "Agile & Scrum & Kanban",
+            "Backlog Prioritization",
+            "Sprint Planning",
+            "Risk Management",
+            "Process Optimization"
           ],
           "visible": true
         },
         {
-          "name": "Technical",
+          "name": "Product Management",
           "description": "Web platforms, UX collaboration, QA, analytics, martech.",
           "keywords": [
-            "Web Platforms",
-            "UX Collaboration",
-            "Quality Assurance",
-            "Analytics",
-            "Marketing Technology"
+            "Requirements Definition",
+            "Roadmap Planning",
+            "Stakeholder Alignment",
+            "Cross-functional Collaboration",
+            "Change Management"
+          ],
+          "visible": true
+        },
+        {
+          "name": "Leadership & Strategy",
+          "description": "Strategic thinking, clear communication, solution orientation, attention to detail, adaptability.",
+          "keywords": [
+            "Strategic Thinking",
+            "Clear Communication",
+            "Remote Collaboration",
+            "Attention to Detail",
+            "Team Coaching",
+            "Continuous Improvement",
+            "Adaptability"
           ],
           "visible": true
         },
@@ -120,26 +139,12 @@
           "name": "Tools",
           "description": "Daily drivers & analytics stack.",
           "keywords": [
+            "AI-assisted workflows",
             "Jira",
             "Confluence",
             "Figma",
-            "Google Analytics",
-            "HubSpot",
-            "Salesforce",
-            "Chartio",
-            "Notion"
-          ],
-          "visible": true
-        },
-        {
-          "name": "Soft Skills",
-          "description": "Strategic thinking, clear communication, solution orientation, attention to detail, adaptability.",
-          "keywords": [
-            "Strategic Thinking",
-            "Clear Communication",
-            "Solution Orientation",
-            "Attention to Detail",
-            "Adaptability"
+            "Google Analytics / Domo",
+            "Salesforce"
           ],
           "visible": true
         }
@@ -242,7 +247,7 @@
         },
         {
           "name": "German",
-          "description": "A2 (currently studying B1)",
+          "description": "A2 (studying B1)",
           "level": 2,
           "visible": true
         }
@@ -265,51 +270,36 @@
       "items": [
         {
           "company": "Adjust GmbH",
-          "position": "Senior Project Manager – Web",
+          "position": "Senior Project Manager",
           "location": "Berlin, Germany",
-          "date": "Jan 2022 — Dec 2024",
+          "date": "Jan 2021 — Dec 2024",
           "url": {
             "href": "",
             "label": ""
           },
-          "summary": "Led cross‑functional web initiatives, aligning product, design, and engineering teams for large‑scale digital projects.",
+          "summary": "Led cross-functional digital delivery initiatives across product, engineering, and design during Adjust’s post-acquisition transformation. Collaborated closely with AppLovin’s California-based teams to align cross-company priorities, bridge time zones, and ensure operational consistency across global product streams. ",
           "highlights": [
-            "Streamlined deployment workflows, reducing release time by 90% and improving team efficiency for 20+ contributors.",
-            "Led cross‑functional teams across design, engineering, and product, ensuring delivery of complex global web initiatives.",
-            "Drove the rollout of a new design system, creating consistency across digital products and accelerating development.",
+            "Drove cross-functional delivery improvements, achieving a 90 % reduction in release cycles and improved efficiency across global teams.",
+            "Promoted the rollout of a company-wide design system, enabling faster product launches and consistent user experience.",
             "Coordinated communication with senior stakeholders (including CTO and leadership), maintaining transparency and alignment.",
             "Oversaw the complete relaunch of the corporate website and a standalone ranking tool, improving UX and SEO visibility."
           ],
           "visible": true
         },
         {
-          "company": "Adjust GmbH",
-          "position": "Product Manager – Web",
-          "location": "Berlin, Germany",
-          "date": "Jan 2021 — Dec 2021",
-          "url": {
-            "href": "",
-            "label": ""
-          },
-          "summary": "Managed product delivery and UX improvements for Adjust’s web presence, focusing on global consistency and growth.",
-          "highlights": [],
-          "visible": true
-        },
-        {
           "company": "Unbabel",
           "position": "Product Manager",
           "location": "Lisbon, Portugal",
-          "date": "Apr 2019 — Apr 2020",
+          "date": "Jan 2018 — Apr 2020",
           "url": {
             "href": "",
             "label": ""
           },
-          "summary": "Product delivery across web initiatives with cross‑functional collaboration.",
+          "summary": "Delivered multiple product launches and UX initiatives for Unbabel’s core translation platform, bridging business goals and technical execution.",
           "highlights": [
-            "Delivered 10+ product launches managing teams of up to 8 people (internal and external).",
-            "Achieved 40% growth in new business through new product sections, digital brand enhancements, and CRO initiatives.",
-            "Improved release processes, achieving a 4× faster deployment cycle and higher platform reliability.",
-            "Drove collaboration between developers, designers, and marketers through structured agile rituals and data‑driven insights."
+            "Managed roadmap execution across design, development, and marketing teams.",
+            "Improved release processes, achieving a four-fold increase in deployment speed.",
+            "Delivered 10 + product updates driving 40 % growth in new business and improved retention."
           ],
           "visible": true
         },
@@ -322,10 +312,9 @@
             "href": "",
             "label": ""
           },
-          "summary": "Growth leadership and analytics‑driven marketing.",
+          "summary": "Defined and executed growth strategy to scale the Landing.jobs marketplace, driving user acquisition and engagement through performance analytics and A/B experimentation.",
           "highlights": [
-            "Led growth initiatives, achieving 100%+ annual user growth and conducting 100+ user interviews to guide product development.",
-            "Managed performance tracking through Chartio, Salesforce, Pardot, and Google Analytics to drive data‑informed marketing strategy."
+            "Led growth initiatives, achieving 100%+ annual user growth and conducting 100+ user interviews to guide product development."
           ],
           "visible": true
         },
@@ -338,10 +327,8 @@
             "href": "",
             "label": ""
           },
-          "summary": "Co‑founded and managed a software house building custom web MVPs for clients and equity‑based projects.",
+          "summary": "Co-founded and managed a software house delivering custom web and mobile MVPs for both client and equity-based projects, overseeing technical delivery and client relationships.",
           "highlights": [
-            "Co‑founded and managed a software house building custom web MVPs for clients and equity‑based projects.",
-            "Oversaw technical delivery, agile workflows, and client relationship management."
           ],
           "visible": true
         }

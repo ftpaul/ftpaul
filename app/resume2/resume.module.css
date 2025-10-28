@@ -35,15 +35,15 @@
 }
 .sideHeader{ margin-bottom: 16px; }
 .name{
-  font-size: 28px;
-  margin: 0 0 4px;
+  font-size: 44px;
+  margin: 0 0 6px;
   color: var(--primary);
   letter-spacing: .2px;
 }
 .headline{
   color: var(--text);
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;   
 }
 .block{ margin-top: 16px; }
 .blockTitle{
@@ -72,6 +72,21 @@
 .eduInst{ font-weight:600; font-size:13px; }
 .eduMeta{ color: var(--muted); font-size:12px; }
 
+.skillCategory {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 11px;
+  margin-top: 10px;
+}
+.skillList {
+  margin: 0;
+  padding-left: 14px;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+.skillList li { margin-bottom: 2px; }
+
 /* Main content */
 .content{
   padding: 28px 28px 24px 28px;
@@ -91,20 +106,12 @@
 .roleHeader{ display:flex; flex-direction:column; gap:2px; }
 .roleTitle{ margin:0; font-weight:600; }
 .roleMeta{ color: var(--muted); font-size: 12px; }
-.roleSummary{ margin: 6px 0; }
-.bullets{ margin:6px 0 0; padding-left: 18px; }
-.bullets li{ margin: 4px 0; }
-
-/* Print button */
-.printButton{
-  position: fixed;
-  bottom: 20px; right: 20px;
-  background: var(--primary); color:#fff;
-  border: none; padding: 10px 16px; border-radius: 8px;
-  cursor: pointer; font-size:14px;
-  box-shadow: 0 6px 16px rgba(10,60,48,.25);
+.roleSummary{ margin: 6px 0; font-size: 0.94em; }
+.bullets{ margin:6px 0 0; padding-left: 18px; list-style-type: disc; }
+.bullets li{ margin: 3px 0; color: var(--text); font-size: 0.91em;  line-height: 1.45; }
+.bullets li::marker {
+  color: var(--primary);        /* use your deep green */
 }
-.printButton:hover{ opacity:.95; }
 
 /* LINKS IN CONTENT */
 .page a{
@@ -113,6 +120,7 @@
   border-bottom: 1px solid var(--primary);
 }
 
+
 /* -------- ONE-PAGE FIT HELPERS -------- */
 
 /* Slightly tighter rhythm to save space */
@@ -120,22 +128,149 @@
 .bullets li, .listTight li { margin-bottom: 3px; }
 .role { margin-bottom: 10px; }
 
-/* Optional: shrink fonts a touch for print to ensure 1 page */
-@media print {
-  @page{ size: A4; margin: 10mm; }
-  .stage{ padding: 0; background: transparent; }
-  .page{
-    width: auto;
-    box-shadow: none; border-radius: 0;
-  }
-  /* Global shrink to help fit on one page */
-  .page{ font-size: 13px; }
-  .name{ font-size: 24px; }
+/* --- Add this near the bottom, before @media print --- */
+.actions {
+  background: #eef2f0;
+  width: 100%;
+  display: flex;
+  justify-content: center;      /* center horizontally */
+  padding: 24px 0 48px 0;        /* space above & below */
 }
 
-/* Responsive */
-@media (max-width: 900px){
+/* Update button style: remove 'position: fixed' to keep it in flow */
+.actions button{
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(10,60,48,.25);
+  transition: all 0.2s ease;
+}
+.actions button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 900px){
   .page{ grid-template-columns: 1fr; }
   .side{ padding-bottom: 12px; }
   .content{ padding-top: 18px; }
+}
+
+@media print {
+  /* Full-bleed page setup (lets grey hit the edge) */
+  @page { size: A4; margin: 0; }               /* zero margins */
+  :global(html), :global(body) { margin: 0 !important; padding: 0 !important; }
+
+  /* Hide everything but the CV */
+  :global(body *) { visibility: hidden !important; }
+  :global(#cv-root), :global(#cv-root *) { visibility: visible !important; }
+
+  /* Put the CV at 210mm full width (A4 width) */
+  :global(#cv-root) {
+    position: absolute;
+    inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+    width: 210mm;             /* exact page width */
+    margin: 0 !important;
+    background: #fff;
+  }
+
+  .stage { padding: 0 !important; background: transparent !important; }
+
+  .page {
+    width: 210mm !important;  /* match A4 width exactly */
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    display: grid !important;
+    grid-template-columns: 1fr 70mm !important; /* main + sidebar (right) */
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 12.6px;
+    line-height: 1.45;
+
+    min-height: 297mm; /* full A4 height */
+    height: 297mm !important;
+    display: grid !important;
+    grid-template-columns: 1fr 70mm !important;
+  }
+
+  /* Ensure the grey sidebar actually prints to the edge */
+  .side {
+    background: var(--side) !important;         /* your grey */
+    padding: 118px 16px;
+    position: relative;
+  }
+
+  .side::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--side);
+    z-index: -1;
+  }
+  .content { padding: 20px 22px 18px 22px; }
+
+  /* Hide download button row on print */
+  .downloadArea, .printButton { display: none !important; }
+
+  /* Avoid awkward splits */
+  .section, .role, .eduItem, .block, .kv, .listTight, .bullets {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+}
+
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media screen and (max-width: 768px) {
+  /* Layout: stack vertically */
+  .page {
+    grid-template-columns: 1fr !important;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .side {
+    background: var(--side);
+    padding: 16px 20px;
+    order: 2; /* Move sidebar below main content */
+  }
+
+  .content {
+    order: 1;
+    padding: 20px;
+  }
+
+  /* Hide or minimize bullets */
+  .bullets {
+    display: none; /* hides bullet lists entirely */
+  }
+
+  /* Hide secondary sidebar sections (Skills, Profiles, etc.) */
+  .block:nth-of-type(2), /* Skills */
+  .block:nth-of-type(3), /* Languages */
+  .block:nth-of-type(4)  /* Education, adjust if needed */
+  {
+    display: none;
+  }
+
+  /* Adjust font sizes for smaller screens */
+  .name {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  .headline {
+    font-size: 14px;
+  }
+  .sectionTitle {
+    font-size: 12px;
+  }
+
+  /* Add gentle padding at bottom so it feels natural when scrolling */
+  .downloadArea {
+    margin-bottom: 24px;
+  }
 }

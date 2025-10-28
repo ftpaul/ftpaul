@@ -8,6 +8,7 @@ export default function Page() {
   const s = resume?.sections ?? {};
 
   return (
+    <>
     <div id="cv-root" className={styles.stage}>
       <main className={styles.page}>
         {/* LEFT SIDEBAR (grey background) */}
@@ -32,7 +33,7 @@ export default function Page() {
                   <article key={i} className={styles.role}>
                     <div className={styles.roleHeader}>
                       <h3 className={styles.roleTitle}>
-                        {role.position} — {role.company}
+                        {role.position} - {role.company}
                       </h3>
                       <div className={styles.roleMeta}>
                         {[role.location, role.date].filter(Boolean).join(" · ")}
@@ -68,10 +69,13 @@ export default function Page() {
               {basics.url?.href && (
                 <li><span>Website</span><span><a href={basics.url.href} target="_blank">{basics.url.label || basics.url.href}</a></span></li>
               )}
+              {basics.linkedin?.href && (
+                <li><span>LinkedIn</span><span><a href={basics.url.href} target="_blank">{basics.linkedin.label || basics.linkedin.href}</a></span></li>
+              )}
             </ul>
           </section>
 
-          {/* Profiles */}
+          {/* Profiles 
           {s.profiles?.items?.length > 0 && (
             <section className={styles.block}>
               <h3 className={styles.blockTitle}>Profiles</h3>
@@ -87,7 +91,7 @@ export default function Page() {
                   ))}
               </ul>
             </section>
-          )}
+          )}*/}
 
           {/* Skills */}
           {s.skills?.items?.length > 0 && (
@@ -112,7 +116,7 @@ export default function Page() {
               <ul className={styles.listTight}>
                 {s.languages.items.map((lng: any, i: number) => (
                   <li key={i}>
-                    {lng.name} — {lng.description}
+                    {lng.name} - {lng.description}
                   </li>
                 ))}
               </ul>
@@ -137,7 +141,12 @@ export default function Page() {
         </aside>
       </main>
 
-      <PrintButton />
+      
     </div>
+    
+    <div className={styles.actions}>
+        <PrintButton />
+      </div>
+    </>
   );
 }
