@@ -4,15 +4,15 @@ import Section from './Section'
 
 const Features = () => (
 
-<Section>
-    <div className="pb-32 pt-8 xs:pt-16 bg-white">
+<Section className="bg-gray-100" >
+    <div className="pb-32 pt-8 xs:pt-16">
     <div className="max-w-screen-xl mx-auto sm:px-6">
         <div className="lg:text-center">
         <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             The features you will fall in love with
         </h3>
         <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-            My diverse background brings together a unique set of competencies. 
+            My diverse background brings together a unique set of competencies that combine strategy, delivery, and collaboration.
         </p>
         </div>
 
@@ -30,7 +30,7 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Strategic thinking</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                I connect day-to-day actions with long-term goals, ensuring every project aligns with the organization's vision and contributes to sustainable success.
+                I connect day-to-day actions with long-term goals, ensuring every initiative aligns with the organization's vision and drives sustainable impact.
                 </p>
                 </div>
             </div>
@@ -47,7 +47,8 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Project execution</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                With a focus on efficiency and adaptability, I drive projects from concept to completion, establishing clear processes to meet timelines and deliver and high-quality results.
+                {/* With a focus on efficiency and adaptability, I drive projects from concept to completion, establishing clear processes to meet timelines and deliver and high-quality results. */}
+                I deliver complex projects efficiently and adaptively - from concept to launch - by defining clear processes, aligning stakeholders, and maintaining quality at every stage.
                 {/* With over 10 years of experience, I specialize in driving projects from concept to completion, optimizing processes, and adapting to evolving challenges to ensure timely delivery and high-quality results. */}
                 </p>
                 </div>
@@ -65,7 +66,8 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Empowering people and teams</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                I create a collaborative environment that supports team growth, encouraging everyone to contribute their best and achieve shared objectives.
+                {/* I create a collaborative environment that supports team growth, encouraging everyone to contribute their best and achieve shared objectives. */}
+                I cultivate collaborative, high-trust environments that enable teams to grow, innovate, and achieve shared objectives.
                 </p>
                 </div>
             </div>
@@ -82,7 +84,8 @@ const Features = () => (
                 <div className="ml-4">
                 <h4 className="text-lg leading-6 font-medium text-gray-900">Outcomes oriented</h4>
                 <p className="mt-2 text-base leading-6 text-gray-500">
-                I prioritize measurable impact over output, ensuring each project delivers tangible results that drive value for the business and its users.
+                {/* I prioritize measurable impact over output, ensuring each project delivers tangible results that drive value for the business and its users. */}
+                I focus on measurable results, ensuring that every project creates tangible value for both the business and its users.
                 </p>
                 </div>
             </div>
