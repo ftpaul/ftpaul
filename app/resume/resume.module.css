@@ -39,6 +39,7 @@
   margin: 0 0 6px;
   color: var(--primary);
   letter-spacing: .2px;
+  font-weight: 600;
 }
 .headline{
   color: var(--text);
