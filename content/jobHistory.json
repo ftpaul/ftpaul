@@ -1,17 +1,45 @@
 [
     {
       "company": "Adjust",
-      "role": "(Senior) Project Manager, Web",
+      "role": "Senior Project Manager",
       "logo": "/images/adjust.png",
       "location": "Berlin",
       "start_date": "Jan 2024",
       "end_date": "Present",
-      "featured_date": "2024 - Present",
+      "featured_date": "2021 - Present",
       "description": [
         "Led a team of developers, managing backlog, prioritization, and facilitating Agile ceremonies such as stand-ups and retrospectives.",
         "Coordinated cross-functional globally distributed teams, fostering collaboration among developers, designers, and marketers.",
         "Leveraged data and analytics to track project performance, monitor key metrics, and drive informed decision-making. ",
         "Achieved a 4x reduction in deployment time and significantly improved speed and enhancing user experience globally and operational efficiency."
+      ]
+    },
+    {
+      "company": "Unbabel",
+      "role": "Product Manager",
+      "logo": "/images/unbabel.png",
+      "location": "Lisbon",
+      "start_date": "Apr 2019",
+      "end_date": "Apr 2020",
+      "featured_date": "2018 - 2020",
+      "description": [
+        "Drove 40% of new business through enhanced product sections, a new digital brand, and CRO initiatives.",
+        "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)."
+      ]
+    },
+    {
+      "company": "Landing.jobs",
+      "role": "Marketing Lead ",
+      "logo": "/images/landingjobs.png",
+      "location": "Lisbon",
+      "start_date": "Jun 2014",
+      "end_date": "Jun 2017",
+      "featured_date": "2014 - 2017",
+      "description": [
+        "Managed the work and rituals of a team with 5 people (SCRUM)",
+        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog",
+        "Conducted 100+ users interviews for product feedback and idea validation",
+        "Achieved growth rates over 100% every year"
       ]
     },
     {
@@ -30,16 +58,15 @@
       ]
     },
     {
-      "company": "Unbabel",
-      "role": "Product Manager",
-      "logo": "/images/unbabel.png",
+      "company": "Inspiring Code",
+      "role": "Co-founder",
+      "logo": "/images/inspiringcode.png",
       "location": "Lisbon",
-      "start_date": "Apr 2019",
-      "end_date": "Apr 2020",
-      "featured_date": "2019 - 2020",
+      "start_date": "Feb 2013",
+      "end_date": "Feb 2014",
       "description": [
-        "Drove 40% of new business through enhanced product sections, a new digital brand, and CRO initiatives.",
-        "Delivered 10+ product launches working with a team up to 8 people (both in-house and outsourcing)."
+        "Managed a portfolio of projects and products with clients",
+        "Coordinated the design and development of several MVPs and web applications"
       ]
     },
     {
@@ -52,32 +79,6 @@
       "featured_date": "2018",
       "description": [
         "Led reporting and analytics efforts using Chartio, Salesforce, Pardot, and GA to track KPIs, measure impact, and inform strategic adjustments."
-      ]
-    },
-    {
-      "company": "Landing.jobs",
-      "role": "Marketing Lead / Growth Marketing Manager",
-      "logo": "/images/landingjobs.png",
-      "location": "Lisbon",
-      "start_date": "Jun 2014",
-      "end_date": "Jun 2017",
-      "description": [
-        "Managed the work and rituals of a team with 5 people (SCRUM)",
-        "Collaborated with PM and Engineer team to define the roadmap and to prioritize the backlog",
-        "Conducted 100+ users interviews for product feedback and idea validation",
-        "Achieved growth rates over 100% every year"
-      ]
-    },
-    {
-      "company": "Inspiring Code",
-      "role": "Co-founder",
-      "logo": "/images/inspiringcode.png",
-      "location": "Lisbon",
-      "start_date": "Feb 2013",
-      "end_date": "Feb 2014",
-      "description": [
-        "Managed a portfolio of projects and products with clients",
-        "Coordinated the design and development of several MVPs and web applications"
       ]
     }
   ]

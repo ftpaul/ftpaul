@@ -1,132 +1,156 @@
-import ExperienceBlock from '../../components/resume/ExperienceBlock'
-import Image from 'next/image'
-import '../../styles/resume.css'
-import Link from "next/link";
-import content from '../../content/resume.json'
-import jobHistory from '../../content/jobHistory.json'
+// app/resume2/page.tsx
+import resume from "../../content/resume2.json"
+import styles from "./resume.module.css"
+import PrintButton from "./PrintButton"
 
-
-export default async function ResumePage() {
-
-  const seo = {
-    title: "Paulo Teixeira Resume",
-    description: "Find and download Paulo Teixeira's curriculum. A Project Manager with 10+ years of experience in digital businesses."
-  }
+export default function Page() {
+  const basics = resume?.basics ?? {};
+  const s = resume?.sections ?? {};
+  const isLocalhost = process.env.IS_LOCALHOST === 'true';
 
   return (
     <>
-      {/*
-      <Seo title={seo.title} description={seo.description} />
-       ... 
-      <Image src="/assets/images/ezgif-5-bea54725e5.jpeg" alt="Paulo Teixeira | ftpaul.io" width={160} height={160} className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full" /       ... 
-  
-   */}
+    <div id="cv-root" className={styles.stage}>
+      <main className={styles.page}>
+        {/* LEFT SIDEBAR (grey background) */}
+        <section className={styles.content}>
+        <header className={styles.sideHeader}>
+            <h1 className={styles.name}>{basics.name}</h1>
+            {basics.headline && <div className={styles.headline}>{basics.headline}</div>}
+          </header>
+          {s.summary?.content && (
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>Profile</h2>
+              <p className={styles.summary}>{s.summary.content}</p>
+            </section>
+          )}
 
-  <div className="letter xs:p-2 p-8 mx-auto mb-24 mt-6 bg-white relative max-w-screen-lg w-11/12">
+          {s.experience?.items?.length > 0 && (
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>Experience</h2>
+              {s.experience.items
+                .filter((it: any) => it?.visible !== false)
+                .map((role: any, i: number) => (
+                  <article key={i} className={styles.role}>
+                    <div className={styles.roleHeader}>
+                      <h3 className={styles.roleTitle}>
+                        {role.position} - {role.company}
+                      </h3>
+                      <div className={styles.roleMeta}>
+                        {[role.location, role.date].filter(Boolean).join(" · ")}
+                      </div>
+                    </div>
+                    {role.summary && <p className={styles.roleSummary}>{role.summary}</p>}
+                    {Array.isArray(role.highlights) && role.highlights.length > 0 && (
+                      <ul className={styles.bullets}>
+                        {role.highlights.map((h: string, idx: number) => (
+                          <li key={idx}>{h}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </article>
+                ))}
+            </section>
+          )}
+        </section>
 
-    <div className="flex flex-wrap">
-      
-      <div className="w-4/6  pt-4 pr-1 xs:pr-0 div-w-title">
-            
-          <h1 className="text-5xl xs:text-3xl font-bold text-gray-600 leading-none pt-4 pb-0 mb-0">
-          <button className="focus:outline-none outline-none cursor-default hover:cursor-default" >
-                {content.name}<span className="font-black text-6xl xs:text-3xl text-green-600">.</span>
-            </button> 
-          </h1>
-          <h2 className="text-4xl xs:text-2xl font-normal text-gray-300 pb-4">{content.title}</h2>
-
-      </div>
-
-  <div className="w-2/6 div-w-image " >
- 
-   
-   <Image 
-        src="/images/paulo-teixeira-main-image.jpeg" 
-        alt="Paulo Teixeira" 
-        className="w-40 h-40 xs:w-20 xs:h-20 mt-4 z-20 rounded-full"
-        width="400" 
-        height="400" 
-        priority={true}
-        key="somethingelse"/>
-    
-  </div>
-
-   
-
-
-    {/* Summary and Experience       */}
-    <div className="w-4/6 xs:w-full pt-4 pr-1 xs:pr-0 ">
-
-      <h4 className="uppercase text-xs text-gray-300 tracking-widest">Summary</h4>
-      <p className="text-lg text-gray-500 pb-6">{content.summary}</p>
-
-      <h4 className="uppercase text-xs text-gray-300 tracking-widest w-full">Experience</h4>
-
-      {jobHistory.slice(0, 4).map((job) => (
-        <ExperienceBlock job={job} key={job.end_date} />
-      ))}
-      
-    </div>
-    
-
-
-    {/* Details Column */}
-    <div className="w-2/6 xs:w-full pl-8 xs:pl-0 xs:pr-0 " >
-
-      <div className="pt-6 pb-8 xs:hidden">
-        <p className="text-base font-bold text-gray-500">Based in {content.details.location.city} <span role="img" aria-label="content.details.location.country"  ></span></p>
-      </div>
-
-      <div className="pb-8">
-        <p className="text-base font-bold text-gray-500">Languages</p>
-        {content.languages.map(language => (
-          <p className="text-base text-gray-500 pb-0" key={language}>{language}</p>
-        ))} 
-      </div>
-
-      <div className="pb-2 xs:hidden">
-        <p className="text-base pb-2 font-bold text-gray-500">Skills &amp; Competencies</p>
-        {content.industry_knowledge.map(group => (
-          <div className="pb-3" key={group.name}>
-            <p className="text-base capitalize text-gray-500 pb-0" >{group.name}</p>
-             {group.individuals.map(individuals => (
-              <p className="text-base text-gray-500" key={individuals}> - {individuals}</p>
-            ))} 
-          </div>
-        ))} 
-      </div>
-
-      <div className="pb-2 xs:hidden">
-        <p className="text-base pb-2 font-bold text-gray-500">Education</p>
+        {/* RIGHT CONTENT (white) */}
         
-          <div className="pb-3" >
-            <p className="text-base capitalize text-gray-500 pb-0" >{content.education.school}</p>
-            <p className="text-base text-gray-500" >{content.education.course}</p> 
-            <p className="text-base text-gray-300" >{content.education.description}</p> 
-          </div>
+        <aside className={styles.side}>
+          
+
+          {/* Contact */}
+          <section className={styles.block}>
+            <h3 className={styles.blockTitle}>Contact</h3>
+            <ul className={styles.kv}>
+              {basics.location && <li><span>Location:</span><span>{basics.location}</span></li>}
+              {(basics.email && isLocalhost)&& (
+                <li><span>Email:</span><span><a href={`mailto:${basics.email}`}>{basics.email}</a></span></li>
+              )}
+              {(basics.phone && isLocalhost)&& (
+                <li><span>Phone:</span><span><a href={`tel:${basics.phone}`}>{basics.phone}</a></span></li>
+              )}
+              {basics.url?.href && (
+                <li><span>Website:</span><span><a href={basics.url.href} target="_blank">{basics.url.label || basics.url.href}</a></span></li>
+              )}
+              {basics.linkedin?.href && (
+                <li><span>LinkedIn:</span><span><a href={basics.linkedin.href} target="_blank">{basics.linkedin.label || basics.linkedin.href}</a></span></li>
+              )}
+            </ul>
+          </section>
+
+          {/* Profiles 
+          {s.profiles?.items?.length > 0 && (
+            <section className={styles.block}>
+              <h3 className={styles.blockTitle}>Profiles</h3>
+              <ul className={styles.listTight}>
+                {s.profiles.items
+                  .filter((p: any) => p?.visible !== false)
+                  .map((p: any, i: number) => (
+                    <li key={i}>
+                      <a href={p.url?.href || p.url} target="_blank">
+                        {p.username || p.network}
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          )}*/}
+
+          {/* Skills */}
+          {s.skills?.items?.length > 0 && (
+            <section className={styles.block}>
+              <h3 className={styles.blockTitle}>Skills</h3>
+              <ul className={styles.listTight}>
+                {s.skills.items
+                  .filter((it: any) => it?.visible !== false)
+                  .map((sk: any, i: number) => (
+                    <li key={i}>
+                      <strong>{sk.name}:</strong> {(sk.keywords || []).join(", ")}
+                    </li>
+                  ))}
+              </ul>
+            </section>
+          )}
+
+          {/* Languages */}
+          {s.languages?.items?.length > 0 && (
+            <section className={styles.block}>
+              <h3 className={styles.blockTitle}>Languages</h3>
+              <ul className={styles.listTight}>
+                {s.languages.items.map((lng: any, i: number) => (
+                  <li key={i}>
+                    {lng.name} - {lng.description}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {/* Education */}
+          {s.education?.items?.length > 0 && (
+            <section className={styles.block}>
+              <h3 className={styles.blockTitle}>Education</h3>
+              {s.education.items.map((ed: any, i: number) => (
+                <div key={i} className={styles.eduItem}>
+                  <div className={styles.eduInst}>{ed.institution}</div>
+                  <div className={styles.eduMeta}>
+                    {[ed.studyType, ed.area].filter(Boolean).join(" ")}
+                    {ed.date ? ` · ${ed.date}` : ""}
+                  </div>
+                </div>
+              ))}
+            </section>
+          )}
+        </aside>
+      </main>
+
       
-      </div>
-
-
-      <div className="pb-8">
-       
-      </div>
-
-      <div className="pb-8">
-        
-      </div>
-
-
-    </div>
-      <div className='w-full mt-4 xs:mt-0 xs:mb-4 text-center'>
-        <Link href={content.download_link} target="_blank" className="text-green-600 hover:text-green-400 hover:border-b-4 border-b-2 text-lg font-bold transition duration-500">Download full CV (PDF)</Link>
-      </div>
-      
-    </div>
     </div>
     
+    <div className={styles.actions}>
+        <PrintButton />
+      </div>
     </>
-  )
+  );
 }
-
-
