@@ -3,12 +3,16 @@ import ImageGallery from "../components/ImageGallery"
 import Features from "../components/Features"
 import CompanyHistory from "../components/CompanyHistory"
 import Contact from "../components/Contact"
-
 import jobHistory from '../content/jobHistory.json'
 
 export const metadata = {
-  title: 'Paulo Teixeira · Senior Projetc Manager, Web · ftpaul.io',
-  description: 'A Senior Project Manager with a solid background in engineering and marketing. Delivering digital products since 2013.',
+  title: 'Paulo Teixeira · Senior Project Manager | Product Owner',
+  openGraph: {
+    title: 'Paulo Teixeira · Senior Project Manager | Product Owner',
+    description: 'A Senior Project Manager with a solid background in engineering and marketing.',
+    images: ['/images/og-image.jpg'], 
+    type: 'website',
+  }
 }
 
 export default async function IndexPage() {
