@@ -6,7 +6,7 @@
     },
     "name": "Paulo Teixeira",
     "email": "hey@pauloteixeira.de",
-    "phone": "",
+    "phone": "+4915165197937",
     "linkedin": {
       "href": "https://linkedin.com/in/ftpaul",
       "label": "in/ftpaul"
@@ -98,10 +98,10 @@
       "name": "Skills",
       "items": [
         {
-          "name": "Delivery & Process Management",
+          "name": "Delivery and Process Management",
           "description": "Agile delivery, stakeholder alignment, cross‑functional leadership.",
           "keywords": [
-            "Agile & Scrum & Kanban",
+            "Agile / Scrum / Kanban",
             "Backlog Prioritization",
             "Sprint Planning",
             "Risk Management",
@@ -157,7 +157,7 @@
       "id": "summary",
       "name": "Summary",
       "columns": 1,
-      "content": "Experienced Senior Project Manager with a strong IT and marketing foundation, skilled at bridging technical and business goals. I’ve led cross‑functional global teams, aligning stakeholders, optimizing delivery, and driving measurable outcomes in fast‑paced digital environments. Currently based in Berlin and open to new opportunities where I can combine strategic planning, agile collaboration, and hands‑on leadership to deliver impactful products and experiences.",
+      "content": "Experienced Senior Project Manager with a strong IT and marketing foundation, skilled at bridging technical and business goals. I've led cross‑functional global teams, aligning stakeholders, optimizing delivery, and driving measurable outcomes in fast‑paced digital environments. Currently based in Berlin and open to new opportunities where I can combine strategic planning, agile collaboration, and hands‑on leadership to deliver impactful products and experiences.",
       "visible": true,
       "separateLinks": true
     },
@@ -207,7 +207,7 @@
           "studyType": "BSc",
           "area": "Computer Engineering",
           "location": "Lisbon, Portugal",
-          "date": "2006 — 2010",
+          "date": "2010 - 2013",
           "score": "",
           "summary": "",
           "url": {
@@ -272,14 +272,14 @@
           "company": "Adjust GmbH",
           "position": "Senior Project Manager",
           "location": "Berlin, Germany",
-          "date": "Jan 2021 — Dec 2024",
+          "date": "Jan 2021 - Dec 2024",
           "url": {
             "href": "",
             "label": ""
           },
-          "summary": "Led cross-functional digital delivery initiatives across product, engineering, and design during Adjust’s post-acquisition transformation. Collaborated closely with AppLovin’s California-based teams to align cross-company priorities, bridge time zones, and ensure operational consistency across global product streams. ",
+          "summary": "Led cross-functional digital delivery initiatives across product, engineering, and design during Adjust's post-acquisition transformation. Collaborated closely with AppLovin's California-based teams to align cross-company priorities, bridge time zones, and ensure operational consistency across global product streams. ",
           "highlights": [
-            "Drove cross-functional delivery improvements, achieving a 90 % reduction in release cycles and improved efficiency across global teams.",
+            "Drove cross-functional delivery improvements, achieving a 90% reduction in release cycles and improved efficiency across global teams.",
             "Promoted the rollout of a company-wide design system, enabling faster product launches and consistent user experience.",
             "Coordinated communication with senior stakeholders (including CTO and leadership), maintaining transparency and alignment.",
             "Oversaw the complete relaunch of the corporate website and a standalone ranking tool, improving UX and SEO visibility."
@@ -290,16 +290,16 @@
           "company": "Unbabel",
           "position": "Product Manager",
           "location": "Lisbon, Portugal",
-          "date": "Jan 2018 — Apr 2020",
+          "date": "Jan 2018 - Apr 2020",
           "url": {
             "href": "",
             "label": ""
           },
-          "summary": "Delivered multiple product launches and UX initiatives for Unbabel’s core translation platform, bridging business goals and technical execution.",
+          "summary": "Delivered multiple product launches and UX initiatives for Unbabel's core translation platform, bridging business goals and technical execution.",
           "highlights": [
             "Managed roadmap execution across design, development, and marketing teams.",
             "Improved release processes, achieving a four-fold increase in deployment speed.",
-            "Delivered 10 + product updates driving 40 % growth in new business and improved retention."
+            "Delivered 10+ product updates driving 40% growth in new business and improved retention."
           ],
           "visible": true
         },
@@ -307,7 +307,7 @@
           "company": "Landing.jobs",
           "position": "Marketing Lead / Growth Manager",
           "location": "Lisbon, Portugal",
-          "date": "Jan 2017 — Jun 2017",
+          "date": "Jan 2017 - Jun 2017",
           "url": {
             "href": "",
             "label": ""
@@ -322,7 +322,7 @@
           "company": "Inspiring Code",
           "position": "Co‑founder / Project Manager",
           "location": "Lisbon, Portugal",
-          "date": "Feb 2013 — Feb 2014",
+          "date": "Feb 2013 - Feb 2014",
           "url": {
             "href": "",
             "label": ""

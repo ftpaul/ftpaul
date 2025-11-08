@@ -1,11 +1,12 @@
 // app/resume2/page.tsx
-import resume from "../../content/resume2.json";
-import styles from "./resume.module.css";
-import PrintButton from "./PrintButton";
+import resume from "../../content/resume2.json"
+import styles from "./resume.module.css"
+import PrintButton from "./PrintButton"
 
 export default function Page() {
   const basics = resume?.basics ?? {};
   const s = resume?.sections ?? {};
+  const isLocalhost = process.env.IS_LOCALHOST === 'true';
 
   return (
     <>
@@ -62,15 +63,18 @@ export default function Page() {
           <section className={styles.block}>
             <h3 className={styles.blockTitle}>Contact</h3>
             <ul className={styles.kv}>
-              {basics.location && <li><span>Location</span><span>{basics.location}</span></li>}
-              {basics.email && (
-                <li><span>Email</span><span><a href={`mailto:${basics.email}`}>{basics.email}</a></span></li>
+              {basics.location && <li><span>Location:</span><span>{basics.location}</span></li>}
+              {(basics.email && isLocalhost)&& (
+                <li><span>Email:</span><span><a href={`mailto:${basics.email}`}>{basics.email}</a></span></li>
+              )}
+              {(basics.phone && isLocalhost)&& (
+                <li><span>Phone:</span><span><a href={`tel:${basics.phone}`}>{basics.phone}</a></span></li>
               )}
               {basics.url?.href && (
-                <li><span>Website</span><span><a href={basics.url.href} target="_blank">{basics.url.label || basics.url.href}</a></span></li>
+                <li><span>Website:</span><span><a href={basics.url.href} target="_blank">{basics.url.label || basics.url.href}</a></span></li>
               )}
               {basics.linkedin?.href && (
-                <li><span>LinkedIn</span><span><a href={basics.url.href} target="_blank">{basics.linkedin.label || basics.linkedin.href}</a></span></li>
+                <li><span>LinkedIn:</span><span><a href={basics.linkedin.href} target="_blank">{basics.linkedin.label || basics.linkedin.href}</a></span></li>
               )}
             </ul>
           </section>

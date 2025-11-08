@@ -1,32 +1,26 @@
-"use client";
+"use client"
+
+import { useEffect, useState } from "react";
 
 export default function PrintButton() {
-  const isLocalhost =
-    typeof window !== "undefined" &&
-    (window.location.hostname === "localhost" ||
-      window.location.hostname === "127.0.0.1" ||
-      window.location.hostname === "0.0.0.0");
+  const [isLocalhost, setIsLocalhost] = useState(false);
 
-  const pdfPath = "/2025_Paulo_Teixeira.pdf"; 
-
-  if (isLocalhost) {
-    return (
-      <button onClick={() => window.print()} aria-label="Download PDF" className="printButton">
-        Download PDF
-      </button>
+  useEffect(() => {
+    const h = typeof window !== "undefined" ? window.location.hostname : "";
+    setIsLocalhost(
+      h === "localhost" || h === "127.0.0.1" || h === "::1" || h.endsWith(".local")
     );
-  }
+  }, []);
+
+  const pdfPath = "/2025_Paulo_Teixeira.pdf";
 
   return (
-    <a
-      href={pdfPath}
-      className="printButton"
+    <button
+      onClick={isLocalhost ? () => window.print() : () => window.open(pdfPath, "_blank")}
       aria-label="Download PDF"
-      target="_blank"
-      rel="noopener noreferrer"
-      download
+      className="printButton"
     >
       Download PDF
-    </a>
+    </button>
   );
 }
