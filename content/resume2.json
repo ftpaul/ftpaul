@@ -207,7 +207,7 @@
         },
         {
           "name": "German",
-          "description": "A2 (studying B1)",
+          "description": "B1",
           "level": 2,
           "visible": true
         }
@@ -244,6 +244,7 @@
             "Coordinated communication with senior stakeholders (including CTO and leadership), maintaining transparency and alignment.",
             "Led the complete relaunch of corporate website and ranking tool through collaborative design sprints and iterative prototyping, improving UX and driving measurable SEO improvements."
           ],
+          "note": "Note: After completing this role in December 2024, I took a structured career break to focus on German language acquisition (B1) and strategic career positioning.",
           "visible": true
         },
         {
@@ -275,20 +276,6 @@
           "summary": "Defined and executed growth strategy to scale the Landing.jobs marketplace, driving user acquisition and retention through Product-Led Growth.",
           "highlights": [
             "Led growth initiatives, achieving 100%+ annual user growth and conducting 100+ user interviews to guide product development."
-          ],
-          "visible": true
-        },
-        {
-          "company": "Inspiring Code",
-          "position": "Co‑founder",
-          "location": "Lisbon, Portugal",
-          "date": "Feb 2013 - Feb 2014",
-          "url": {
-            "href": "",
-            "label": ""
-          },
-          "summary": "Co-founded and managed a software house delivering custom web and mobile MVPs for both client and equity-based projects, overseeing technical delivery and client relationships.",
-          "highlights": [
           ],
           "visible": true
         }
