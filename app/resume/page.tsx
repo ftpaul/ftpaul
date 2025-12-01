@@ -1,4 +1,9 @@
 // app/resume2/page.tsx
+//import resume from "../../content/resume_spm.json"
+//import resume from "../../content/resume_pm.json"
+//import resume from "../../content/resume_pm_martech.json"
+//import resume from "../../content/resume_spm_content.json"
+//import resume from "../../content/resume_spm_2.json"
 import resume from "../../content/resume2.json"
 import styles from "./resume.module.css"
 import PrintButton from "./PrintButton"
@@ -20,7 +25,7 @@ export default function Page() {
           </header>
           {s.summary?.content && (
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Profile</h2>
+              <h2 className={styles.sectionTitle}>{s.summary.name}</h2>
               <p className={styles.summary}>{s.summary.content}</p>
             </section>
           )}
@@ -48,6 +53,12 @@ export default function Page() {
                         ))}
                       </ul>
                     )}
+                    {/* optional note (not a standard bullet; styled darker grey with a small bullet) */}
+                        {role.note && (
+                          <div className={styles.roleNote}>
+                            <div className={styles.roleNoteText}>{role.note}</div>
+                          </div>
+                        )}
                   </article>
                 ))}
             </section>

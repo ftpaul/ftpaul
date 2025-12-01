@@ -5,7 +5,7 @@
       "label": "pauloteixeira.de"
     },
     "name": "Paulo Teixeira",
-    "email": "hey@pauloteixeira.de",
+    "email": "ftpaul@gmail.com",
     "phone": "+4915165197937",
     "linkedin": {
       "href": "https://linkedin.com/in/ftpaul",
@@ -45,44 +45,10 @@
       "primary": "#0ea5e9",
       "background": "#ffffff"
     },
-    "layout": [
-      [
-        [
-          "profiles",
-          "summary",
-          "experience",
-          "education",
-          "projects",
-          "volunteer",
-          "references"
-        ],
-        [
-          "skills",
-          "interests",
-          "certifications",
-          "awards",
-          "publications",
-          "languages"
-        ]
-      ]
-    ],
-    "template": "rhyhorn",
-    "typography": {
-      "font": {
-        "size": 14,
-        "family": "IBM Plex Serif",
-        "subset": "latin",
-        "variants": [
-          "regular",
-          "italic",
-          "600"
-        ]
-      },
       "hideIcons": false,
       "lineHeight": 1.5,
       "underlineLinks": true
-    }
-  },
+    },
   "sections": {
     "awards": {
       "id": "awards",
@@ -98,55 +64,49 @@
       "name": "Skills",
       "items": [
         {
-          "name": "Delivery and Process Management",
-          "description": "Agile delivery, stakeholder alignment, cross‑functional leadership.",
+          "name": "Design & Process",
           "keywords": [
-            "Agile / Scrum / Kanban",
-            "Backlog Prioritization",
-            "Sprint Planning",
+            "Design Thinking",
+            "Process Design",
+            "Workflow Optimization",
+            "Agile/Scrum/Kanban",
             "Risk Management",
-            "Process Optimization"
-          ],
-          "visible": true
+            "Backlog Prioritization",
+            "Budgeting & Resource Planning"
+          ]
         },
         {
-          "name": "Product Management",
-          "description": "Web platforms, UX collaboration, QA, analytics, martech.",
+          "name": "Cross-Functional Collaboration",
           "keywords": [
+            "Stakeholder Alignment",
             "Requirements Definition",
             "Roadmap Planning",
-            "Stakeholder Alignment",
-            "Cross-functional Collaboration",
-            "Change Management"
-          ],
-          "visible": true
+            "Change Management",
+            "Workshop Facilitation"
+          ]
         },
         {
-          "name": "Leadership & Strategy",
-          "description": "Strategic thinking, clear communication, solution orientation, attention to detail, adaptability.",
+          "name": "Strategic Execution",
           "keywords": [
             "Strategic Thinking",
-            "Clear Communication",
-            "Remote Collaboration",
-            "Attention to Detail",
-            "Team Coaching",
+            "Problem-Solving",
+            "Risk Management",
             "Continuous Improvement",
-            "Adaptability"
-          ],
-          "visible": true
+            "Remote Collaboration",
+            "Attention to Detail"
+          ]
         },
         {
-          "name": "Tools",
-          "description": "Daily drivers & analytics stack.",
+          "name": "Tools & Platforms",
           "keywords": [
             "AI-assisted workflows",
             "Jira",
             "Confluence",
             "Figma",
-            "Google Analytics / Domo",
+            "Google Analytics",
+            "Hotjar",
             "Salesforce"
-          ],
-          "visible": true
+          ]
         }
       ],
       "columns": 1,
@@ -157,7 +117,7 @@
       "id": "summary",
       "name": "Summary",
       "columns": 1,
-      "content": "Experienced Senior Project Manager with a strong IT and marketing foundation, skilled at bridging technical and business goals. I've led cross‑functional global teams, aligning stakeholders, optimizing delivery, and driving measurable outcomes in fast‑paced digital environments. Currently based in Berlin and open to new opportunities where I can combine strategic planning, agile collaboration, and hands‑on leadership to deliver impactful products and experiences.",
+      "content": "Creative problem-solver who thrives at the intersection of design, tech, and business. I blend design thinking with technical execution to lead cross-functional teams, build collaborative workflows, and deliver meaningful impact. With a strong IT and marketing foundation, I bridge disciplines, translating complex concepts into actionable plans, empowering teams through empathy and pragmatism, and moving fluidly between strategy and hands-on execution.",
       "visible": true,
       "separateLinks": true
     },
@@ -277,12 +237,12 @@
             "href": "",
             "label": ""
           },
-          "summary": "Led cross-functional digital delivery initiatives across product, engineering, and design during Adjust's post-acquisition transformation. Collaborated closely with AppLovin's California-based teams to align cross-company priorities, bridge time zones, and ensure operational consistency across global product streams. ",
+          "summary": "Led cross-functional digital delivery during Adjust's post-acquisition transformation, designing collaborative workflows that bridged product, engineering, and design teams across time zones and ensured operational consistency with AppLovin's California-based teams.",
           "highlights": [
             "Drove cross-functional delivery improvements, achieving a 90% reduction in release cycles and improved efficiency across global teams.",
             "Promoted the rollout of a company-wide design system, enabling faster product launches and consistent user experience.",
             "Coordinated communication with senior stakeholders (including CTO and leadership), maintaining transparency and alignment.",
-            "Oversaw the complete relaunch of the corporate website and a standalone ranking tool, improving UX and SEO visibility."
+            "Led the complete relaunch of corporate website and ranking tool through collaborative design sprints and iterative prototyping, improving UX and driving measurable SEO improvements."
           ],
           "visible": true
         },
@@ -295,10 +255,10 @@
             "href": "",
             "label": ""
           },
-          "summary": "Delivered multiple product launches and UX initiatives for Unbabel's core translation platform, bridging business goals and technical execution.",
+          "summary": "Delivered marketing-facing tools to drive top-of-funnel growth for Unbabel's AI translation platform, translating GTM needs into product requirements across design, engineering, and business teams.",
           "highlights": [
-            "Managed roadmap execution across design, development, and marketing teams.",
-            "Improved release processes, achieving a four-fold increase in deployment speed.",
+            "Designed and managed the roadmap for marketing-facing tools, facilitating collaborative sessions that balanced technical feasibility with GTM priorities and timelines.",
+            "Optimized release and CI/CD workflows, achieving a 4× increase in deployment speed and significantly improving delivery cadence.",
             "Delivered 10+ product updates driving 40% growth in new business and improved retention."
           ],
           "visible": true
@@ -307,12 +267,12 @@
           "company": "Landing.jobs",
           "position": "Marketing Lead / Growth Manager",
           "location": "Lisbon, Portugal",
-          "date": "Jan 2017 - Jun 2017",
+          "date": "Jan 2014 - Jun 2017",
           "url": {
             "href": "",
             "label": ""
           },
-          "summary": "Defined and executed growth strategy to scale the Landing.jobs marketplace, driving user acquisition and engagement through performance analytics and A/B experimentation.",
+          "summary": "Defined and executed growth strategy to scale the Landing.jobs marketplace, driving user acquisition and retention through Product-Led Growth.",
           "highlights": [
             "Led growth initiatives, achieving 100%+ annual user growth and conducting 100+ user interviews to guide product development."
           ],
@@ -320,7 +280,7 @@
         },
         {
           "company": "Inspiring Code",
-          "position": "Co‑founder / Project Manager",
+          "position": "Co‑founder",
           "location": "Lisbon, Portugal",
           "date": "Feb 2013 - Feb 2014",
           "url": {

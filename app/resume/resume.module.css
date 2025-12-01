@@ -31,7 +31,7 @@
 /* Sidebar */
 .side{
   background: var(--side);
-  padding: 24px 20px;
+  padding: 64px 20px;
 }
 .sideHeader{ margin-bottom: 16px; }
 .name{
@@ -113,7 +113,19 @@
 .bullets li::marker {
   color: var(--primary);        /* use your deep green */
 }
+.roleNote {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 0.25rem; /* align with bullets */
+}
 
+.roleNoteText {
+  color: #374151; /* same dark gray */
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-style: italic;
+}
 /* LINKS IN CONTENT */
 .page a{
   color: var(--primary);
@@ -201,7 +213,7 @@
   /* Ensure the grey sidebar actually prints to the edge */
   .side {
     background: var(--side) !important;         /* your grey */
-    padding: 118px 16px;
+    padding: 80px 16px;
     position: relative;
   }
 
@@ -221,7 +233,16 @@
   .section, .role, .eduItem, .block, .kv, .listTight, .bullets {
     break-inside: avoid; page-break-inside: avoid;
   }
+  .roleNoteText {
+    color: #374151 !important;
+    font-size: 12px !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-style: italic;
+  }
 }
+
+
 
 
 /* ===== MOBILE OPTIMIZATION ===== */
