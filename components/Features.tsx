@@ -9,27 +9,27 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    title: "Strategic Thinking",
+    title: "Design Process",
     text:
-      "I connect day-to-day actions with long-term goals, ensuring every initiative aligns with the organization's vision and drives sustainable impact.",
+      "By creating structured workflows, clear rituals, and collaborative environments, I design systems that enable teams to do their best work, removing friction while maintaining flexibility for innovation.",
     icon: "strategy",
   },
   {
-    title: "Project Execution",
+    title: "Bridging Worlds",
     text:
-      "I deliver complex projects efficiently and adaptively - from concept to launch - by defining clear processes, aligning stakeholders, and maintaining quality at every stage.",
+      "I thrive in the intersection of diferent areas, translating complex concepts and goals into actionable plans. I move fluidly between strategy and execution, getting into the details when it matters.",
     icon: "execution",
   },
   {
     title: "Empowering People and Teams",
     text:
-      "I cultivate collaborative, high-trust environments that enable teams to grow, innovate, and achieve shared objectives.",
+      "I cultivate collaborative, high-trust environments that enable teams to grow, innovate, and achieve shared objectives. I lead with empathy, listening deeply and providing practical support when people need it.",
     icon: "team",
   },
   {
-    title: "Outcomes oriented",
+    title: "Impact through iteration",
     text:
-      "I focus on measurable results, ensuring every project creates tangible value for the business and its users.",
+      "I focus on outcomes, not outputs. By applying agile principles and continuous feedback loops, I ensure every project delivers measurable value, and that we learn something even when we fail.",
     icon: "outcome",
   },
 ]
@@ -70,10 +70,11 @@ const Features = () => (
       <div className="max-w-screen-xl mx-auto sm:px-6">
         <div className="lg:text-center">
           <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-            The features you will fall in love with
+            How I work: where strategy meets creativity
           </h3>
           <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">
-            My diverse background brings together a unique set of competencies that combine strategy, delivery, and collaboration.
+            {/* My diverse background brings together a unique set of competencies that combine strategy, delivery, and collaboration. */}
+            I solve problems at the intersection of disciplines - blending design thinking, technical execution, and human-centered collaboration to drive meaningful impact.
           </p>
         </div>
 
