@@ -1,11 +1,5 @@
-:root {
-  --primary:#0A3C30;
-  --text:#1C1C1C;
-  --bg:#ffffff;
-  --muted:#5f6b6b;
-  --side:#f3f5f4;         /* grey sidebar */
-  --divider:#e9eeec;
-}
+/* CSS variables moved to styles/global.css to avoid CSS Modules purity errors */
+
 
 /* Stage centers the page and adds the “page” effect */
 .stage{
@@ -174,22 +168,7 @@
 }
 
 @media print {
-  /* Full-bleed page setup (lets grey hit the edge) */
-  @page { size: A4; margin: 0; }               /* zero margins */
-  :global(html), :global(body) { margin: 0 !important; padding: 0 !important; }
-
-  /* Hide everything but the CV */
-  :global(body *) { visibility: hidden !important; }
-  :global(#cv-root), :global(#cv-root *) { visibility: visible !important; }
-
-  /* Put the CV at 210mm full width (A4 width) */
-  :global(#cv-root) {
-    position: absolute;
-    inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
-    width: 210mm;             /* exact page width */
-    margin: 0 !important;
-    background: #fff;
-  }
+  /* Full-bleed page setup (print-specific layout kept here for module-scoped classes) */
 
   .stage { padding: 0 !important; background: transparent !important; }
 

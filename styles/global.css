@@ -12,5 +12,38 @@ body {
   background: #eef2f0;
 }
 
+/* Global CSS variables used by the resume module */
+:root {
+  --primary:#0A3C30;
+  --text:#1C1C1C;
+  --bg:#ffffff;
+  --muted:#5f6b6b;
+  --side:#f3f5f4;
+  --divider:#e9eeec;
+}
 
-  
+/* Print-specific global rules */
+@media print {
+  /* ensure no browser default margins */
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  @page { size: A4; margin: 0; }
+
+  /* hide everything except the CV container */
+  body * { visibility: hidden !important; }
+  #cv-root, #cv-root * { visibility: visible !important; }
+
+  /* position the CV at full A4 width */
+  #cv-root {
+    position: absolute;
+    inset: 0;
+    width: 210mm;
+    margin: 0 !important;
+    background: #fff;
+  }
+}
+
+
