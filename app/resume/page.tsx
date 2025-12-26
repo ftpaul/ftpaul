@@ -6,7 +6,7 @@
 //import resume from "../../content/resume_spm_2.json"
 //import resume from "../../content/resume_program.json"
 //import resume from "../../content/resume_pm_martech.json"
-import resume from "../../content/resume.json"
+import resume from "../../content/resume_chief-of-staff.json"
 import styles from "./resume.module.css"
 import PrintButton from "./PrintButton"
 

@@ -1,0 +1,267 @@
+{
+  "basics": {
+    "url": {
+      "href": "https://pauloteixeira.de",
+      "label": "pauloteixeira.de"
+    },
+    "name": "Paulo Teixeira",
+    "email": "ftpaul@gmail.com",
+    "phone": "+4915165197937",
+    "linkedin": {
+      "href": "https://linkedin.com/in/ftpaul",
+      "label": "in/ftpaul"
+    },
+    "picture": {
+      "url": "",
+      "size": 64,
+      "effects": {
+        "border": false,
+        "hidden": false,
+        "grayscale": false
+      },
+      "aspectRatio": 1,
+      "borderRadius": 0
+    },
+    "headline": "Executive Project Manager | Strategic Operations",
+    "location": "Berlin, Germany",
+    "customFields": []
+  },
+  "metadata": {
+    "css": {
+      "value": "",
+      "visible": false
+    },
+    "page": {
+      "format": "a4",
+      "margin": 18,
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "notes": "",
+    "theme": {
+      "text": "#000000",
+      "primary": "#0ea5e9",
+      "background": "#ffffff"
+    },
+    "template": "rhyhorn",
+    "typography": {
+      "font": {
+        "size": 14,
+        "family": "IBM Plex Serif",
+        "subset": "latin",
+        "variants": [
+          "regular",
+          "italic",
+          "600"
+        ]
+      },
+      "hideIcons": false,
+      "lineHeight": 1.5,
+      "underlineLinks": true
+    }
+  },
+  "sections": {
+    "skills": {
+      "id": "skills",
+      "name": "Skills",
+      "items": [
+        {
+    "name": "Strategic Operations",
+    "keywords": [
+      "Strategic Planning & Execution",
+      "Organizational Development",
+      "Process Design & Optimization",
+      "Change Management",
+      "Business Operations"
+    ]
+  },
+  {
+    "name": "Leadership & Collaboration",
+    "keywords": [
+      "Executive Partnership",
+      "Cross-functional Team Leadership",
+      "Stakeholder Management",
+      "Workshop Facilitation",
+      "Clear Communication"
+    ]
+  },
+  {
+    "name": "Analytical & Technical",
+    "keywords": [
+      "Data-Driven Decision Making",
+      "Agile/Scrum/Kanban",
+      "Product Strategy",
+      "Project Management",
+      "BSc Computer Engineering"
+    ]
+  },
+  {
+    "name": "Tools & Platforms",
+    "keywords": [
+      "Jira",
+      "Confluence",
+      "Figma",
+      "Google Analytics",
+      "Mixpanel",
+      "AI-assisted workflows",
+      "Presentation & Documentation"
+    ]
+  }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "summary": {
+      "id": "summary",
+      "name": "Summary",
+      "columns": 1,
+      "content":"Strategic operations leader who thrives at the intersection of product, technology, and business. I partner with executive leadership to turn vision into execution through cross-functional collaboration, systematic process design, and data-driven decision-making. With a strong technical foundation and 10+ years bridging product, engineering, and business teams, I translate complex challenges into actionable plans, design systems that enable teams to scale, and drive high-impact strategic initiatives in fast-paced environments.",
+      "visible": true,
+      "separateLinks": true
+    },
+    "profiles": {
+      "id": "profiles",
+      "name": "Profiles",
+      "items": [
+        {
+          "network": "LinkedIn",
+          "username": "ftpaul",
+          "icon": "linkedin",
+          "url": {
+            "href": "https://linkedin.com/in/ftpaul",
+            "label": "LinkedIn"
+          },
+          "visible": true
+        },
+        {
+          "network": "Website",
+          "username": "pauloteixeira.de",
+          "icon": "globe",
+          "url": {
+            "href": "https://pauloteixeira.de",
+            "label": "Website"
+          },
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "education": {
+      "id": "education",
+      "name": "Education",
+      "items": [
+        {
+          "institution": "ISCTE – University Institute of Lisbon",
+          "studyType": "BSc",
+          "area": "Computer Engineering",
+          "location": "Lisbon, Portugal",
+          "date": "2010 - 2013",
+          "score": "",
+          "summary": "",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "languages": {
+      "id": "languages",
+      "name": "Languages",
+      "items": [
+        {
+          "name": "English",
+          "description": "Professional",
+          "level": 5,
+          "visible": true
+        },
+        {
+          "name": "Portuguese",
+          "description": "Native",
+          "level": 5,
+          "visible": true
+        },
+        {
+          "name": "German",
+          "description": "B1",
+          "level": 2,
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "experience": {
+      "id": "experience",
+      "name": "Experience",
+      "items": [
+        {
+          "company": "Adjust GmbH",
+          "position": "Senior Project Manager / Strategic Operations",
+          "location": "Berlin, Germany",
+          "date": "Jan 2021 - Dec 2024",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Led product optimization initiatives that reduced release cycles by 90% during post-acquisition transformation, designing collaborative frameworks that aligned product, engineering, design, and business teams across global markets.",
+          "highlights": [
+            "Acted as bridge between leadership vision and team execution, translating strategic priorities into operational plans and ensuring cross-functional alignment.",
+            "Drove company-wide design system adoption as strategic project owner, coordinating across product, engineering, and design to improve UX consistency and accelerate feature launches.",
+            "Designed collaborative frameworks and operational processes that enabled distributed teams to work effectively across time zones, improving communication clarity and decision-making speed.",
+            "Standardized agile practices and optimized workflows to improve team productivity and cross-functional alignment."
+          ],
+          "note": "Note: After completing this role in December 2024, I took a structured career break to focus on German language acquisition (B1) and strategic career development.",
+          "visible": true
+        },
+        {
+          "company": "Unbabel",
+          "position": "Product Manager",
+          "location": "Lisbon, Portugal",
+          "date": "Jan 2018 - Apr 2020",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Led product management for marketing-facing tools at Unbabel's AI translation platform, managing roadmap prioritization and cross-functional collaboration across design, engineering, and business teams.",
+          "highlights": [
+            "Managed roadmap for marketing-facing tools, delivering 10+ features that drove 40% growth in new business through collaborative prioritization sessions that balanced technical feasibility with business goals.",
+            "Optimized release workflows and CI/CD processes, achieving 4× increase in deployment speed and enabling rapid experimentation and iteration.",
+            "Led product discovery initiatives, conducting user research and translating customer insights into actionable product requirements that informed roadmap decisions."
+            
+          ],
+          "visible": true
+        },
+        {
+          "company": "Landing.jobs",
+          "position": "Marketing Lead / Growth Manager",
+          "location": "Lisbon, Portugal",
+          "date": "Jan 2014 - Jun 2017",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Defined and executed growth strategy to scale the Landing.jobs marketplace, driving user acquisition and retention through Product-Led Growth.",
+          "highlights": [
+            "Led growth initiatives, achieving 100%+ annual user growth through data-driven experiments, multi-channel acquisition, and systematic optimization.",
+            "Conducted 100+ user interviews to identify friction points and inform product roadmap, resulting in measurable improvements in activation and retention."
+          ],
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    }
+  }
+}
