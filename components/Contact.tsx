@@ -7,7 +7,7 @@ const Contact = () => (
 
 <Section className="bg-gray-100">
  
-<div className="pb-16 pt-8 xs:pt-16">
+<div className="pb-16 pt-8 xs:pt-16 relative">
   <div className="max-w-screen-xl mx-auto sm:px-6">
     <div className="lg:text-center">
       <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">

@@ -1,17 +1,21 @@
 // app/resume2/page.tsx
 //import resume from "../../content/resume_spm.json"
-//import resume from "../../content/resume_pm.json"
+//import resume from "../../content/resume_program.json"
 //import resume from "../../content/resume_pm_martech.json"
 //import resume from "../../content/resume_spm_content.json"
 //import resume from "../../content/resume_spm_2.json"
-import resume from "../../content/resume2.json"
+//import resume from "../../content/resume_program.json"
+//import resume from "../../content/resume_pm_martech.json"
+import resume from "../../content/resume_chief-of-staff.json"
 import styles from "./resume.module.css"
 import PrintButton from "./PrintButton"
+
 
 export default function Page() {
   const basics = resume?.basics ?? {};
   const s = resume?.sections ?? {};
   const isLocalhost = process.env.IS_LOCALHOST === 'true';
+
 
   return (
     <>
