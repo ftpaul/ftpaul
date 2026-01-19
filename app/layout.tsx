@@ -2,21 +2,24 @@ import React from 'react'
 import TopBar from '../components/navigation/TopBar'
 import Navigation from '../components/navigation/Navigation'
 import Footer from '../components/navigation/Footer'
-import FloatingBackgroundShapes from '../components/shapes/shapes'
 import './../styles/global.css'
 import { Analytics } from "@vercel/analytics/react"
-
+import AnimationWrapper from "../components/shapes/animation"
+import FloatingShapes from '../components/shapes/shapes'
 
 function MainLayout({ children }) {
   return (
     
     <html lang="en">
       <body>
-        <FloatingBackgroundShapes />
+        <AnimationWrapper>
         <TopBar />
         <Navigation />
+        
         {children}
         <Footer />
+        <FloatingShapes/>
+        </AnimationWrapper>
         <Analytics/>
       </body>
     </html>

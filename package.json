@@ -13,6 +13,7 @@
     "autoprefixer": "^10.4.15",
     "chart.js": "^4.3.3",
     "eslint-config-next": "^13.4.12",
+    "gsap": "^3.14.2",
     "lodash": "^4.17.21",
     "next": "^15.5.9",
     "postcss": "^8.4.31",

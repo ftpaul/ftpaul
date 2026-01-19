@@ -2,9 +2,8 @@
 import ImageGallery from "../components/ImageGallery"
 import Features from "../components/Features"
 import CompanyHistory from "../components/CompanyHistory"
-import Contact from "../components/Contact"
 import jobHistory from '../content/jobHistory.json'
-import FloatingBackgroundShapes from "../components/shapes/shapes"
+
 
 export const metadata = {
   title: 'Paulo Teixeira · Senior Project Manager | Product Owner',
@@ -52,8 +51,6 @@ export default async function IndexPage() {
       <Features />
               
       <CompanyHistory jobHistory={jobHistory} />
-
-      <Contact />
 
     </>
     )
