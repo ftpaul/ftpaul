@@ -116,6 +116,24 @@ export default function AnimationWrapper({ children }: { children: React.ReactNo
 
     initializeAnimations();
 
+    // Handle viewport changes (mobile browser UI appearing/disappearing)
+    let resizeTimeout: NodeJS.Timeout;
+    let lastViewportHeight = window.innerHeight;
+
+    const handleViewportChange = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        // Only refresh if viewport height actually changed
+        if (window.innerHeight !== lastViewportHeight) {
+          lastViewportHeight = window.innerHeight;
+          ScrollTrigger.refresh();
+        }
+      }, 150); // Debounce to avoid too many refreshes
+    };
+
+    window.addEventListener('resize', handleViewportChange);
+    window.addEventListener('orientationchange', handleViewportChange);
+
     return () => {
       if (ctx) {
         ctx.revert();
@@ -123,6 +141,11 @@ export default function AnimationWrapper({ children }: { children: React.ReactNo
       if (setupTimeout) {
         clearTimeout(setupTimeout);
       }
+      if (resizeTimeout) {
+        clearTimeout(resizeTimeout);
+      }
+      window.removeEventListener('resize', handleViewportChange);
+      window.removeEventListener('orientationchange', handleViewportChange);
     };
   }, [pathname]);
 
