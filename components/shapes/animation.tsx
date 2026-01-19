@@ -61,7 +61,8 @@ export default function AnimationWrapper({ children }: { children: React.ReactNo
       }
 
       // Reset everything
-      gsap.set(shapes, { x: 0, y: 0, rotation: 0, scale: 1 });
+      const isMobile = window.innerWidth < 768;
+      gsap.set(shapes, { x: 0, y: 0, rotation: 0, scale: 1, opacity: isMobile ? 0.4 : 1 });
 
       // Capture initial positions AFTER images are loaded
       const shapeInitialPositions = shapes.map(shape => {
@@ -95,12 +96,17 @@ export default function AnimationWrapper({ children }: { children: React.ReactNo
               const deltaX = slotCenterX - shapeInitial.centerX;
               const deltaY = slotCenterY - shapeInitial.centerY;
 
+              // Check if mobile (md breakpoint is 768px)
+              const isMobile = window.innerWidth < 768;
+              const baseOpacity = isMobile ? 0.4 : 1;
+
               // Apply transforms based on scroll progress
               gsap.set(shape, {
                 x: deltaX * self.progress,
                 y: deltaY * self.progress,
                 rotation: 0,
                 scale: 0.9 + (0.1 * (1 - self.progress)),
+                opacity: baseOpacity,
               });
             }
           }
