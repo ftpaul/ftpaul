@@ -66,10 +66,10 @@ const Icon = ({ name }: { name?: Feature['icon'] }) => {
 
 const Features = () => (
   <Section className="bg-gray-100 " >
-    <div className="pb-32 pt-8 xs:pt-16">
+    <div className="pb-32 pt-8 xs:pt-16 relative z-10">
       <div className="max-w-screen-xl mx-auto sm:px-6 relative">
         <div className="lg:text-center">
-          <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          <h3 className="mt-2 text-3xl  leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             How I work: where strategy meets creativity
           </h3>
           <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-400 lg:mx-auto">

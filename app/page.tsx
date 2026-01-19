@@ -1,8 +1,8 @@
 
 import ImageGallery from "../components/ImageGallery"
 import Features from "../components/Features"
-import CompanyHistory from "../components/CompanyHistory"
-import jobHistory from '../content/jobHistory.json'
+// import CompanyHistory from "../components/CompanyHistory"
+// import jobHistory from '../content/jobHistory.json'
 
 
 export const metadata = {
@@ -50,7 +50,7 @@ export default async function IndexPage() {
       
       <Features />
               
-      <CompanyHistory jobHistory={jobHistory} />
+      {/* <CompanyHistory jobHistory={jobHistory} /> */}
 
     </>
     )

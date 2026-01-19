@@ -3,10 +3,10 @@
 //import resume from "../../content/resume_program.json"
 //import resume from "../../content/resume_pm_martech.json"
 //import resume from "../../content/resume_spm_content.json"
-//import resume from "../../content/resume_spm_2.json"
-//import resume from "../../content/resume_program.json"
+//import resume from "../../content/resume_prod_ops.json"
+import resume from "../../content/resume_program.json"
 //import resume from "../../content/resume_pm_martech.json"
-import resume from "../../content/resume_chief-of-staff.json"
+//import resume from "../../content/resume_chief-of-staff.json"
 import styles from "./resume.module.css"
 import PrintButton from "./PrintButton"
 
@@ -94,24 +94,6 @@ export default function Page() {
             </ul>
           </section>
 
-          {/* Profiles 
-          {s.profiles?.items?.length > 0 && (
-            <section className={styles.block}>
-              <h3 className={styles.blockTitle}>Profiles</h3>
-              <ul className={styles.listTight}>
-                {s.profiles.items
-                  .filter((p: any) => p?.visible !== false)
-                  .map((p: any, i: number) => (
-                    <li key={i}>
-                      <a href={p.url?.href || p.url} target="_blank">
-                        {p.username || p.network}
-                      </a>
-                    </li>
-                  ))}
-              </ul>
-            </section>
-          )}*/}
-
           {/* Skills */}
           {s.skills?.items?.length > 0 && (
             <section className={styles.block}>
@@ -129,6 +111,7 @@ export default function Page() {
           )}
 
           {/* Languages */}
+          {console.log(s.languages?.items?.length)}
           {s.languages?.items?.length > 0 && (
             <section className={styles.block}>
               <h3 className={styles.blockTitle}>Languages</h3>
@@ -139,6 +122,22 @@ export default function Page() {
                   </li>
                 ))}
               </ul>
+            </section>
+          )}
+
+          {/* Side Project */}
+          {s.projects?.items?.length > 0 && (
+            <section className={styles.block}>
+              <h3 className={styles.blockTitle}>Side Projects</h3>
+              {s.projects.items.map((pj: any, i: number) => (
+                <div key={i} className={styles.eduItem}>
+                  <div className={styles.eduInst}>{pj.name}</div>
+                  <div className={styles.eduMeta}>
+                    {pj.description}
+                    {<span><a href={pj.url.href} target="_blank">{pj.url.label || pj.url.href}</a></span>}
+                  </div>
+                </div>
+              ))}
             </section>
           )}
 
