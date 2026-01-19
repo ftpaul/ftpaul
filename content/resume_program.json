@@ -1,0 +1,289 @@
+{
+  "basics": {
+    "url": {
+      "href": "https://pauloteixeira.de",
+      "label": "pauloteixeira.de"
+    },
+    "name": "Paulo Teixeira",
+    "email": "ftpaul@gmail.com",
+    "phone": "+4915165197937",
+    "linkedin": {
+      "href": "https://linkedin.com/in/ftpaul",
+      "label": "in/ftpaul"
+    },
+    "picture": {
+      "url": "",
+      "size": 64,
+      "effects": {
+        "border": false,
+        "hidden": false,
+        "grayscale": false
+      },
+      "aspectRatio": 1,
+      "borderRadius": 0
+    },
+    "headline": "Technical Project Manager",
+    "location": "Berlin, Germany",
+    "customFields": []
+  },
+  "metadata": {
+    "css": {
+      "value": "",
+      "visible": false
+    },
+    "page": {
+      "format": "a4",
+      "margin": 18,
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "notes": "",
+    "theme": {
+      "text": "#000000",
+      "primary": "#0ea5e9",
+      "background": "#ffffff"
+    },
+    "template": "rhyhorn",
+    "typography": {
+      "font": {
+        "size": 14,
+        "family": "IBM Plex Serif",
+        "subset": "latin",
+        "variants": [
+          "regular",
+          "italic",
+          "600"
+        ]
+      },
+      "hideIcons": false,
+      "lineHeight": 1.5,
+      "underlineLinks": true
+    }
+  },
+  "sections": {
+    "awards": {
+      "id": "awards",
+      "name": "Awards",
+      "items": [],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "custom": {},
+    "skills": {
+      "id": "skills",
+      "name": "Skills",
+      "items": [
+        
+  {
+    "name": "Program & Delivery Management",
+    "keywords": [
+      "Program Delivery (E2E)",
+      "Project Leadership",
+      "Risk Management & Mitigation Planning",
+      "Release management",
+      "Cross-Functional Alignment",
+      "Vendor Management"
+    ], 
+    "visibility": true
+  },
+  {
+    "name": "Process & Operations",
+    "keywords": [
+      "Operational Excellence & Continuous Improvement",
+      "Workflow Automation & Optimization",
+      "Change Management & Process Enablement",
+      "Documentation, Training & Enablement"
+    ]
+  },
+  {
+    "name": "Tools & Skills",
+    "keywords": [
+      "AI Tools (ChatGPT, Claude, Gemini)",
+      "Data Analysis (SQL, dashboards, multi-source datasets)",
+      "KPI Definition & Reporting",
+      "Jira / Confluence",
+      "Notion",
+      "Automation Tools (Zapier, internal tooling)",
+      "GitHub",
+      "Scripting (Bash)",
+      "Analytics"
+    ]
+  }
+
+
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "summary": {
+      "id": "summary",
+      "name": "Summary",
+      "columns": 1,
+      "content": "Project Manager with technical background in software engineering and extensive experience managing complex cross-functional initiatives and driving operational excellence in fast-paced tech environments. Skilled in hands-on technical work, AI workflows and prompting, CI/CD automation, and QA coordination, alongside process optimization and data-driven decision making.",
+      "visible": true,
+      "separateLinks": true
+    },
+    "profiles": {
+      "id": "profiles",
+      "name": "Profiles",
+      "items": [
+        {
+          "network": "LinkedIn",
+          "username": "ftpaul",
+          "icon": "linkedin",
+          "url": {
+            "href": "https://linkedin.com/in/ftpaul",
+            "label": "LinkedIn"
+          },
+          "visible": true
+        },
+        {
+          "network": "Website",
+          "username": "pauloteixeira.de",
+          "icon": "globe",
+          "url": {
+            "href": "https://pauloteixeira.de",
+            "label": "Website"
+          },
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "projects": {
+      "id": "projects",
+      "name": "Projects",
+      "items": [
+        {
+          "name": "JobLyst",
+          "description": "Building a curated job discovery platform for Berlin tech companies, applying hands-on technical skills in automation, API integration, and both AI and no-code development: ", 
+          "url": {
+              "href": "https://joblyst.tech",
+              "label": "joblyst.tech"
+            },
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "education": {
+      "id": "education",
+      "name": "Education",
+      "items": [
+        {
+          "institution": "ISCTE – University Institute of Lisbon",
+          "studyType": "BSc",
+          "area": "Computer Engineering",
+          "location": "Lisbon, Portugal",
+          "date": "2010 - 2013",
+          "score": "",
+          "summary": "",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "languages": {
+      "id": "languages",
+      "name": "Languages",
+      "items": [
+        {
+          "name": "English",
+          "description": "Professional",
+          "level": 5,
+          "visible": true
+        },
+        {
+          "name": "Portuguese",
+          "description": "Native",
+          "level": 5,
+          "visible": true
+        },
+        {
+          "name": "German",
+          "description": "B1",
+          "level": 2,
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    },
+    "experience": {
+      "id": "experience",
+      "name": "Experience",
+      "items": [
+        {
+          "company": "Adjust GmbH",
+          "position": "Senior (Technical) Project Manager",
+          "location": "Berlin, Germany",
+          "date": "Jan 2021 - Dec 2024",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Owned internal tooling and delivery workflows during Adjust’s post-acquisition integration, enabling team autonomy and faster execution. Partnered with AppLovin’s California teams to align priorities, manage dependencies, and ensure operational consistency.",
+          "highlights": [
+            "Led a platform migration that reduced release cycles by 90%, enabling faster product iteration and significantly improving time-to-market for new features.",
+            "Enabled 30+ global stakeholders through structured workflow design, documentation, and training; reducing operational bottlenecks and lowering dependency on engineering teams.",
+            "Created delivery visibility through tracking systems and dashboards that monitored sprint execution, team velocity, and blockers, facilitating proactive risk management and continuous improvement.",
+            "Implemented internal self-service tooling and automated workflows that reduced manual effort and significantly accelerated delivery cycles across teams.",
+            "Drove adoption of company-wide standards and governance frameworks (design system), improving consistency, reducing rework, and enabling faster delivery across distributed teams."
+          ],
+          "note": "Note: After completing this role in December 2024, I took a structured career break to focus on German language acquisition (B1) and strategic career development.",
+          "visible": true
+        },
+        {
+          "company": "Unbabel",
+          "position": "Product Manager",
+          "location": "Lisbon, Portugal",
+          "date": "Jan 2018 - Apr 2020",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Drove technical delivery for Unbabel's AI translation platform, collaborating with engineering to improve system reliability, internal tooling, and operational workflows.",
+          "highlights": [
+            "Delivered 10+ platform improvements that supported acquisition and retention systems, informed by experimentation, user insights, and validation across internal stakeholders.",
+            "Improved technical infrastructure and CI/CD workflows in partnership with engineering, leading to a 4× increase in deployment speed and smoother release cycles.",
+            "Built analytics foundations and dashboards using SQL to track operational metrics, enabling data-driven process improvements across teams"
+
+          ],
+          "visible": true
+        },
+        {
+          "company": "Landing.jobs",
+          "position": "Marketing Lead / Growth Manager",
+          "location": "Lisbon, Portugal",
+          "date": "Jan 2014 - Jun 2017",
+          "url": {
+            "href": "",
+            "label": ""
+          },
+          "summary": "Led growth initiatives and product development during rapid scaling, collaborating with engineering teams to build features and tools that drove 100%+ annual user growth through data-driven experimentation and 100+ user interviews.",
+          "highlights": [
+          ],
+          "visible": true
+        }
+      ],
+      "columns": 1,
+      "visible": true,
+      "separateLinks": true
+    }
+  }
+}
