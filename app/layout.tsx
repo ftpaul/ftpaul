@@ -6,11 +6,13 @@ import './../styles/global.css'
 import { Analytics } from "@vercel/analytics/react"
 import AnimationWrapper from "../components/shapes/animation"
 import FloatingShapes from '../components/shapes/shapes'
+import Head from './head'
 
 function MainLayout({ children }) {
   return (
     
     <html lang="en">
+      <Head />
       <body>
         <AnimationWrapper>
         <TopBar />

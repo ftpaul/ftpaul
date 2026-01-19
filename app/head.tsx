@@ -1,7 +1,7 @@
 export default function Head() {
     return (
       <>
-        <title>Something using NextJS</title>
+        <title>Paulo Teixeira - Creative Problem-Solver</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link 
           rel="icon" 
