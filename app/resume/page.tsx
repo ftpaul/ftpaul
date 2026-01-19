@@ -111,7 +111,6 @@ export default function Page() {
           )}
 
           {/* Languages */}
-          {console.log(s.languages?.items?.length)}
           {s.languages?.items?.length > 0 && (
             <section className={styles.block}>
               <h3 className={styles.blockTitle}>Languages</h3>
