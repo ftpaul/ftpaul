@@ -27,7 +27,7 @@ export default async function IndexPage() {
         <div className="w-2/3 lg:w-3/4 sm:w-full xs:w-full  ">
           
 
-          <h1 className="text-5xl font-bold tracking-tight text-green-600 mb-6 ">Creative problem-solver at the intersection of design, tech, and people. Based in Berlin 🇩🇪</h1>
+          <h1 className="xs:text-4xl text-5xl font-bold tracking-tight text-green-600 mb-6 ">Creative problem-solver at the intersection of design, tech, and people. Based in Berlin 🇩🇪</h1>
           
           <h2 className="text-xl xs:text-2xl text-gray-600 pb-4 text-left m-auto">
           I thrive in the spaces where disciplines meet, bringing together design thinking, technical strategy, and marketing to solve complex challenges. With a strong tech and marketing background, I lead cross-functional teams globally to align technical capabilities with business goals and user needs. 
