@@ -22,11 +22,7 @@ export default async function IndexPage() {
       
 
 
-      <div className="relative flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4 ">
-
-        
-
-        {/* <div className="blob-shape"></div> */}
+      <div className="relative z-10 flex flex-wrap max-w-screen-lg py-0 my-16 xs:my-6 mx-auto px-4 ">
 
         <div className="w-2/3 lg:w-3/4 sm:w-full xs:w-full  ">
           
