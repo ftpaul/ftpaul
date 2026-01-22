@@ -26,11 +26,11 @@ const ImageGallery = () => {
   
 
   return (
-    <div className="flex justify-center items-center overflow-hidden space-x-12 xs:space-x-3 py-10">
+    <div className="flex justify-center items-center max-w-full overflow-hidden overflow-x-clip space-x-12 xs:space-x-3 py-10">
       {shuffledImages.map((image, index) => (
         <div
           key={index}
-          className={`relative w-64 max-h-64  z-10 rounded-lg shadow-lg transform ${
+          className={`relative w-64 max-h-64 overflow-hidden z-10 rounded-lg shadow-lg transform ${
             index % 2 === 0 ? 'rotate-2' : '-rotate-2'
           } transition-transform duration-300 hover:scale-105
         ${index == 0 || index == (shuffledImages.length-1)? "xs:hidden" : " -translate-x-2 xs:w-1/3"} `}
