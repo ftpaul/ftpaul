@@ -13,7 +13,6 @@ const Navigation = () => {
   
   return (
     <>
-      <TopBar />
 
       <nav className="flex flex-1 items-center justify-between max-w-screen-lg mx-auto pt-8 px-4 sm:px-0 xs:pt-4">
         <div className="flex">

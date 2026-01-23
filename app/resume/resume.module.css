@@ -9,6 +9,7 @@
   align-items:flex-start;
   justify-content:center;
   padding: 32px 16px;
+  
 }
 
 /* The page “sheet” */
@@ -20,6 +21,8 @@
   box-shadow: 0 12px 30px rgba(10,60,48,.15);
   border-radius: 12px;
   overflow: hidden;             /* rounded corners for sidebar bg */
+  position: relative;
+  z-index: 10;
 }
 
 /* Sidebar */
